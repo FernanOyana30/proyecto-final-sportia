@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Todo sobre el partido Colo Colo vs. River Plate por la fase de grupos de la Copa Libertadores de América">
+    <meta name="keywords"  content="FUTBOL, COPA ARGENTINA, AFA, QUILMES, SAN MARTIN, 16VOS DE FINAL, VICTORIA, GOLES">
+    <title>Sportia, portal de noticias deportivas - Copa Argentina. Quilmes vs San Martín
+    </title>
+    <!--RUTAS DE ESTILO-->
+    <link rel="stylesheet" href="../style/estilo.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="icon" href="../img/sportia-favicon.ico">
+</head>
+<body>
+    <div id="padreArticulo"> 
+        <!--El logotipo funciona como botón de home-->   
+        <header id="cabecera" >  
+            <a href="../index.html"><img src="../img/sportia-logo.png" alt="Sportia Logo" class="logoSportia"></a></li>
+        </header>
+        <!--INICIO NAV--> 
+        <nav id="navegador">
+            <div id="menuDesplegable" class="position-absolute start-0">
+                <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+                    Secciones
+                </button>                  
+                <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="staticBackdropLabel">Secciones</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body ">
+                        <div class="columnaFooter">    
+                            <div>
+                                <div>
+                                    <span class="fw-bold">FUTBOL ARGENTINO</span>
+                                </div> 
+                                <div>
+                                    <a href="../pages/seleccion.html" class= "text-decoration-none text-black">Selección</a> 
+                                </div>
+                                <div>
+                                    <a href="../pages/primera-division.html" class= "text-decoration-none text-black">Primera División</a> 
+                                </div>
+                                <div>
+                                    <a href="../pages/primera-b-nacional.html" class= "text-decoration-none text-black">B Nacional</a> 
+                                </div>
+                                <div>
+                                    <a href="../pages/copa-argentina.html" class= "text-decoration-none text-black">Copa Argentina</a> 
+                                </div>
+                                <div>
+                                    <a href="../pages/primera-b-metropolitana.html" class= "text-decoration-none text-black">Primera B</a> 
+                                </div>
+                                <div>
+                                    <a href="../pages/primera-c.html" class= "text-decoration-none text-black">Primera C</a> 
+                                </div>
+                                <div>
+                                    <a href="../pages/primera-d.html" class= "text-decoration-none text-black">Primera D</a> 
+                                </div>
+                                <div>
+                                    <a href="../pages/estadisticas.html" class= "text-decoration-none text-black">Estadísticas</a> 
+                                </div>
+                            </div> 
+                            <br>
+                            <div>                     
+                                <div>
+                                    <span class="fw-bold">FUTBOL INTERNACIONAL</span>
+                                </div>
+                                <div>
+                                    <a href="../pages/copa-libertadores.html" class= "text-decoration-none text-black">Copa Libertadores</a>
+                                </div>
+                                <div>
+                                    <a href="../pages/copa-sudamericana.html" class= "text-decoration-none text-black">Copa Sudamericana</a>
+                                </div>
+                                <div>
+                                    <a href="../pages/america.html" class= "text-decoration-none text-black">América</a>
+                                </div>
+                                <div>
+                                    <a href="../pages/españa.html" class= "text-decoration-none text-black">España</a>
+                                </div>
+                                <div>
+                                    <a href="../pages/italia.html" class= "text-decoration-none text-black">Italia</a>
+                                </div>
+                                <div>
+                                    <a href="../pages/inglaterra.html" class= "text-decoration-none text-black">Inglaterra</a>
+                                </div>
+                                <div>
+                                    <a href="../pages/champions-league.html" class= "text-decoration-none text-black">Champions League</a>
+                                </div>
+                                <div>
+                                    <a href="../pages/europa-league.html" class= "text-decoration-none text-black">Europa League</a>
+                                </div>
+                                <div>
+                                    <a href="../pages/estadisticas.html" class= "text-decoration-none text-black">Estadísticas</a>
+                                </div>
+                            </div> 
+                            <br>
+                            <div>
+                                <div>
+                                    <span class="fw-bold">MÁS DEPORTES</span>
+                                </div>
+                                <div>
+                                    <a href="../pages/basquet.html" class= "text-decoration-none text-black">Basquet</a>
+                                </div>
+                                <div>
+                                    <a href="../pages/rugby.html" class= "text-decoration-none text-black">Rugby</a>
+                                </div>
+                                <div>
+                                    <a href="../pages/tenis.html" class= "text-decoration-none text-black">Tenis</a>
+                                </div>
+                                <div>
+                                    <a href="../pages/polideportivo.html" class= "text-decoration-none text-black">Polideportivo</a>
+                                </div>
+                            </div>     
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menuNav">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-decoration-none text-dark fs-5" href="../pages/estadisticas.html"><img src="../img/estadisticas.png" alt="" width="30" height="24" class="d-inline-block align-text-top stat-icon"><span class="textoNav">Estadísticas</span></a>
+                    </li>                
+                    <li class="nav-item">
+                        <a class="nav-link text-decoration-none text-dark fs-5" href="../pages/agenda.html"><img src="../img/agenda.png" alt="" width="30" height="30" class="d-inline-block align-text-top calendario-icon"><span class="textoNav">Agenda</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-decoration-none text-dark fs-5" href="../pages/ingresar.html"><span class="textoNav">Ingresar</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-decoration-none text-dark fs-5" href="../pages/suscribirme.html"><span class="suscribirme">SUSCRIBIRME</span></a>
+                    </li>                
+                </ul>
+            </div>           
+        </nav>
+        <!--FIN NAV-->        
+        <main id="articulo">
+            <!--INICIO ARTICULO PERIODISTICO-->
+            <section id="notaPartido" >
+                <div class="divNota">
+                    <div >
+                        <h5 class="copeteNota">COPA ARGENTINA/ QUILMES 2 - SAN MARTÍN (T) 0</h5>
+                    </div>
+                    <div>
+                        <h1 class="titular">Quilmes venció a San Martín por 2-0 y se metió en 16vos de la Copa Argentina</h1>
+                    </div>
+                    <div id="cajaSubtitulo">
+                        <p class="subtitulo">Con mayoría de suplentes y una previa cargada de polémicas, el Cervecero venció al Ciruja con goles de Machado y Molina. Ahora, espera por Rosario Central o Sol de Mayo.</p>
+                    </div>  
+                    <img class="fotoArticulo" src="../img/quilmes.jpg" alt="Quilmes venció a San Martín">
+                    <div class= "cajaPie">
+                        <p>Quilmes ganó y avanzó en la Copa Argentina. (Prensa Quilmes).</p>
+                    </div>  
+                    <div class="marcador-partido">
+                        <span class="equipo-local"><p>QUILMES<img class="escudoLocal" src="../img/escudos/quilmes-escudo.png" alt="Escudo Quilmes"></p></span><span class="resultado"><p>2 vs 0</p></span><span class="equipo-visitante"><img class="escudo" src="../img/escudos/san-martin-tucuman-escudo.png" alt="Escudo San Martín de Tucumán"><p>SAN MARTIN (T)</p></span>
+                        <span><p class="goles-local">Camilo Machado 6' PT Mauro Molina 58' ST</p></span>
+                    </div>    
+                    <p id="fecha-nota" class="fw-bold fs-6">Copa Argentina / 32vos de final / 27 de Abril - 21:00h. / Estadio Carlos Augusto Mercado Luna</p>
+                    <div class="notaPeriodistica">
+                        <p>A veces el fútbol es difícil de entender y la victoria de Quilmes en la tarde-noche del miércoles suma otro capítulo más a este fenómeno. San Martín de Tucumán hizo todo: dominó, presionó, atacó y acorraló contra un arco a un Cervecero que jugó con mayoría de suplentes. Pero claro, hizo todo, menos el gol. <span class="negrita"> Los del Sur aprovecharon sus momentos, fueron efectivos y consiguieron el pase a la próxima fase de la Copa Argentina con un 2-0 final.</span></p>
+                        <br>    
+                        <p><span class="negrita">Los goles de la Cerveza vinieron tras dos errores de la defensa tucumana</span>: el primero llegó a través de un penal, bien cobrado por el árbitro, luego de que Hernán Lopes tocara la pelota con la mano en el área (en el ST Penel no tomó la misma determinación cuando la bocha le pegó a un jugador cervecero). Camilo Machado lo hizo valer y puso arriba a Quilmes ni bien comenzado el partido. Luego, cuando el Ciruja dominaba, un pelotazo largo al área de San Martín rebotó en la espalda de Nicolás Sansotre y le quedó picando en el punto penal a Mauro Molina: zurdazo y 2-0 final para los de Leandro Benítez. <span class="negrita">Pero esta victoria no se puede entender sin la presencia de Matías Budiño en el arco. El arquero sacó todo lo que llegó a su área. Figura.</span></p>
+                        <br>
+                        <img class="fotoArticulo w-100" src="../img/camilo-machado.jpg" alt="Camilo Machado">
+                        <br>
+                        <br>
+                        <p>En la previa del encuentro todo indicaba que los de Tucumán se tenían que llevar la victoria: <span class="negrita">el Cervecero llegaba con una racha de ocho partidos sin ganar, paraba un equipo con mayoría de suplentes y tuvo que pasar por la requisa policial al micro cuando estaba llegando a La Rioja -donde se habrían encontrado sustancias prohibidas-.</span>. Pese a todas las adversidades, los del Chino Benítez vencieron a San Martín, que es animador en la Primera Nacional y puso lo mejor que tenía a disposición.</p>
+                        <br>
+                        <p>Ahora, ya con el pasaje a 16avos sellado, esperan por el vencedor la llave de Rosario Central y Sol de Mayo -sin fecha definida- para conocer a su rival.</p>
+                    </div> 
+                    <!--FIN ARTICULO PERIODISTICO-->
+                    <div class="videoResumen">
+                        <h2 class="title-franklin fs-4">Resumen del partido</h2>
+                        <iframe width="624" height="351" src="https://www.youtube.com/embed/W54K8sfQxhk" title="32avos: Quilmes 2 - San Martín de Tucumán 0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>                    
+                    <h3 class="fs-5 fw-bold">Alineaciones</h3>
+                    <!--Inicio Alineaciones-->
+                    <div class="alineaciones">  
+                        <!--Inicio alineación equipo local-->                      
+                        <table class="table table-striped w-25 fs-6">
+                            <tr class="bg-secondary"><!-- inicio fila-->
+                                <th></th>
+                                <th class="text-light">Quilmes</th>
+                                <th></th>
+                            </tr><!-- cierre fila-->                                                        
+                            <tr><!-- inicio de otra fila-->
+                                <td>1</th>
+                                <td>Matías Budiño</td>
+                                <td>Arq</td>
+                            </tr><!-- cierre 2° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>4</th>
+                                <td>Martín Ortega</td>
+                                <td>Def</td>
+                            </tr><!-- cierre 3° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>13</th>
+                                <td>Federico Tévez</td>
+                                <td>Def</td>
+                            </tr><!-- cierre 4° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>5</th>
+                                <td>Rafael Barrios</td>
+                                <td>Def</td>
+                            </tr><!-- cierre 5° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>13</th>
+                                <td>Matías Cortave</td>
+                                <td>Def</td>
+                            </tr><!-- cierre 6° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>14</th>
+                                <td>Iván Erquiaga</td>
+                                <td>Med</td>
+                            </tr><!-- cierre 7° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>8</th>
+                                <td>Kevin López</td>
+                                <td>Med</td>
+                            </tr><!-- cierre 8° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>14</th>
+                                <td>Richard Núñez</td>
+                                <td>Med</td>
+                            </tr><!-- cierre 9° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>18</th>
+                                <td>Julián Bonetto <img src="../img/out_icon.svg" alt=""></td>
+                                <td>Del</td>
+                            </tr><!-- cierre 10° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>17</th>
+                                <td>Mauro Molina <img src="../img/goal_icon.svg" alt=""><img src="../img/out_icon.svg" alt=""></td>
+                                <td>Del</td>
+                            </tr><!-- cierre 11° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>16</th>
+                                <td>Camilo Machado <img src="../img/goal_icon.svg" alt=""><img src="../img/out_icon.svg" alt=""></td>
+                                <td>Del</td>
+                            </tr><!-- cierre 12° fila-->
+                            <tr class="bg-secondary"><!-- inicio de otra fila-->
+                                <th></th>
+                                <th class="text-light">Suplentes</th>
+                                <th></th>
+                            </tr><!-- cierre 13° fila--> 
+                            <tr><!-- inicio de otra fila-->
+                                <td>16</th>
+                                <td>Axel Batista <img src="../img/in_icon.svg" alt=""></td>
+                                <td>Sup</td>
+                            </tr><!-- cierre 14° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>9</th>
+                                <td>Federico González <img src="../img/in_icon.svg" alt=""><img src="../img/yellow_card_icon.svg" alt=""></td>
+                                <td>Sup</td>
+                            </tr><!-- cierre 15° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>11</th>
+                                <td>Alexis Quintana <img src="../img/in_icon.svg" alt=""></td>
+                                <td>Sup</td>
+                            </tr><!-- cierre 16° fila-->
+                            <tr class="bg-secondary"><!-- inicio de otra fila-->
+                                <th></th>
+                                <th class="text-light">Director Técnico</th>
+                                <th></th>
+                            </tr><!-- cierre 17° fila--> 
+                            <tr><!-- inicio de otra fila-->
+                                <td>-</th>
+                                <td>Leandro Benítez</td>
+                                <td>DT</td>
+                            </tr><!-- cierre 18° fila-->
+                        </table>
+                        <!--Fin alineación equipo local--> 
+                        <!--Inicio alineación equipo visitante--> 
+                        <table class="table table-striped w-25 fs-6">
+                            <tr class="bg-secondary"><!-- inicio fila-->
+                                <th></th>
+                                <th class="text-light">San Martín (T)</th>
+                                <th></th>
+                            </tr><!-- cierre fila-->                            
+                            <tr><!-- inicio de otra fila-->
+                                <td>1</th>
+                                <td>Darío Sand</td>
+                                <td>Arq</td>
+                            </tr><!-- cierre 2° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>3</th>
+                                <td>Lucas Diarte</td>
+                                <td>Def</td>
+                            </tr><!-- cierre 3° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>6</th>
+                                <td>Hernán López</td>
+                                <td>Def</td>
+                            </tr><!-- cierre 4° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>2</th>
+                                <td>Hernán Pellerano <img src="../img/yellow_card_icon.svg" alt=""><img src="../img/out_icon.svg" alt=""></td>
+                                <td>Def</td>
+                            </tr><!-- cierre 5° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>4</th>
+                                <td>Nicolás Sansotre</td>
+                                <td>Def</td>
+                            </tr><!-- cierre 6° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>18</th>
+                                <td>Milton Céliz <img src="../img/out_icon.svg" alt=""></td>
+                                <td>Med</td>
+                            </tr><!-- cierre 7° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>5</th>
+                                <td>Rodrigo Herrera</td>
+                                <td>Med</td>
+                            </tr><!-- cierre 8° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>10</th>
+                                <td>Valentín Larralde <img src="../img/out_icon.svg" alt=""></td>
+                                <td>Med</td>
+                            </tr><!-- cierre 9° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>7</th>
+                                <td>Federico Jourdan <img src="../img/out_icon.svg" alt=""></td>
+                                <td>Med</td>
+                            </tr><!-- cierre 10° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>11</th>
+                                <td>Diego Sosa <img src="../img/out_icon.svg" alt=""></td>
+                                <td>Del</td>
+                            </tr><!-- cierre 11° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>9</th>
+                                <td>Juan Miritello</td>
+                                <td>Del</td>
+                            </tr><!-- cierre 12° fila-->
+                            <tr class="bg-secondary"><!-- inicio de otra fila-->
+                                <th></th>
+                                <th class="text-light">Suplentes</th>
+                                <th></th>
+                            </tr><!-- cierre 13° fila--> 
+                            <tr><!-- inicio de otra fila-->
+                                <td>16</th>
+                                <td>Patricio Pérez <img src="../img/in_icon.svg" alt=""></td>
+                                <td>Sup</td>
+                            </tr><!-- cierre 14° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>16</th>
+                                <td>Tino Costa <img src="../img/in_icon.svg" alt=""></td>
+                                <td>Sup</td>
+                            </tr><!-- cierre 15° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>8</th>
+                                <td>Mauro Bellone <img src="../img/in_icon.svg" alt=""></td>
+                                <td>Sup</td>
+                            </tr><!-- cierre 16° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>14</th>
+                                <td>Lucas Cano <img src="../img/in_icon.svg" alt=""></td>
+                                <td>Sup</td>
+                            </tr><!-- cierre 17° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>16</th>
+                                <td>Juan Martín Imbert <img src="../img/in_icon.svg" alt=""></td>
+                                <td>Sup</td>
+                            </tr><!-- cierre 18° fila-->
+                            <tr class="bg-secondary"><!-- inicio de otra fila-->
+                                <th></th>
+                                <th class="text-light">Director Técnico</th>
+                                <th></th>
+                            </tr><!-- cierre 19° fila--> 
+                            <tr><!-- inicio de otra fila-->
+                                <td>-</th>
+                                <td>Pablo de Muner</td>
+                                <td>DT</td>
+                            </tr><!-- cierre 17° fila-->
+                        </table>
+                        <!--Fin alineación equipo visitante--> 
+                    </div>
+                    <!--Fin Alineaciones-->
+                    <!--Inicio cronología del partido-->
+                    <div class="cronologia w-75">                        
+                        <table class="table table-striped w-100 fs-6">
+                            <tr class="bg-secondary"><!-- inicio fila-->
+                                <th class="text-light">Cronología</th>
+                                <th></th>
+                                <th></th>
+                            </tr><!-- cierre fila-->                            
+                            <tr><!-- inicio de otra fila-->
+                                <td>90+7'</th>
+                                <td></td>
+                                <td>Final del partido. Quilmes 2, San Martín (T) 0.</td>
+                            </tr><!-- cierre 2° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>78'</th>
+                                <td><img src="../img/yellow_card_icon.svg" alt=""></td>
+                                <td>Tarjeta amarilla para Federico González (Quilmes).</td>
+                            </tr><!-- cierre 3° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>74'</th>
+                                <td><img src="../img/substitution_icon.svg" alt=""></td>
+                                <td>Sustitución en San Martín (T). Sale Milton Céliz, ingresa Patricio Pérez.</td>
+                            </tr><!-- cierre 4° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>74'</th>
+                                <td><img src="../img/substitution_icon.svg" alt=""></td>
+                                <td>Sustitución en San Martín (T). Sale Valentín Larralde, ingresa Mauro Bellone.</td>
+                            </tr><!-- cierre 5° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>68'</th>
+                                <td><img src="../img/substitution_icon.svg" alt=""></td>
+                                <td>Sustitución en Quilmes. Sale Julián Bonetto, ingresa Federico González.</td>
+                            </tr><!-- cierre 6° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>67'</th>
+                                <td><img src="../img/substitution_icon.svg" alt=""></td>
+                                <td>Sustitución en Quilmes. Sale Mauro Molina, ingresa Alexis Quintana.</td>
+                            </tr><!-- cierre 7° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>62'</th>
+                                <td><img src="../img/substitution_icon.svg" alt=""></td>
+                                <td>Sustitución en San Martín (T). Sale Hernán Pellerano, ingresa Lucas Cano.</td>
+                            </tr><!-- cierre 8° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>58'</th>
+                                <td><img src="../img/goal_icon.svg" alt=""></td>
+                                <td>Gol de Quilmes. Mauro Molina. Quilmes 1 - 0 San Martín (SJ)</td>
+                            </tr><!-- cierre 9° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>52'</th>
+                                <td><img src="../img/substitution_icon.svg" alt=""></td>
+                                <td>Sustitución en Quilmes. Sale Camilo Machado, ingresa Axel Batista.</td>
+                            </tr><!-- cierre 10° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>50'</th>
+                                <td><img src="../img/yellow_card_icon.svg" alt=""></td>
+                                <td>Tarjeta Amarilla para Hernán Pellerano (San Martín (T)).</td>
+                            </tr><!-- cierre 11° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>45'</th>
+                                <td></td>
+                                <td>Final primer tiempo. Quilmes 1, San Martín (T) 0.</td>
+                            </tr><!-- cierre 12° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>45'</th>
+                                <td><img src="../img/substitution_icon.svg" alt=""></td>
+                                <td>Sustitución en San Martín (T). Sale Diego Sosa, ingresa Juan Martín Imbert.</td>
+                            </tr><!-- cierre 13° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>45'</th>
+                                <td><img src="../img/substitution_icon.svg" alt=""></td>
+                                <td>Sustitución en San Martín (T). Sale Federico Jourdan, ingresa Alberto Costa.</td>
+                            </tr><!-- cierre 14° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>6'</th>
+                                <td><img src="../img/goal_icon.svg" alt=""></td>
+                                <td>Gol de Quilmes. Camilo Machado. Gol de penal. Quilmes 1 - 0 San Martín (SJ)</td>
+                            </tr><!-- cierre 15° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td></th>
+                                <td></td>
+                                <td>Arrancó el partido. Inicio primer tiempo.</td>
+                            </tr><!-- cierre 16° fila-->
+                        </table>                        
+                    </div>
+                    <!--Fin cronología del partido-->
+                </div>
+            </section>
+            <br>
+            <!--INICIO COMENTARIOS-->    
+            <section id="cajaComentarios">
+                <div class="comentarios" >
+                    <h3 class="title-impact fs-4">COMENTARIOS</h3> 
+                    <P>Comentar las notas de Sportia es exclusivo para usuarios logueados.</P>
+                    <form action="#">
+                        <textarea name="" id="" cols="60" rows="3" class="area-texto"></textarea>
+                        <br>
+                        <input type="submit" value="Cancelar" class="botonForm">
+                        <input type="submit" value="Publicar" class="botonForm">
+                    </form> 
+                </div>
+            </section>      
+            <!--FIN COMENTARIOS-->
+            <!--NOTICIAS RELACIONADAS-->
+            <section id="noticiasRelacionadas">
+                <div class="contenedor-noticias">
+                    <h3 class="title-impact fs-4">TE PUEDE INTERESAR</h3>
+                    <div class="noticiaRelacionada">                                    
+                        <a href="../pages/hace-fortaleza-para-clasificar-a-octavos.html"><img src="../img/fortaleza.jpg" alt="Alianza Lima Fortaleza Copa Libertadores" class="imagen-noticia"> </a> 
+                        <a href="../pages/hace-fortaleza-para-clasificar-a-octavos.html" class="decoration"><h2 class="titulo3 fs-5">Hace Fortaleza para clasificar a octavos</h2></a> 
+                    </div>
+                    <div class="noticiaRelacionada2">                                    
+                        <a href="../pages/banfield-y-una-dura-derrota-que-lo-complica.html"><img src="../img/banfield.jpg" alt="Banfiel cayó ante U. Católica y se complica su clasificación a octavos" class="imagen-noticia2"> </a> 
+                        <a href="../pages/banfield-y-una-dura-derrota-que-lo-complica.html" class="decoration"><h2 class="titulo3 fs-5">Banfield cae en Ecuador y se complica</h2></a> 
+                    </div>
+                    <div class="noticiaRelacionada3">
+                        <a href="../pages/racing-el-fin-de-un-largo-invicto-de-gago.html"><img src="../img/racing.jpg" alt="Racing perdió el invicto frente a Melgar" class="imagen-noticia3"></a>                       
+                        <a href="../pages/racing-el-fin-de-un-largo-invicto-de-gago.html" class="decoration"><h2 class="titulo2 fs-5">Racing: el fin de un largo invicto de Gago y hoy afuera de la Sudamericana</h2></a> 
+                    </div>
+                    <div class="noticiaRelacionada4">
+                        <a href="../pages/un-jugador-de-la-seleccion-argentina-elogio-a-enzo-fernandez.html"><img src="../img/guido-rodriguez-enzo-fernandez.jpg" alt="Guido Rodríguez elogió a Enzo Fernández" class="imagen-noticia4"></a>                       
+                        <a href="../pages/un-jugador-de-la-seleccion-argentina-elogio-a-enzo-fernandez.html" class="decoration"><h2 class="titulo2 ">Un jugador de la Selección Argentina elogió a Enzo Fernández: "Lo está haciendo muy bien en River"</h2></a> 
+                    </div>
+                    <div class="noticiaRelacionada5">
+                        <a href="../pages/san-lorenzo-volvio-al-triunfo-y-complico-a-newells-en-la-copa-liga-profesional.html"><img src="../img/san-lorenzofoto-baires.jpg" alt="San Lorenzo Newell's" class="imagen-noticia5"></a>                       
+                        <a href="../pages/san-lorenzo-volvio-al-triunfo-y-complico-a-newells-en-la-copa-liga-profesional.html" class="decoration"><h2 class="titulo2 ">San Lorenzo volvió al triunfo y complicó a Newell's en la Copa Liga Profesional</h2></a> 
+                    </div> 
+                    <div class="noticiaRelacionada6">
+                        <a href="../pages/german-pezella-a-fondo.html"><img src="../img/german-pezzella_862x485.jpg" alt="Germán Pezzella" class="imagen-noticia6"></a>                       
+                        <a href="../pages/german-pezella-a-fondo.html" class="decoration"><h2 class="titulo2 ">Germán Pezzella, a fondo: el campeonato con el Betis, la Selección Argentina y más</h2></a> 
+                    </div>  
+                </div>
+            </section>
+        </main>   
+        <!--INICIO FOOTER-->
+        <footer id="piePagina">                        
+            <div class="contacto">
+                <div><h2><strong>Sportia</strong></h2></div>
+                <br>
+                <div>© 2022 Fernando Oyanarte</div>
+                <br>
+                <div>Seguinos</div>
+                <br>
+                <div>
+                    <a href="https://www.facebook.com/"><img src="../img/facebook-icon.png" alt="facebook-icon" class="iconoRedes"></a>
+                    <a href="https://www.twitter.com/"><img src="../img/twitter-icon.png" alt="twitter-icon" class="iconoRedes"></a>
+                    <a href="https://www.instagram.com/"><img src="../img/igg-icon.png" alt="igg-icon" class="iconoRedes"></a>
+                    <a href="https://www.youtube.com/"><img src="../img/youtube-icon.png" alt="youtube-icon" class="iconoRedes"></a>
+                </div>                    
+            </div>                     
+            <div class="columnaFooter">    
+                <div>
+                    <div>
+                        <span class="negrita">FUTBOL ARGENTINO</span>
+                    </div>  
+                    <br>
+                    <div>
+                        <a href="../pages/seleccion.html" class= "decoration">Selección</a>
+                    </div>
+                    <div>
+                        <a href="../pages/primera-division.html" class= "decoration">Primera División</a>
+                    </div>
+                    <div>
+                        <a href="../pages/primera-b-nacional.html" class= "decoration">B Nacional</a>
+                    </div>
+                    <div>
+                        <a href="../pages/copa-argentina.html" class= "decoration">Copa Argentina</a>
+                    </div>
+                    <div>
+                        <a href="../pages/primera-b-metropolitana.html" class= "decoration">Primera B</a>
+                    </div>
+                    <div>
+                        <a href="../pages/primera-c.html" class= "decoration">Primera C</a>
+                    </div>
+                    <div>
+                        <a href="../pages/primera-d.html" class= "decoration">Primera D</a>
+                    </div>
+                    <div>
+                        <a href="../pages/estadisticas.html" class= "decoration">Estadísticas</a>
+                    </div>
+                </div> 
+                <div>                     
+                    <div>
+                        <span class="negrita">FUTBOL INTERNACIONAL</span>
+                    </div>
+                    <br>
+                    <div>
+                        <a href="../pages/copa-libertadores.html" class= "decoration">Copa Libertadores</a>
+                    </div>
+                    <div>
+                        <a href="../pages/copa-sudamericana.html" class= "decoration">Copa Sudamericana</a>
+                    </div>
+                    <div>
+                        <a href="../pages/america.html" class= "decoration">América</a>
+                    </div>
+                    <div>
+                        <a href="../pages/españa.html" class= "decoration">España</a>
+                    </div>
+                    <div>
+                        <a href="../pages/italia.html" class= "decoration">Italia</a>
+                    </div>
+                    <div>
+                        <a href="../pages/inglaterra.html" class= "decoration">Inglaterra</a>
+                    </div>
+                    <div>
+                        <a href="../pages/champions-league.html" class= "decoration">Champions League</a>
+                    </div>
+                    <div>
+                        <a href="../pages/europa-league.html" class= "decoration">Europa League</a>
+                    </div>
+                    <div>
+                        <a href="../pages/estadisticas.html" class= "decoration">Estadísticas</a>
+                    </div>
+                </div> 
+                <div>
+                    <div>
+                        <span class="negrita">MÁS DEPORTES</span>
+                    </div> 
+                    <br> 
+                    <div>
+                        <a href="../pages/basquet.html" class= "decoration">Basquet</a>
+                    </div>
+                    <div>
+                        <a href="../pages/rugby.html" class= "decoration">Rugby</a>
+                    </div>
+                    <div>
+                        <a href="../pages/tenis.html" class= "decoration">Tenis</a>
+                    </div>
+                    <div>
+                        <a href="../pages/polideportivo.html" class= "decoration">Polideportivo</a>
+                    </div>                   
+                </div>     
+            </div>
+        </footer>
+        <!--FIN FOOTER-->   
+    </div>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>     
+</body>
+</html>

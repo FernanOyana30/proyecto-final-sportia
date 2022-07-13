@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Todo sobre el partido Colo Colo vs. River Plate por la fase de grupos de la Copa Libertadores de América">
+    <meta name="keywords"  content="FUTBOL, PRIMERA DIVISION, COPA DE LA LIGA PROFESIONAL, SAN LORENZO, NEWELL'S, ZONA A">
+    <title>Sportia, portal de noticias deportivas - Copa Liga Profesional. San Lorenzo vs Newells</title>
+    <!--RUTAS DE ESTILO-->
+    <link rel="stylesheet" href="../style/estilo.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="icon" href="../img/sportia-favicon.ico">
+</head>
+<body>
+    <div id="padreArticulo"> 
+        <!--El logotipo funciona como botón de home-->   
+        <header id="cabecera" >  
+            <a href="../index.html"><img src="../img/sportia-logo.png" alt="Sportia Logo" class="logoSportia"></a></li>
+        </header>
+        <!--INICIO NAV--> 
+        <nav id="navegador">
+            <div id="menuDesplegable" class="position-absolute start-0">
+                <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+                    Secciones
+                </button>                  
+                <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="staticBackdropLabel">Secciones</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body ">
+                        <div class="columnaFooter">    
+                            <div>
+                                <div>
+                                    <span class="fw-bold">FUTBOL ARGENTINO</span>
+                                </div> 
+                                <div>
+                                    <a href="../pages/seleccion.html" class= "text-decoration-none text-black">Selección</a> 
+                                </div>
+                                <div>
+                                    <a href="../pages/primera-division.html" class= "text-decoration-none text-black">Primera División</a> 
+                                </div>
+                                <div>
+                                    <a href="../pages/primera-b-nacional.html" class= "text-decoration-none text-black">B Nacional</a> 
+                                </div>
+                                <div>
+                                    <a href="../pages/copa-argentina.html" class= "text-decoration-none text-black">Copa Argentina</a> 
+                                </div>
+                                <div>
+                                    <a href="../pages/primera-b-metropolitana.html" class= "text-decoration-none text-black">Primera B</a> 
+                                </div>
+                                <div>
+                                    <a href="../pages/primera-c.html" class= "text-decoration-none text-black">Primera C</a> 
+                                </div>
+                                <div>
+                                    <a href="../pages/primera-d.html" class= "text-decoration-none text-black">Primera D</a> 
+                                </div>
+                                <div>
+                                    <a href="../pages/estadisticas.html" class= "text-decoration-none text-black">Estadísticas</a> 
+                                </div>
+                            </div> 
+                            <br>
+                            <div>                     
+                                <div>
+                                    <span class="fw-bold">FUTBOL INTERNACIONAL</span>
+                                </div>
+                                <div>
+                                    <a href="../pages/copa-libertadores.html" class= "text-decoration-none text-black">Copa Libertadores</a>
+                                </div>
+                                <div>
+                                    <a href="../pages/copa-sudamericana.html" class= "text-decoration-none text-black">Copa Sudamericana</a>
+                                </div>
+                                <div>
+                                    <a href="../pages/america.html" class= "text-decoration-none text-black">América</a>
+                                </div>
+                                <div>
+                                    <a href="../pages/españa.html" class= "text-decoration-none text-black">España</a>
+                                </div>
+                                <div>
+                                    <a href="../pages/italia.html" class= "text-decoration-none text-black">Italia</a>
+                                </div>
+                                <div>
+                                    <a href="../pages/inglaterra.html" class= "text-decoration-none text-black">Inglaterra</a>
+                                </div>
+                                <div>
+                                    <a href="../pages/champions-league.html" class= "text-decoration-none text-black">Champions League</a>
+                                </div>
+                                <div>
+                                    <a href="../pages/europa-league.html" class= "text-decoration-none text-black">Europa League</a>
+                                </div>
+                                <div>
+                                    <a href="../pages/estadisticas.html" class= "text-decoration-none text-black">Estadísticas</a>
+                                </div>
+                            </div> 
+                            <br>
+                            <div>
+                                <div>
+                                    <span class="fw-bold">MÁS DEPORTES</span>
+                                </div>
+                                <div>
+                                    <a href="../pages/basquet.html" class= "text-decoration-none text-black">Basquet</a>
+                                </div>
+                                <div>
+                                    <a href="../pages/rugby.html" class= "text-decoration-none text-black">Rugby</a>
+                                </div>
+                                <div>
+                                    <a href="../pages/tenis.html" class= "text-decoration-none text-black">Tenis</a>
+                                </div>
+                                <div>
+                                    <a href="../pages/polideportivo.html" class= "text-decoration-none text-black">Polideportivo</a>
+                                </div>
+                            </div>     
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menuNav">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-decoration-none text-dark fs-5" href="../pages/estadisticas.html"><img src="../img/estadisticas.png" alt="Estadísticas torneos" width="30" height="24" class="d-inline-block align-text-top stat-icon"><span class="textoNav">Estadísticas</span></a>
+                    </li>                
+                    <li class="nav-item">
+                        <a class="nav-link text-decoration-none text-dark fs-5" href="../pages/agenda.html"><img src="../img/agenda.png" alt="Agenda partidos de hoy y mañana" width="30" height="30" class="d-inline-block align-text-top calendario-icon"><span class="textoNav">Agenda</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-decoration-none text-dark fs-5" href="../pages/ingresar.html"><span class="textoNav">Ingresar</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-decoration-none text-dark fs-5" href="../pages/suscribirme.html"><span class="suscribirme">SUSCRIBIRME</span></a>
+                    </li>                
+                </ul>
+            </div>           
+        </nav>
+        <!--FIN NAV-->        
+        <main id="articulo">
+            <!--INICIO ARTICULO PERIODISTICO-->
+            <section id="notaPartido" >
+                <div class="divNota">
+                    <div >
+                        <h5 class="copeteNota">LIGA PROFESIONAL / NEWELL'S 1 - SAN LORENZO 2</h5>
+                    </div>
+                    <div>
+                        <h1 class="titular">San Lorenzo volvió al triunfo y complicó a Newell's en la Copa Liga Profesional</h1>
+                    </div>
+                    <div id="cajaSubtitulo">
+                        <p class="subtitulo">El Ciclón se impuso por 2-1 en Rosario, por la fecha 13 de la Zona A de la Copa LPF 2022. La Lepra podría terminar la jornada fuera de la zona de clasificación.</p>
+                    </div>  
+                    <img class="fotoArticulo w-75" src="../img/san-lorenzofoto-baires.jpg" alt="San Lorenzo se impuso ante Newell's">
+                    <div class= "cajaPie">
+                        <p>Martegani fue el autor del primer gol contra la Lepra. (AP Photo/Esteban Felix)</p>
+                    </div>
+                    <div class="marcador-partido">
+                        <span class="equipo-local"><p>NEWELL'S<img class="escudoLocal" src="../img/escudos/nob-escudo.png" alt="Escudo Newell's"></p></span><span class="resultado"><p >1 vs 2</p></span><span class="equipo-visitante"><img class="escudo" src="../img/escudos/san-lorenzo-escudo.png" alt="Escudo San Lorenzo"><p >SAN LORENZO</p></span>
+                        <span><p class="goles-local">Cristian Lema 71' ST</p><p class="goles-visitante">Agustín Martegani 21' PT Federico A. Gattoni 60' ST </p></span>
+                    </div>    
+                    <p id="fecha-nota" class="fw-bold fs-6">Liga Profesional de Fútbol / Grupo A / Fecha 13 / 27 de Abril - 20:30h. / Darío Herrera / Estadio Monumental David Arellano</p>
+                    <div class="notaPeriodistica">
+                        <p><span class="negrita"> San Lorenzo</span> superó por 2-1 a <span class="negrita">Newell's </span> en el Estadio Marcelo Bielsa, por la fecha 13 de la Zona A de la <span class="negrita">Copa Liga Profesional 2022.</span> Un juvenil equipo del Ciclón consiguió su segundo triunfo en tres partidos y complicó a La Lepra pensando en la clasificación.</p>
+                        <br>    
+                        <p>Los dirigidos por Javier Sanguinetti intentaron tomar el protagonismo desde el arranque para conseguir el triunfo que les hubiese asegurado llegar a la última fecha entre los primeros cuatro. Sin embargo, a los 20 minutos <span class="negrita">Agustín Martegani</span> puso el 1-0 para San Lorenzo tras una espectacular salvada de Willer Ditta.</p>
+                        <br>
+                        <p>Ya en el complemento, el defensor colombiano tuvo en sus pies el empate, pero su remate se fue por encima del travesaño. El duelo se le hizo más cuesta arriba al local a los 15', cuando <span class="negrita">Federico Gattoni </span> puso el 2-0 con un golazo luego de una desatención en el fondo. A partir de ahí, Newell's reaccionó y empezó a acechar hasta que a los 23' se encontró con el descuento a través de un cabeza de <span class="negrita">Cristian Lema, </span>quien previo al gol ya había avisado.</p>
+                        <br>
+                        <p>Finalmente fue triunfo por 2-1 para el Ciclón, que además le cortó una valla invicta de tres partidos a La Lepra. <span class="negrita">Newell’s deberá jugarse la clasificación ante Gimnasia en La Plata, mientras que San Lorenzo cerrará su participación contra Racing de local.</span></p>
+                    </div> 
+                    <!--FIN ARTICULO PERIODISTICO-->
+                    <div class="videoResumen">
+                        <h2 class="title-franklin fs-4">Resumen del partido</h2>
+                        <iframe width="624" height="351" src="https://www.youtube.com/embed/Z8iHJ-OnMXM" title="¡EL CUERVO SORPRENDIÓ A LA LEPRA Y SE LLEVÓ UN TRIUNFAZO! | Newell's 1-2 San Lorenzo | RESUMEN" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>                    
+                    <h3 class="fs-5 fw-bold">Alineaciones</h3>
+                    <!--Inicio Alineaciones-->
+                    <div class="alineaciones">  
+                        <!--Inicio alineación equipo local-->                      
+                        <table class="table table-striped w-25 fs-6">
+                            <tr class="bg-secondary"><!-- inicio fila-->
+                                <th></th>
+                                <th class="text-light">Newell's</th>
+                                <th></th>
+                            </tr><!-- cierre fila-->                                                        
+                            <tr><!-- inicio de otra fila-->
+                                <td>1</th>
+                                <td>Mauricio Arboleda</td>
+                                <td>Arq</td>
+                            </tr><!-- cierre 2° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>14</th>
+                                <td>Armando Méndez</td>
+                                <td>Def</td>
+                            </tr><!-- cierre 3° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>2</th>
+                                <td>Cristian Lema <img src="../img/goal_icon.svg" alt=""> </td>
+                                <td>Def</td>
+                            </tr><!-- cierre 4° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>4</th>
+                                <td>Willer Ditta</td>
+                                <td>Def</td>
+                            </tr><!-- cierre 5° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>21</th>
+                                <td>Leonel Vangioni</td>
+                                <td>Def</td>
+                            </tr><!-- cierre 6° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>20</th>
+                                <td>Julián Fernández</td>
+                                <td>Med</td>
+                            </tr><!-- cierre 7° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>8</th>
+                                <td>Pablo Javier Pérez <img src="../img/yellow_card_icon.svg" alt=""><img src="../img/out_icon.svg" alt=""> </td>
+                                <td>Med</td>
+                            </tr><!-- cierre 8° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>17</th>
+                                <td>Justo Giani <img src="../img/yellow_card_icon.svg" alt=""><img src="../img/out_icon.svg" alt=""></td>
+                                <td>Med</td>
+                            </tr><!-- cierre 9° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>16</th>
+                                <td>Djorkaeff Reasco <img src="../img/out_icon.svg" alt=""></td>
+                                <td>Med</td>
+                            </tr><!-- cierre 10° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>44</th>
+                                <td>Francisco González <img src="../img/yellow_card_icon.svg" alt=""><img src="../img/out_icon.svg" alt=""></td>
+                                <td>Med</td>
+                            </tr><!-- cierre 11° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>39</th>
+                                <td>Nazareno Manuel Fúnez <img src="../img/out_icon.svg" alt=""></td>
+                                <td>Del</td>
+                            </tr><!-- cierre 12° fila-->
+                            <tr class="bg-secondary"><!-- inicio de otra fila-->
+                                <th></th>
+                                <th class="text-light">Suplentes</th>
+                                <th></th>
+                            </tr><!-- cierre 13° fila--> 
+                            <tr><!-- inicio de otra fila-->
+                                <td>10</th>
+                                <td>Nicolás Castro <img src="../img/in_icon.svg" alt=""></td>
+                                <td>Sup</td>
+                            </tr><!-- cierre 14° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>47</th>
+                                <td>Guillermo Balzi <img src="../img/in_icon.svg" alt=""></td>
+                                <td>Sup</td>
+                            </tr><!-- cierre 15° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>24</th>
+                                <td>Genaro Rossi <img src="../img/in_icon.svg" alt=""><img src="../img/yellow_card_icon.svg" alt=""></td>
+                                <td>Sup</td>
+                            </tr><!-- cierre 16° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>7</th>
+                                <td>Juan Garro <img src="../img/in_icon.svg" alt=""></td>
+                                <td>Sup</td>
+                            </tr><!-- cierre 17° fila-->
+                            <tr class="bg-secondary"><!-- inicio de otra fila-->
+                                <th></th>
+                                <th class="text-light">Director Técnico</th>
+                                <th></th>
+                            </tr><!-- cierre 18° fila--> 
+                            <tr><!-- inicio de otra fila-->
+                                <td>-</th>
+                                <td>Javier Sanguinetti</td>
+                                <td>DT</td>
+                            </tr><!-- cierre 19° fila-->
+                        </table>
+                        <!--Fin alineación equipo local--> 
+                        <!--Inicio alineación equipo visitante--> 
+                        <table class="table table-striped w-25 fs-6">
+                            <tr class="bg-secondary"><!-- inicio 1° fila-->
+                                <th></th>
+                                <th class="text-light">San Lorenzo</th>
+                                <th></th>
+                            </tr><!-- cierre 1° fila-->                            
+                            <tr><!-- inicio de otra fila-->
+                                <td>1</th>
+                                <td>Sebastián Torrico</td>
+                                <td>Arq</td>
+                            </tr><!-- cierre 2° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>6</th>
+                                <td>Federico Gattoni <img src="../img/goal_icon.svg" alt=""> </td>
+                                <td>Def</td>
+                            </tr><!-- cierre 3° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>23</th>
+                                <td>Gastón Hernández</td>
+                                <td>Def</td>
+                            </tr><!-- cierre 4° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>24</th>
+                                <td>Jeremias James</td>
+                                <td>Def</td>
+                            </tr><!-- cierre 5° fila-->                            
+                            <tr><!-- inicio de otra fila-->
+                                <td>47</th>
+                                <td>Agustín Giay <img src="../img/out_icon.svg" alt=""></td>
+                                <td>Med</td>
+                            </tr><!-- cierre 6° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>27</th>
+                                <td>Jalil Elías </td>
+                                <td>Med</td>
+                            </tr><!-- cierre 7° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>42</th>
+                                <td>Agustín Martegan <img src="../img/goal_icon.svg" alt="gol ícono"><img src="../img/out_icon.svg" alt=""></td>
+                                <td>Med</td>
+                            </tr><!-- cierre 8° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>46</th>
+                                <td>Tomas Silva</td>
+                                <td>Med</td>
+                            </tr><!-- cierre 9° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>5</th>
+                                <td>Yeison Gordillo <img src="../img/yellow_card_icon.svg" alt=""><img src="../img/out_icon.svg" alt=""></td>
+                                <td>Med</td>
+                            </tr><!-- cierre 10° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>7</th>
+                                <td>Ezequiel Cerutti <img src="../img/out_icon.svg" alt=""></td>
+                                <td>Del</td>
+                            </tr><!-- cierre 11° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>29</th>
+                                <td>Nicolás Fernández</td>
+                                <td>Def</td>
+                            </tr><!-- cierre 12° fila-->
+                            <tr class="bg-secondary"><!-- inicio de otra fila-->
+                                <th></th>
+                                <th class="text-light">Suplentes</th>
+                                <th></th>
+                            </tr><!-- cierre 13° fila--> 
+                            <tr><!-- inicio de otra fila-->
+                                <td>57</th>
+                                <td>Ezequiel Herrera <img src="../img/in_icon.svg" alt=""></td>
+                                <td>Sup</td>
+                            </tr><!-- cierre 14° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>38</th>
+                                <td>Siro Rosane <img src="../img/in_icon.svg" alt=""></td>
+                                <td>Sup</td>
+                            </tr><!-- cierre 15° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>50</th>
+                                <td>Francisco Perruzzi <img src="../img/in_icon.svg" alt=""></td>
+                                <td>Sup</td>
+                            </tr><!-- cierre 16° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>41</th>
+                                <td>Ivan Leguizamon <img src="../img/in_icon.svg" alt=""></td>
+                                <td>Sup</td>
+                            </tr><!-- cierre 17° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>9</th>
+                                <td>Nicolás Blandi <img src="../img/in_icon.svg" alt=""></td>
+                                <td>Sup</td>
+                            </tr><!-- cierre 18° fila-->
+                            <tr class="bg-secondary"><!-- inicio de otra fila-->
+                                <th></th>
+                                <th class="text-light">Director Técnico</th>
+                                <th></th>
+                            </tr><!-- cierre 19° fila--> 
+                            <tr><!-- inicio de otra fila-->
+                                <td>-</th>
+                                <td>Fernando Berón</td>
+                                <td>DT</td>
+                            </tr><!-- cierre 20° fila-->
+                        </table>
+                        <!--Fin alineación equipo visitante--> 
+                    </div>
+                    <!--Fin Alineaciones-->
+                    <!--Inicio cronología del partido-->
+                    <div class="cronologia w-75">                        
+                        <table class="table table-striped w-100 fs-6">
+                            <tr class="bg-secondary"><!-- inicio 1° fila-->
+                                <th class="text-light">Cronología</th>
+                                <th></th>
+                                <th></th>
+                            </tr><!-- cierre 1° fila-->                            
+                            <tr><!-- inicio de otra fila-->
+                                <td>90+6'</th>
+                                <td></td>
+                                <td>Final del partido. Newell's 1, San Lorenzo 2.</td>
+                            </tr><!-- cierre 2° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>90+5'</th>
+                                <td><img src="../img/yellow_card_icon.svg" alt=""></td>
+                                <td>Tarjeta amarilla para Genaro Ariel Rossi (Newell's, delantero #24).</td>
+                            </tr><!-- cierre 11° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>89'</th>
+                                <td><img src="../img/substitution_icon.svg" alt=""></td>
+                                <td>Sustitución en San Lorenzo. Se retira Yeison Gordillo (mediocampista #5), entra Siro Rosané (mediocampista #38).</td>
+                            </tr><!-- cierre 11° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>89'</th>
+                                <td><img src="../img/substitution_icon.svg" alt=""></td>
+                                <td>Sustitución en San Lorenzo. Se retira Ezequiel Cerutti (delantero #7), entra Nicolás Blandi (delantero #9).</td>
+                            </tr><!-- cierre 11° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>79'</th>
+                                <td><img src="../img/substitution_icon.svg" alt=""></td>
+                                <td>Sustitución en San Lorenzo. Se retira Agustín Marteagani (mediocampista #50), entra Francisco Perruzzi (mediocampista #50).</td>
+                            </tr><!-- cierre 11° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>79'</th>
+                                <td><img src="../img/substitution_icon.svg" alt=""></td>
+                                <td>Sustitución en Newell's. Se retira Francisco Agustín González (mediocampista #44), entra Guillermo Balzi (mediocampista #47).</td>
+                            </tr><!-- cierre 11° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>63'</th>
+                                <td><img src="../img/goal_icon.svg" alt=""></td>
+                                <td>Gol de Newell's. Cristian Lema (defensor #2). Asistió: F. A. González. Newell's 1, San Lorenzo 2.</td>
+                            </tr><!-- cierre 18° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>67'</th>
+                                <td><img src="../img/yellow_card_icon.svg" alt=""></td>
+                                <td>Tarjeta amarilla para Yeison Gordillo (San Lorenzo, mediocampista #5).</td>
+                            </tr><!-- cierre 10° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>67'</th>
+                                <td><img src="../img/substitution_icon.svg" alt=""></td>
+                                <td>Sustitución en San Lorenzo. Se retira Agustín Giay (mediocampista #47), entra Ezequiel Herrera (defensor #57).</td>
+                            </tr><!-- cierre 11° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>63'</th>
+                                <td><img src="../img/substitution_icon.svg" alt=""></td>
+                                <td>Sustitución en Newell's. Se retira Djorkaeff Reasco (mediocampista #16), entra Genaro Rossi (delantero #24).</td>
+                            </tr><!-- cierre 11° fila-->                            
+                            <tr><!-- inicio de otra fila-->
+                                <td>63'</th>
+                                <td><img src="../img/goal_icon.svg" alt=""></td>
+                                <td>Gol de San Lorenzo. Federico Gattoni (defensor #6). Newell's 0, San Lorenzo 2.</td>
+                            </tr><!-- cierre 18° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>54'</th>
+                                <td><img src="../img/substitution_icon.svg" alt=""></td>
+                                <td>Sustitución en Newell's. Sale Nazareno Manuel Fúnez (delantero #39), ingresa Nicolás Castro (mediocampista #10).</td>
+                            </tr><!-- cierre 20° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>55'</th>
+                                <td><img src="../img/substitution_icon.svg" alt=""></td>
+                                <td>Sustitución en Newell's. Sale Pablo Javier Pérez (mediocampista #8), ingresa Juan Garro (delantero #7).</td>
+                            </tr><!-- cierre 20° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>52'</th>
+                                <td><img src="../img/yellow_card_icon.svg" alt=""></td>
+                                <td>Tarjeta Amarilla para Pablo Javier Pérez (Newell's, mediocampista #8)</td>
+                            </tr><!-- cierre 26° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>45'</th>
+                                <td></td>
+                                <td>Final primer tiempo. Newell's 0, San Lorenzo 1.</td>
+                            </tr><!-- cierre 22° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>43'</th>
+                                <td><img src="../img/yellow_card_icon.svg" alt=""></td>
+                                <td>Tarjeta Amarilla para Justo Giani (Newell's, mediocampista #17)</td>
+                            </tr><!-- cierre 26° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>25'</th>
+                                <td><img src="../img/yellow_card_icon.svg" alt=""></td>
+                                <td>Tarjeta Amarilla para Francisco González (Newell's, mediocampista #44)</td>
+                            </tr><!-- cierre 26° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>22'</th>
+                                <td><img src="../img/goal_icon.svg" alt=""></td>
+                                <td>Gol de San Lorenzo. Agustín Marteagani. Newell's 0, San Lorenzo 1.</td>
+                            </tr><!-- cierre 27° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td></th>
+                                <td></td>
+                                <td>Arrancó el partido. Inicio primer tiempo.</td>
+                            </tr><!-- cierre 33° fila-->
+                        </table>
+                        
+                    </div>
+                    <!--Fin cronología del partido-->
+                </div>
+            </section>
+            <br>
+            <!--INICIO COMENTARIOS-->    
+            <section id="cajaComentarios">
+                <div class="comentarios" >
+                    <h3 class="title-impact fs-4">COMENTARIOS</h3> 
+                    <P>Comentar las notas de Sportia es exclusivo para usuarios logueados.</P>
+                    <form action="#">
+                        <textarea name="" id="" cols="60" rows="3" class="area-texto"></textarea>
+                        <br>
+                        <input type="submit" value="Cancelar" class="botonForm">
+                        <input type="submit" value="Publicar" class="botonForm">
+                    </form> 
+                </div>
+            </section>      
+            <!--FIN COMENTARIOS-->
+            <!--NOTICIAS RELACIONADAS-->
+            <section id="noticiasRelacionadas">
+                <div class="contenedor-noticias">
+                    <h3 class="title-impact fs-4">TE PUEDE INTERESAR</h3>
+                    <div class="noticiaRelacionada">                                    
+                        <a href="../pages/hace-fortaleza-para-clasificar-a-octavos.html"><img src="../img/fortaleza.jpg" alt="Alianza Lima Fortaleza Copa Libertadores" class="imagen-noticia"> </a> 
+                        <a href="../pages/hace-fortaleza-para-clasificar-a-octavos.html" class="decoration"><h2 class="titulo3 fs-5">Hace Fortaleza para clasificar a octavos</h2></a> 
+                    </div>
+                    <div class="noticiaRelacionada2">                                    
+                        <a href="../pages/banfield-y-una-dura-derrota-que-lo-complica.html"><img src="../img/banfield.jpg" alt="Banfiel cayó ante U. Católica y se complica su clasificación a octavos" class="imagen-noticia2"> </a> 
+                        <a href="../pages/banfield-y-una-dura-derrota-que-lo-complica.html" class="decoration"><h2 class="titulo3 fs-5">Banfield cae en Ecuador y se complica</h2></a> 
+                    </div>
+                    <div class="noticiaRelacionada3">
+                        <a href="../pages/racing-el-fin-de-un-largo-invicto-de-gago.html"><img src="../img/racing.jpg" alt="Racing perdió el invicto frente a Melgar" class="imagen-noticia3"></a>                       
+                        <a href="../pages/racing-el-fin-de-un-largo-invicto-de-gago.html" class="decoration"><h2 class="titulo2 fs-5">Racing: el fin de un largo invicto de Gago y hoy afuera de la Sudamericana</h2></a> 
+                    </div>
+                    <div class="noticiaRelacionada4">
+                        <a href="../pages/un-jugador-de-la-seleccion-argentina-elogio-a-enzo-fernandez.html"><img src="../img/guido-rodriguez-enzo-fernandez.jpg" alt="Guido Rodríguez elogió a Enzo Fernández" class="imagen-noticia4"></a>                       
+                        <a href="../pages/un-jugador-de-la-seleccion-argentina-elogio-a-enzo-fernandez.html" class="decoration"><h2 class="titulo2 ">Un jugador de la Selección Argentina elogió a Enzo Fernández: "Lo está haciendo muy bien en River"</h2></a> 
+                    </div>
+                    <div class="noticiaRelacionada5">
+                        <a href="../pages/river-peleo-acerto-y-marcha-en-la-libertadores.html"><img src="../img/river.jpg" alt="River festejó un triunfo de visitante frente a Colo Colo" class="imagen-noticia5"></a>                       
+                        <a href="../pages/river-peleo-acerto-y-marcha-en-la-libertadores.html" class="decoration"><h2 class="titulo2 fs-5">River peleó, acertó y marcha en la Libertadores</h2></a> 
+                    </div> 
+                    <div class="noticiaRelacionada6">
+                        <a href="../pages/german-pezella-a-fondo.html"><img src="../img/german-pezzella_862x485.jpg" alt="Germán Pezzella" class="imagen-noticia6"></a>                       
+                        <a href="../pages/german-pezella-a-fondo.html" class="decoration"><h2 class="titulo2 ">Germán Pezzella, a fondo: el campeonato con el Betis, la Selección Argentina y más</h2></a> 
+                    </div>  
+                </div>
+            </section>
+        </main>   
+        <!--INICIO FOOTER-->
+        <footer id="piePagina">                        
+            <div class="contacto">
+                <div><h2><strong>Sportia</strong></h2></div>
+                <br>
+                <div>© 2022 Fernando Oyanarte</div>
+                <br>
+                <div>Seguinos</div>
+                <br>
+                <div>
+                    <a href="https://www.facebook.com/"><img src="../img/facebook-icon.png" alt="facebook-icon" class="iconoRedes"></a>
+                    <a href="https://www.twitter.com/"><img src="../img/twitter-icon.png" alt="twitter-icon" class="iconoRedes"></a>
+                    <a href="https://www.instagram.com/"><img src="../img/igg-icon.png" alt="igg-icon" class="iconoRedes"></a>
+                    <a href="https://www.youtube.com/"><img src="../img/youtube-icon.png" alt="youtube-icon" class="iconoRedes"></a>
+                </div>                    
+            </div>                     
+            <div class="columnaFooter">    
+                <div>
+                    <div>
+                        <span class="negrita">FUTBOL ARGENTINO</span>
+                    </div>  
+                    <br>
+                    <div>
+                        <a href="../pages/seleccion.html" class= "decoration">Selección</a>
+                    </div>
+                    <div>
+                        <a href="../pages/primera-division.html" class= "decoration">Primera División</a>
+                    </div>
+                    <div>
+                        <a href="../pages/primera-b-nacional.html" class= "decoration">B Nacional</a>
+                    </div>
+                    <div>
+                        <a href="../pages/copa-argentina.html" class= "decoration">Copa Argentina</a>
+                    </div>
+                    <div>
+                        <a href="../pages/primera-b-metropolitana.html" class= "decoration">Primera B</a>
+                    </div>
+                    <div>
+                        <a href="../pages/primera-c.html" class= "decoration">Primera C</a>
+                    </div>
+                    <div>
+                        <a href="../pages/primera-d.html" class= "decoration">Primera D</a>
+                    </div>
+                    <div>
+                        <a href="../pages/estadisticas.html" class= "decoration">Estadísticas</a>
+                    </div>
+                </div> 
+                <div>                     
+                    <div>
+                        <span class="negrita">FUTBOL INTERNACIONAL</span>
+                    </div>
+                    <br>
+                    <div>
+                        <a href="../pages/copa-libertadores.html" class= "decoration">Copa Libertadores</a>
+                    </div>
+                    <div>
+                        <a href="../pages/copa-sudamericana.html" class= "decoration">Copa Sudamericana</a>
+                    </div>
+                    <div>
+                        <a href="../pages/america.html" class= "decoration">América</a>
+                    </div>
+                    <div>
+                        <a href="../pages/españa.html" class= "decoration">España</a>
+                    </div>
+                    <div>
+                        <a href="../pages/italia.html" class= "decoration">Italia</a>
+                    </div>
+                    <div>
+                        <a href="../pages/inglaterra.html" class= "decoration">Inglaterra</a>
+                    </div>
+                    <div>
+                        <a href="../pages/champions-league.html" class= "decoration">Champions League</a>
+                    </div>
+                    <div>
+                        <a href="../pages/europa-league.html" class= "decoration">Europa League</a>
+                    </div>
+                    <div>
+                        <a href="../pages/estadisticas.html" class= "decoration">Estadísticas</a>
+                    </div>
+                </div> 
+                <div>
+                    <div>
+                        <span class="negrita">MÁS DEPORTES</span>
+                    </div> 
+                    <br> 
+                    <div>
+                        <a href="../pages/basquet.html" class= "decoration">Basquet</a>
+                    </div>
+                    <div>
+                        <a href="../pages/rugby.html" class= "decoration">Rugby</a>
+                    </div>
+                    <div>
+                        <a href="../pages/tenis.html" class= "decoration">Tenis</a>
+                    </div>
+                    <div>
+                        <a href="../pages/polideportivo.html" class= "decoration">Polideportivo</a>
+                    </div>                   
+                </div>     
+            </div> 
+        </footer>
+        <!--FIN FOOTER-->   
+    </div>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>     
+</body>
+</html>

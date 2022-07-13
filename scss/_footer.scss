@@ -1,0 +1,45 @@
+/*FOOTER*/
+#piePagina{
+    grid-area: footer;
+    border-top: solid 6px black;
+    background-image: linear-gradient(to right, rgb(115, 163, 20), rgb(158, 211, 51));
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-family: $font_arial; 
+    padding-top: 50px; 
+    width: 1343px;
+    .contacto{
+        div{
+            .iconoRedes{
+                height: 30px;
+                width: 30px;
+                transform: translateY(20px);
+                &:hover{
+                    height: 50px;
+                    width: 50px;
+                }
+            }
+        }
+    }
+    .columnaFooter{
+        width: 550px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        div{
+            .negrita{
+                font-weight: bold;
+            }
+        }
+        div{
+            .decoration{
+                text-decoration: none;
+                color: $text_black;
+                &:hover{
+                    color: $text_white;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Todo sobre el partido Colo Colo vs. River Plate por la fase de grupos de la Copa Libertadores de América">
+    <meta name="keywords"  content="FUTBOL, UEFA CHAMPIONS LEAGUE, LIVERPOOL, VILLARREAL, OCTAVOS DE FINAL, GOLES, PARTIDO">
+    <title>Sportia, portal de noticias deportivas - UEFA Champions League. Liverpool vs Villarreal</title>
+    <!--RUTAS DE ESTILO-->
+    <link rel="stylesheet" href="../style/estilo.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="icon" href="../img/sportia-favicon.ico">
+</head>
+<body>
+    <div id="padreArticulo"> 
+        <!--El logotipo funciona como botón de home-->   
+        <header id="cabecera" >  
+            <a href="../index.html"><img src="../img/sportia-logo.png" alt="Sportia Logo" class="logoSportia"></a></li>
+        </header>
+        <!--INICIO NAV--> 
+        <nav id="navegador">
+            <div id="menuDesplegable" class="position-absolute start-0">
+                <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+                    Secciones
+                </button>                  
+                <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="staticBackdropLabel">Secciones</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body ">
+                        <div class="columnaFooter">    
+                            <div>
+                                <div>
+                                    <span class="fw-bold">FUTBOL ARGENTINO</span>
+                                </div> 
+                                <div>
+                                    <a href="../pages/seleccion.html" class= "text-decoration-none text-black">Selección</a> 
+                                </div>
+                                <div>
+                                    <a href="../pages/primera-division.html" class= "text-decoration-none text-black">Primera División</a> 
+                                </div>
+                                <div>
+                                    <a href="../pages/primera-b-nacional.html" class= "text-decoration-none text-black">B Nacional</a> 
+                                </div>
+                                <div>
+                                    <a href="../pages/copa-argentina.html" class= "text-decoration-none text-black">Copa Argentina</a> 
+                                </div>
+                                <div>
+                                    <a href="../pages/primera-b-metropolitana.html" class= "text-decoration-none text-black">Primera B</a> 
+                                </div>
+                                <div>
+                                    <a href="../pages/primera-c.html" class= "text-decoration-none text-black">Primera C</a> 
+                                </div>
+                                <div>
+                                    <a href="../pages/primera-d.html" class= "text-decoration-none text-black">Primera D</a> 
+                                </div>
+                                <div>
+                                    <a href="../pages/estadisticas.html" class= "text-decoration-none text-black">Estadísticas</a> 
+                                </div>
+                            </div> 
+                            <br>
+                            <div>                     
+                                <div>
+                                    <span class="fw-bold">FUTBOL INTERNACIONAL</span>
+                                </div>
+                                <div>
+                                    <a href="../pages/copa-libertadores.html" class= "text-decoration-none text-black">Copa Libertadores</a>
+                                </div>
+                                <div>
+                                    <a href="../pages/copa-sudamericana.html" class= "text-decoration-none text-black">Copa Sudamericana</a>
+                                </div>
+                                <div>
+                                    <a href="../pages/america.html" class= "text-decoration-none text-black">América</a>
+                                </div>
+                                <div>
+                                    <a href="../pages/españa.html" class= "text-decoration-none text-black">España</a>
+                                </div>
+                                <div>
+                                    <a href="../pages/italia.html" class= "text-decoration-none text-black">Italia</a>
+                                </div>
+                                <div>
+                                    <a href="../pages/inglaterra.html" class= "text-decoration-none text-black">Inglaterra</a>
+                                </div>
+                                <div>
+                                    <a href="../pages/champions-league.html" class= "text-decoration-none text-black">Champions League</a>
+                                </div>
+                                <div>
+                                    <a href="../pages/europa-league.html" class= "text-decoration-none text-black">Europa League</a>
+                                </div>
+                                <div>
+                                    <a href="../pages/estadisticas.html" class= "text-decoration-none text-black">Estadísticas</a>
+                                </div>
+                            </div> 
+                            <br>
+                            <div>
+                                <div>
+                                    <span class="fw-bold">MÁS DEPORTES</span>
+                                </div>
+                                <div>
+                                    <a href="../pages/basquet.html" class= "text-decoration-none text-black">Basquet</a>
+                                </div>
+                                <div>
+                                    <a href="../pages/rugby.html" class= "text-decoration-none text-black">Rugby</a>
+                                </div>
+                                <div>
+                                    <a href="../pages/tenis.html" class= "text-decoration-none text-black">Tenis</a>
+                                </div>
+                                <div>
+                                    <a href="../pages/polideportivo.html" class= "text-decoration-none text-black">Polideportivo</a>
+                                </div>
+                            </div>     
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menuNav">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-decoration-none text-dark fs-5" href="../pages/estadisticas.html"><img src="../img/estadisticas.png" alt="Estadísticas torneos" width="30" height="24" class="d-inline-block align-text-top stat-icon"><span class="textoNav">Estadísticas</span></a>
+                    </li>                
+                    <li class="nav-item">
+                        <a class="nav-link text-decoration-none text-dark fs-5" href="../pages/agenda.html"><img src="../img/agenda.png" alt="Agenda partidos de hoy y mañana" width="30" height="30" class="d-inline-block align-text-top calendario-icon"><span class="textoNav">Agenda</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-decoration-none text-dark fs-5" href="../pages/ingresar.html"><span class="textoNav">Ingresar</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-decoration-none text-dark fs-5" href="../pages/suscribirme.html"><span class="suscribirme">SUSCRIBIRME</span></a>
+                    </li>                
+                </ul>
+            </div>           
+        </nav>
+        <!--FIN NAV-->        
+        <main id="articulo">
+            <!--INICIO ARTICULO PERIODISTICO-->
+            <section id="notaPartido" >
+                <div class="divNota">
+                    <div >
+                        <h5 class="copeteNota">CHAMPIONS / LIVERPOOL 2 - VILLARREAL 0</h5>
+                    </div>
+                    <div>
+                        <h1 class="titular w-75" style="font-size: 64px;">Liverpool tiene un pie en la final</h1>
+                    </div>
+                    <div id="cajaSubtitulo">
+                        <p class="subtitulo">El equipo de Klopp le ganó con comodidad al Villarreal y es candidatazo para estar en la final. Rulli, Foyth y Lo Celso poco pudieron hacer ante el poderío inglés.</p>
+                    </div>  
+                    <img class="fotoArticulo" src="../img/liverpool-villarreal.jpg" alt="Liverpool vence al Villarreal">
+                    <div class= "cajaPie">
+                        <p>Fue un cómodo 2-0.</p>
+                    </div>  
+                    <div class="marcador-partido">
+                        <span class="equipo-local"><p>LIVERPOOL<img class="escudoLocal" src="../img/escudos/liverpool-escudo.png" alt="Escudo Liverpool"></p></span><span class="resultado"><p>2 vs 0</p></span><span class="equipo-visitante"><img class="escudo" src="../img/escudos/villarreal-escudo.png" alt="Escudo Villarreal"><p>VILLARREAL</p></span>
+                        <span><p class="goles-local">Pervis Estupiñán 8' ST (GC) Sadio Mané 10' ST</p></span>
+                    </div>    
+                    <p id="fecha-nota" class="fw-bold fs-6">Champions League / Semi-Finales / 27 de Abril - 16:00h. / Szymon Marciniak / Anfield</p>
+                    <div class="notaPeriodistica">
+                        <p>La incógnita no era el cómo sino cuándo. Tan delgado era el margen de error del Villarreal contra el Liverpool, que era apenas una cuestión de tiempo encontrarlo en desventaja. Porque en Anfield, <span class="negrita">el Submarino Amarilla apenas pudo conservar la pelota un par de segundos por jugada ante un equipo de Klopp que ejecutó una presión asfixiante </span> durante todo el partido. Aguantó un tiempo la Cenicienta de estas semifinales de Champions. <span class="negrita">Tras el descanso, el muro no aguantó las grietas y se terminó cayendo.</span>En España quedará el mal trago de que el 1-0, a los ocho minutos del segundo tiempo, fue por una carambola. Porque <span class="negrita">Henderson mandó un centro que se desvió en Estupiñán e hizo estéril el manotazo de Rulli.</span>, Fue gol en contra del ecuatoriano, pero una consecuencia de todo lo que había hecho el Liverpool.</p>
+                        <br>
+                        <h2 class="title-franklin fs-4">El plantel defensivo del Villarreal</h2>
+                        <p>Con demasiada diferencia de jerarquía individual y colectiva, <span class="negrita">Villarreal intentó emular lo que el Atlético de Simeone había hecho contra el City (0-1), en la ida de los cuartos.</span>Acumuló mucha gente atrás para disminuir el poder de gol de su rival y llegar con vida al partido de vuelta. <span class="negrita">El primer tiempo le salió bien, porque salvo jugadas muy aisladas, el dominio inglés no se tradujo en chances claras.</span> Apenas una mediavuelta de Mané y un remate de media distancia de Thiago que dio en un ángulo sacudieron a Rulli, de nivel aceptable.</p>
+                        <br>
+                        <p><span class="negrita">Pero para lograr esto, los de Emery decididamente entregaron el ataque.</span> Con dos líneas de cuatro bien marcadas, <span class="negrita">Lo Celso fue un volante por derecha dedicado a clausurar su banda y casi nunca pudo agarrar la pelota. </span>Quedó claro que el plan original era que en ataque se cerrara y jugara de enganche, pero la presión rival se lo impidió.</p>
+                        <br>
+                        <p>Es tan alta la exigencia y perfección que demanda el Liverpool, que <span class="negrita">apenas Villarreal se desconectó del partido lo lastimó. </span>Dos minutos después del gol en contra, y todavía mareado, llegó el 2-0. Asistencia de Salah con caño incluido y definición mano a mano de Mané.</p>
+                        <br>
+                        <p>Si bien pudieron ser tres o cuatro goles, los de Klopp se conformaron con los dos de ventaja. Si bien quedan 90 minutos, la serie parecería estar casi cerrada.</p>
+                    </div> 
+                    <!--FIN ARTICULO PERIODISTICO-->
+                    <div class="videoResumen">
+                        <h2 class="title-franklin fs-4">Resumen del partido</h2>
+                        <iframe width="624" height="351" src="https://www.youtube.com/embed/BRhtiW9n4Jg" title="¡LOS DE KLOPP BAILARON AL SUBMARINO AMARILLO Y SACARON VENTAJA! | Liverpool 2-0 Villarreal | RESUMEN" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>                    
+                    <h3 class="fs-5 fw-bold">Alineaciones</h3>
+                    <!--Inicio Alineaciones-->
+                    <div class="alineaciones">  
+                        <!--Inicio alineación equipo local-->                      
+                        <table class="table table-striped w-25 fs-6">
+                            <tr class="bg-secondary"><!-- inicio fila-->
+                                <th></th>
+                                <th class="text-light">Liverpool</th>
+                                <th></th>
+                            </tr><!-- cierre fila-->                                                        
+                            <tr><!-- inicio de otra fila-->
+                                <td>1</th>
+                                <td>Alison</td>
+                                <td>Arq</td>
+                            </tr><!-- cierre 2° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>66</th>
+                                <td>Alexander Arnold <img src="../img/out_icon.svg" alt=""></td>
+                                <td>Def</td>
+                            </tr><!-- cierre 3° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>5</th>
+                                <td>Ibrahima Konaté</td>
+                                <td>Def</td>
+                            </tr><!-- cierre 4° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>4</th>
+                                <td>Virgil Van Dijk <img src="../img/yellow_card_icon.svg" alt=""></td>
+                                <td>Def</td>
+                            </tr><!-- cierre 5° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>26</th>
+                                <td>Andrew Robertson</td>
+                                <td>Def</td>
+                            </tr><!-- cierre 6° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>14</th>
+                                <td>Jordan Henderson <img src="../img/out_icon.svg" alt=""></td>
+                                <td>Med</td>
+                            </tr><!-- cierre 7° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>3</th>
+                                <td>Fabinho Tavares</td>
+                                <td>Med</td>
+                            </tr><!-- cierre 8° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>6</th>
+                                <td>Thiago Alcántara </td>
+                                <td>Med</td>
+                            </tr><!-- cierre 9° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>11</th>
+                                <td>Mohamed Salah </td>
+                                <td>Del</td>
+                            </tr><!-- cierre 10° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>10</th>
+                                <td>Sadio Mané <img src="../img/goal_icon.svg" alt=""><img src="../img/out_icon.svg" alt=""></td>
+                                <td>Del</td>
+                            </tr><!-- cierre 11° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>23</th>
+                                <td>Luis F. Díaz <img src="../img/out_icon.svg" alt=""></td>
+                                <td>Del</td>
+                            </tr><!-- cierre 12° fila-->
+                            <tr class="bg-secondary"><!-- inicio de otra fila-->
+                                <th></th>
+                                <th class="text-light">Suplentes</th>
+                                <th></th>
+                            </tr><!-- cierre 13° fila--> 
+                            <tr><!-- inicio de otra fila-->
+                                <td>8</th>
+                                <td>Naby Keita <img src="../img/in_icon.svg" alt=""></td>
+                                <td>Sup</td>
+                            </tr><!-- cierre 14° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>12</th>
+                                <td>Joe Gomez <img src="../img/in_icon.svg" alt=""></td>
+                                <td>Sup</td>
+                            </tr><!-- cierre 15° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>20</th>
+                                <td>Diogo Jota <img src="../img/in_icon.svg" alt=""></td>
+                                <td>Sup</td>
+                            </tr><!-- cierre 16° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>27</th>
+                                <td>Divock Origi <img src="../img/in_icon.svg" alt=""></td>
+                                <td>Sup</td>
+                            </tr><!-- cierre 17° fila-->
+                            <tr class="bg-secondary"><!-- inicio de otra fila-->
+                                <th></th>
+                                <th class="text-light">Director Técnico</th>
+                                <th></th>
+                            </tr><!-- cierre 18° fila--> 
+                            <tr><!-- inicio de otra fila-->
+                                <td>-</th>
+                                <td>Jürgen Klopp</td>
+                                <td>DT</td>
+                            </tr><!-- cierre 19° fila-->
+                        </table>
+                        <!--Fin alineación equipo local--> 
+                        <!--Inicio alineación equipo visitante--> 
+                        <table class="table table-striped w-25 fs-6">
+                            <tr class="bg-secondary"><!-- inicio 1° fila-->
+                                <th></th>
+                                <th class="text-light">Villarreal</th>
+                                <th></th>
+                            </tr><!-- cierre 1° fila-->                            
+                            <tr><!-- inicio de otra fila-->
+                                <td>13</th>
+                                <td>Gerónimo Rulli</td>
+                                <td>Arq</td>
+                            </tr><!-- cierre 2° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>12</th>
+                                <td>Pervis Estupiñán <img src="../img/yellow_card_icon.svg" alt=""><img src="../img/goal_icon.svg" alt=""><img src="../img/out_icon.svg" alt=""></td>
+                                <td>Def</td>
+                            </tr><!-- cierre 3° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>4</th>
+                                <td>Pau Torres </td>
+                                <td>Def</td>
+                            </tr><!-- cierre 4° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>3</th>
+                                <td>Raúl Albiol</td>
+                                <td>Def</td>
+                            </tr><!-- cierre 5° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>8</th>
+                                <td>Juan Foyth</td>
+                                <td>Def</td>
+                            </tr><!-- cierre 6° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>19</th>
+                                <td>Francis Coquetín <img src="../img/out_icon.svg" alt=""></td>
+                                <td>Med</td>
+                            </tr><!-- cierre 7° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>5</th>
+                                <td>Dani Parejo <img src="../img/out_icon.svg" alt=""></td>
+                                <td>Med</td>
+                            </tr><!-- cierre 8° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>6</th>
+                                <td>Étienne Capoue</td>
+                                <td>Med</td>
+                            </tr><!-- cierre 9° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>17</th>
+                                <td>Giovanni Lo Celso <img src="../img/yellow_card_icon.svg" alt=""></td>
+                                <td>Med</td>
+                            </tr><!-- cierre 10° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>15</th>
+                                <td>Arnaut Groenveld <img src="../img/out_icon.svg" alt=""></td>
+                                <td>Del</td>
+                            </tr><!-- cierre 11° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>11</th>
+                                <td>Samuel Chukwueze <img src="../img/out_icon.svg" alt=""></td>
+                                <td>Del</td>
+                            </tr><!-- cierre 12° fila-->
+                            <tr class="bg-secondary"><!-- inicio de otra fila-->
+                                <th></th>
+                                <th class="text-light">Suplentes</th>
+                                <th></th>
+                            </tr><!-- cierre 13° fila--> 
+                            <tr><!-- inicio de otra fila-->
+                                <td>9</th>
+                                <td>Paco Alcácer <img src="../img/in_icon.svg" alt=""></td>
+                                <td>Sup</td>
+                            </tr><!-- cierre 14° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>14</th>
+                                <td>Manu Trigueros <img src="../img/in_icon.svg" alt=""></td>
+                                <td>Sup</td>
+                            </tr><!-- cierre 15° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>16</th>
+                                <td>Boulaye Día <img src="../img/in_icon.svg" alt=""></td>
+                                <td>Sup</td>
+                            </tr><!-- cierre 16° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>24</th>
+                                <td>Alfonso Pedraza Sag <img src="../img/in_icon.svg" alt=""></td>
+                                <td>Sup</td>
+                            </tr><!-- cierre 17° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>25</th>
+                                <td>Serge Aurier <img src="../img/in_icon.svg" alt=""></td>
+                                <td>Sup</td>
+                            </tr><!-- cierre 18° fila-->
+                            <tr class="bg-secondary"><!-- inicio de otra fila-->
+                                <th></th>
+                                <th class="text-light">Director Técnico</th>
+                                <th></th>
+                            </tr><!-- cierre 19° fila--> 
+                            <tr><!-- inicio de otra fila-->
+                                <td>-</th>
+                                <td>Unal Emery Etxegoien</td>
+                                <td>DT</td>
+                            </tr><!-- cierre 20° fila-->
+                        </table>
+                        <!--Fin alineación equipo visitante--> 
+                    </div>
+                    <!--Fin Alineaciones-->
+                    <!--Inicio cronología del partido-->
+                    <div class="cronologia w-75">                        
+                        <table class="table table-striped w-100 fs-6">
+                            <tr class="bg-secondary"><!-- inicio fila-->
+                                <th class="text-light">Cronología</th>
+                                <th></th>
+                                <th></th>
+                            </tr><!-- cierre fila-->                            
+                            <tr><!-- inicio de otra fila-->
+                                <td>90+5'</th>
+                                <td></td>
+                                <td>Final del partido. Liverpool 2, Villarreal 0.</td>
+                            </tr><!-- cierre 2° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>86'</th>
+                                <td><img src="../img/substitution_icon.svg" alt=""></td>
+                                <td>Sustitución en Villarreal. Sale Arnaut Groenveld (delantero #15), entra Paco Alcácer (delantero #9).</td>
+                            </tr><!-- cierre 3° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>81'</th>
+                                <td><img src="../img/substitution_icon.svg" alt=""></td>
+                                <td>Sustitución en Liverpool. Sale Luis F. (delantero #23), entra Divock Origi (delantero #27).</td>
+                            </tr><!-- cierre 4° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>81'</th>
+                                <td><img src="../img/substitution_icon.svg" alt=""></td>
+                                <td>Sustitución en Liverpool. Sale Alexander Arnold (defensor #66), entra Joe Gómez (defensor #12).</td>
+                            </tr><!-- cierre 5° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>73'</th>
+                                <td><img src="../img/substitution_icon.svg" alt=""></td>
+                                <td>Sustitución en Liverpool. Sale Jordan Henderson (mediocampista #14), entra Naby Keita (mediocampista #8).</td>
+                            </tr><!-- cierre 6° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>72'</th>
+                                <td><img src="../img/substitution_icon.svg" alt=""></td>
+                                <td>Sustitución en Liverpool. Sale Sadio Mané (delantero #10), entra Diogo Jota (delantero #20).</td>
+                            </tr><!-- cierre 7° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>72'</th>
+                                <td><img src="../img/substitution_icon.svg" alt=""></td>
+                                <td>Sustitución en Villarreal. Sale Samuel Chukwueze (delantero #11), ingresa Boulaye Dia (delantero #16).</td>
+                            </tr><!-- cierre 8° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>72'</th>
+                                <td><img src="../img/substitution_icon.svg" alt=""></td>
+                                <td>Sustitución en Liverpool. Sale Jordan Henderson (mediocampista #14), entra Naby Keita (mediocampista #8).</td>
+                            </tr><!-- cierre 9° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>72'</th>
+                                <td><img src="../img/substitution_icon.svg" alt=""></td>
+                                <td>Sustitución en Villarreal. Se retira Pervis Estupiñán (defensor #12), entra Manu Trigueros (mediocampista #14).</td>
+                            </tr><!-- cierre 10° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>71'</th>
+                                <td><img src="../img/substitution_icon.svg" alt=""></td>
+                                <td>Sustitución en Villarreal. Se retira Dani Parejo (Mediocampista #5), entra Serge Aurier (defensor #25).</td>
+                            </tr><!-- cierre 11° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>66'</th>
+                                <td></td>
+                                <td>Zapatazo de Van Dijk. Casi marca el central neerlandés con un disparo mortal desde la frontal. Estaba atento Rulli para despejar el peligro.</td>
+                            </tr><!-- cierre 12° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>63'</th>
+                                <td></td>
+                                <td>No vale el gol de Robertson. Jugada invalidada por fuera de juego del lateral escocés, que bate a Rulli tras un espectacular centro de Alexander Arnold. Estaba muy bien diseñada la línea defensiva del Villarreael.</td>
+                            </tr><!-- cierre 13° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>62'</th>
+                                <td><img src="../img/yellow_card_icon.svg" alt=""></td>
+                                <td>Tarjeta amarilla para Giovanni Lo Celso por una falta sobre Robertson.</td>
+                            </tr><!-- cierre 14° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>57'</th>
+                                <td><img src="../img/substitution_icon.svg" alt=""></td>
+                                <td>Se produce el primer cambio en el Villarreal tras los dos goles del Liverpool. Entra Alfonso Pedraza Sag (mediocampista #24) en lugar de Francis Coquelin (mediocampista #19).</td>
+                            </tr><!-- cierre 15° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>55'</th>
+                                <td><img src="../img/goal_icon.svg" alt=""></td>
+                                <td>Gol de Sadio Mané. Liverpool 2 - 0 Villarreal. Sané tira de calidad para aumentar la ventaja de los 'Reds'. Recibe Salah en la frontal y el egipcio, con tiempo para girar y encontrar espacio, filtra un espectacular pase a su socio en ataque. El delantero senegalés tiene sangre fría para realizar un leve toque que supera a Rulli por bajo.</td>
+                            </tr><!-- cierre 16° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>53'</th>
+                                <td><img src="../img/goal_icon.svg" alt=""></td>
+                                <td>Autogol de Pervis Estupiñán. Liverpool 1 - 0 Villarreal.</td>
+                            </tr><!-- cierre 17° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>52'</th>
+                                <td></td>
+                                <td>Bloqueo de Rulli. No consigue dar dirección ni potencia al balón Luis Díaz con un remate en el corazón del área. Se lamenta el jugador colombiano.</td>
+                            </tr><!-- cierre 18° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>49'</th>
+                                <td></td>
+                                <td>Gol anulado al Liverpool. Hay fuera de juego de Fabinho cuando alcanzaba el esférico tras un toque de Van Dijk dentro del área. Acierta el colegiado polaco Marciniak.</td>
+                            </tr><!-- cierre 19° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>47'</th>
+                                <td><img src="../img/yellow_card_icon.svg" alt=""></td>
+                                <td>Amarilla para Pervis Estupiñán por agarrar del brazo a Mohamed Salah. Hay tiro libre a favor del Liverpool muy cerca del pico del área.</td>
+                            </tr><!-- cierre 20° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>46'</th>
+                                <td></td>
+                                <td>La primera de la segunda parte la tiene el Liverpool. Centro de Salah buscando a Mané, pero aparece Pau Torres para desviar la trayectoria del lanzamiento y habilitar el blocaje de Rulli.</td>
+                            </tr><!-- cierre 21° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>45'</th>
+                                <td></td>
+                                <td>Final primer tiempo. Liverpool 0, Villarreal 0.</td>
+                            </tr><!-- cierre 22° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>41'</th>
+                                <td></td>
+                                <td>Balonazo extraordinario de Thiago Alcántara, que le pega desde fuera del área y encuentra el poste de Rulli. Por poco no se inaugura el marcador en Anfield.</td>
+                            </tr><!-- cierre 23° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>35'</th>
+                                <td></td>
+                                <td>Primera chance para el Villarreal. Aparición sorprendente de Lo Celso, que se tiró para tocar un lanzamiento en largo de Parejo. Aplaude desde la banda Unai Emery</td>
+                            </tr><!-- cierre 24° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>34'</th>
+                                <td></td>
+                                <td>En solo tres toques, el Liverpool transporta la pelota desde el centro del campo al corazón del área. Engancha el egipcio un remate de primeras a un centro de Alexander Arnold, mandando el balón por encima del travesaño.</td>
+                            </tr><!-- cierre 25° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>32'</th>
+                                <td></td>
+                                <td>Chance de gol para Liverpool. Disparo potente de Mané que desvía en Albiol y casi engaña a Rulli. Totalmente de espalda a la portería contraria, el senegalés se giró y encontró espacio para el tiro.</td>
+                            </tr><!-- cierre 26° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>32'</th>
+                                <td><img src="../img/yellow_card_icon.svg" alt=""></td>
+                                <td>Tarjeta amarilla para Virgil Van Dijk por falta. La primera cartulina del encuentro la ve un jugador del Liverpool.</td>
+                            </tr><!-- cierre 27° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>30'</th>
+                                <td></td>
+                                <td>Intenta de lejos Luis Díaz y su disparo lo despeja el portero del Villarreal. Sigue picando piedra el Liverpool.</td>
+                            </tr><!-- cierre 28° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>28'</th>
+                                <td></td>
+                                <td>Le pega con fuerza Alexander Arnold, pero su disparo no puede superar la fila de futbolistas colocada por Rulli. Mete la cabeza con valentía Pau Torres.</td>
+                            </tr><!-- cierre 29° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>26'</th>
+                                <td></td>
+                                <td>Otra jugada combinativa entre Mané y Salah que termina con un tiro de rosca del egipcio que se marcha por encima de la portería.</td>
+                            </tr><!-- cierre 30° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>21'</th>
+                                <td></td>
+                                <td>Perfecto lanzamiento de Fabinho a Henderson, cuyo centrochut de primeras desde la derecha toca el poste de Rulli y se marcha fuera. Lo tenía controlado el portero del Villarreal</td>
+                            </tr><!-- cierre 31° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>15'</th>
+                                <td></td>
+                                <td>Disparo desde la frontal de Henderson que termina anulando el asistente por posición antirreglamentaria de los jugadores del Liverpool, que le tapaban la visión a Rulli. </td>
+                            </tr><!-- cierre 32° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>13'</th>
+                                <td></td>
+                                <td>Jugadón de Luis Díaz. El colombiano recorta hacia adentro y encuentra espacio para rematar desde lejos, pero su disparo lo detiene el portero del Villarreal. Sigue mordiendo arriba el equipo de Klopp.</td>
+                            </tr><!-- cierre 33° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>11'</th>
+                                <td></td>
+                                <td>Conexión entre Salah y Mané que termina con un cabezazo forzado del senegalés. No lo hace bien Mané a la hora de rematar por alto.</td>
+                            </tr><!-- cierre 34° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td>9'</th>
+                                <td></td>
+                                <td>¡La primera del Liverpool! Remate de cabeza de Salah, tras un centro de Alexander Arnold al primer palo. Presiona el cuadro británico en estos primeros 10' de encuentro.</td>
+                            </tr><!-- cierre 35° fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td></th>
+                                <td></td>
+                                <td>Arrancó el partido. Inicio primer tiempo.</td>
+                            </tr><!-- cierre 36° fila-->
+                        </table>                        
+                    </div>
+                    <!--Fin cronología del partido-->
+                </div>
+            </section>
+            <br>
+            <!--INICIO COMENTARIOS-->    
+            <section id="cajaComentarios">
+                <div class="comentarios" >
+                    <h3 class="title-impact fs-4">COMENTARIOS</h3> 
+                    <P>Comentar las notas de Sportia es exclusivo para usuarios logueados.</P>
+                    <form action="#">
+                        <textarea name="" id="" cols="60" rows="3" class="area-texto"></textarea>
+                        <br>
+                        <input type="submit" value="Cancelar" class="botonForm">
+                        <input type="submit" value="Publicar" class="botonForm">
+                    </form> 
+                </div>
+            </section>      
+            <!--FIN COMENTARIOS-->
+            <!--NOTICIAS RELACIONADAS-->
+            <section id="noticiasRelacionadas">
+                <div class="contenedor-noticias">
+                    <h3 class="title-impact fs-4">TE PUEDE INTERESAR</h3>
+                    <div class="noticiaRelacionada">                                    
+                        <a href="../pages/julio-cruz-sobre-el-partido-de-inter-y-bologna.html"><img src="../img/lautaro-martinez-joaquin-correa_862x485.jpg" alt="Lautaro Martínez Joaquín Correa" class="imagen-noticia"> </a> 
+                        <a href="../pages/julio-cruz-sobre-el-partido-de-inter-y-bologna.html" class="decoration"><h2 class="titulo3 fs-5">Julio Cruz, sobre el partido entre Inter y Bologna : "Apuesto por Lautaro y por Correa"</h2></a> 
+                    </div>
+                    <div class="noticiaRelacionada2">                                    
+                        <a href="../pages/la-condicion-de-lewandowky.html"><img src="../img/robert-lewandowski_862x485.jpg" alt="Robert Lewandowski" class="imagen-noticia2"> </a> 
+                        <a href="../pages/la-condicion-de-lewandowky.html" class="decoration"><h2 class="titulo3 fs-5">La condición de Robert Lewandowski a Barcelona para aceptar un traspaso</h2></a> 
+                    </div>
+                    <div class="noticiaRelacionada3">
+                        <a href="../pages/el-presidente-del-tottenham-se-refirio-sobre-una-posible-vuelta-de-pochettino.html"><img src="../img/daniel-levy-mauricio-pochettino_862x485.jpg" alt="Daniel Levy Mauricio Pochettino" class="imagen-noticia3"></a>                       
+                        <a href="../pages/el-presidente-del-tottenham-se-refirio-sobre-una-posible-vuelta-de-pochettino.html" class="decoration"><h2 class="titulo2 fs-5">El presidente del Tottenham se refirió sobre una posible vuelta de Pochettino</h2></a> 
+                    </div>
+                    <div class="noticiaRelacionada4">
+                        <a href="../pages/como-quedaron-las-semifinales-de-la-uefa-europa-league.html"><img src="../img/trofeo-europa-league_416x234.jpg" alt="Europa League Trofeo" class="imagen-noticia4"></a>                       
+                        <a href="../pages/como-quedaron-las-semifinales-de-la-uefa-europa-league.html" class="decoration"><h2 class="titulo2 ">Cómo quedaron las semifinales de la UEFA Europa League</h2></a> 
+                    </div>
+                    <div class="noticiaRelacionada5">
+                        <a href="../pages/paulo-dybala-y-el-inter-estan-en-negociaciones-avanzadas.html"><img src="../img/dybala-inter_862x485.jpg" alt="Paulo Dybala Inter" class="imagen-noticia5"></a>                       
+                        <a href="../pages/paulo-dybala-y-el-inter-estan-en-negociaciones-avanzadas.html" class="decoration"><h2 class="titulo2 fs-5">Paulo Dybala y el Inter están en negociaciones avanzadas</h2></a> 
+                    </div> 
+                    <div class="noticiaRelacionada6">
+                        <a href="../pages/alessio-romagnoli-el-tapado-del-barcelona.html"><img src="../img/xavi-hernandez_862x485.jpg" alt="Xavi Hernández" class="imagen-noticia6"></a>                       
+                        <a href="../pages/alessio-romagnoli-el-tapado-del-barcelona.html" class="decoration"><h2 class="titulo2 fs-4">Alessio Romagnoli, el tapado del Barcelona</h2></a> 
+                    </div>  
+                </div>
+            </section>
+        </main>   
+        <!--INICIO FOOTER-->
+        <footer id="piePagina">                        
+            <div class="contacto">
+                <div><h2><strong>Sportia</strong></h2></div>
+                <br>
+                <div>© 2022 Fernando Oyanarte</div>
+                <br>
+                <div>Seguinos</div>
+                <br>
+                <div>
+                    <a href="https://www.facebook.com/"><img src="../img/facebook-icon.png" alt="facebook-icon" class="iconoRedes"></a>
+                    <a href="https://www.twitter.com/"><img src="../img/twitter-icon.png" alt="twitter-icon" class="iconoRedes"></a>
+                    <a href="https://www.instagram.com/"><img src="../img/igg-icon.png" alt="igg-icon" class="iconoRedes"></a>
+                    <a href="https://www.youtube.com/"><img src="../img/youtube-icon.png" alt="youtube-icon" class="iconoRedes"></a>
+                </div>                    
+            </div>                     
+            <div class="columnaFooter">    
+                <div>
+                    <div>
+                        <span class="negrita">FUTBOL ARGENTINO</span>
+                    </div>  
+                    <br>
+                    <div>
+                        <a href="../pages/seleccion.html" class= "decoration">Selección</a>
+                    </div>
+                    <div>
+                        <a href="../pages/primera-division.html" class= "decoration">Primera División</a>
+                    </div>
+                    <div>
+                        <a href="../pages/primera-b-nacional.html" class= "decoration">B Nacional</a>
+                    </div>
+                    <div>
+                        <a href="../pages/copa-argentina.html" class= "decoration">Copa Argentina</a>
+                    </div>
+                    <div>
+                        <a href="../pages/primera-b-metropolitana.html" class= "decoration">Primera B</a>
+                    </div>
+                    <div>
+                        <a href="../pages/primera-c.html" class= "decoration">Primera C</a>
+                    </div>
+                    <div>
+                        <a href="../pages/primera-d.html" class= "decoration">Primera D</a>
+                    </div>
+                    <div>
+                        <a href="../pages/estadisticas.html" class= "decoration">Estadísticas</a>
+                    </div>
+                </div> 
+                <div>                     
+                    <div>
+                        <span class="negrita">FUTBOL INTERNACIONAL</span>
+                    </div>
+                    <br>
+                    <div>
+                        <a href="../pages/copa-libertadores.html" class= "decoration">Copa Libertadores</a>
+                    </div>
+                    <div>
+                        <a href="../pages/copa-sudamericana.html" class= "decoration">Copa Sudamericana</a>
+                    </div>
+                    <div>
+                        <a href="../pages/america.html" class= "decoration">América</a>
+                    </div>
+                    <div>
+                        <a href="../pages/españa.html" class= "decoration">España</a>
+                    </div>
+                    <div>
+                        <a href="../pages/italia.html" class= "decoration">Italia</a>
+                    </div>
+                    <div>
+                        <a href="../pages/inglaterra.html" class= "decoration">Inglaterra</a>
+                    </div>
+                    <div>
+                        <a href="../pages/champions-league.html" class= "decoration">Champions League</a>
+                    </div>
+                    <div>
+                        <a href="../pages/europa-league.html" class= "decoration">Europa League</a>
+                    </div>
+                    <div>
+                        <a href="../pages/estadisticas.html" class= "decoration">Estadísticas</a>
+                    </div>
+                </div> 
+                <div>
+                    <div>
+                        <span class="negrita">MÁS DEPORTES</span>
+                    </div> 
+                    <br> 
+                    <div>
+                        <a href="../pages/basquet.html" class= "decoration">Basquet</a>
+                    </div>
+                    <div>
+                        <a href="../pages/rugby.html" class= "decoration">Rugby</a>
+                    </div>
+                    <div>
+                        <a href="../pages/tenis.html" class= "decoration">Tenis</a>
+                    </div>
+                    <div>
+                        <a href="../pages/polideportivo.html" class= "decoration">Polideportivo</a>
+                    </div>                   
+                </div>     
+            </div> 
+        </footer>
+        <!--FIN FOOTER-->   
+    </div>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>     
+</body>
+</html>

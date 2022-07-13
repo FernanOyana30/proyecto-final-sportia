@@ -1,0 +1,381 @@
+/*TITULARES INDEX*/
+#titulares{
+    grid-area: titulares;   
+    #titularesPrincipales{
+        height: 920px;
+        #titularPrincipal{        
+            div{
+                transform: translateY(-29px); 
+                .copete{
+                    @include copete_index;
+                    transform: translate(20px, 30px);
+                    display: inline-block; 
+                }
+                a{
+                    .imagenPrincipal{
+                        width: 1050px;
+                    }
+                }
+                .decoration{
+                    text-decoration: none;
+                    color: $text_black;
+                    .tituloPrincipal{
+                        width: 800px;       
+                        text-align: center;    
+                        font-family: $font_impact;
+                        font-size: 70px;
+                        text-shadow: $text_shadow;
+                        color: $text_white;
+                        display: inline-block;
+                        transform: translate(120px, -300px);
+                        text-align: center;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+                .subtituloPrincipal{
+                    transform: translate(120px, -280px);
+                    left: 220px;
+                    width: 800px;   
+                    text-align: center;    
+                    font-family: $font_arial;
+                    font-size: 12px ;
+                    text-shadow: $text_shadow;
+                    color: $text_white;
+                }
+            }
+        }
+        #titularSecundario{
+            display: grid;
+            justify-content: flex-start;        
+            font-family: $font_impact;
+            .cajaTitular{
+                width: 348px;
+                height: 340px; 
+                transform: translateY(-214px);          
+                a{
+                    .imagenTitulo2{
+                        width: 348px; 
+                        transform: translate(-1px, 0px);
+                    }
+                }           
+                .copete2{
+                    width: 300px;
+                    @include copete_index;
+                    transform: translate(4px, -167px);
+                }            
+                .decoration{
+                    text-decoration: none;
+                    color: $text_black;
+                    .titulo2{
+                        width: 350px;
+                        height: 50px;
+                        color: $text_black;                
+                        transform: translate(0px, -20px); 
+                        text-align: left;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+        #titularSecundario2{        
+            display: grid;
+            justify-content: flex-start;
+            font-family: $font_impact;
+            .cajaTitular2{
+                width: 350px;
+                height: 340px; 
+                transform: translate(700px, -554px);
+                a{
+                    .imagenTitulo3{
+                        width: 350px;   
+                        transform: translate(0px, 0px)
+                    }
+                }       
+                .copete3{
+                    @include copete_index;
+                    transform: translate(4px, -170px);
+                }
+                .decoration{
+                    text-decoration: none;
+                    color: $text_black;
+                    .titulo3{
+                        width: 290px;
+                        color: $text_black;    
+                        transform: translate(0px, -20px);
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+                .subtitulo3{
+                    width: 357px;
+                    text-align: left;    
+                    font-family: $font_arial;
+                    font-size: 16px;   
+                    transform: translate(0px, -26px);
+                }
+            }
+        }
+    } 
+    #otrosTitulares{
+        height: 920px;        
+        #titularPrincipal{        
+            div{
+                transform: translateY(-29px); 
+                .copete{
+                    @include copete_index;
+                    transform: translate(20px, 30px);
+                    display: inline-block; 
+                }
+                a{
+                    .imagenPrincipal{
+                        width: 1050px;
+                    }
+                }
+                .decoration{
+                    text-decoration: none;
+                    color: $text_black;
+                    .tituloPrincipal{
+                        width: 800px;       
+                        text-align: center;    
+                        font-family: $font_impact;
+                        font-size: 70px;
+                        text-shadow: $text_shadow;
+                        color: $text_white;
+                        display: inline-block;
+                        transform: translate(120px, -400px);
+                        text-align: center;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+                .subtituloPrincipal{
+                    transform: translate(120px, -380px);
+                    left: 220px;
+                    width: 800px;   
+                    text-align: center;    
+                    font-family: $font_arial;
+                    font-size: 12px ;
+                    text-shadow: $text_shadow;
+                    color: $text_white;
+                }
+            }
+        }
+        #titularSecundario{
+            display: grid;
+            justify-content: flex-start;        
+            font-family: $font_impact;
+            .cajaTitular{
+                width: 348px;
+                height: 340px; 
+                transform: translateY(-294px);          
+                a{
+                    .imagenTitulo2{
+                        width: 348px; 
+                        transform: translate(-1px, 0px);
+                    }
+                }           
+                .copete2{
+                    width: 300px;
+                    @include copete_index;
+                    transform: translate(4px, -167px);
+                }            
+                .decoration{
+                    text-decoration: none;
+                    color: $text_black;
+                    .titular2{
+                        width: 350px;                        
+                        color: $text_black;                
+                        transform: translate(0px, -18px); 
+                        text-align: left;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+                .subtitulo3{
+                    width: 357px;
+                    text-align: left;    
+                    font-family: $font_arial;
+                    font-size: 16px;   
+                    transform: translate(0px, -26px);
+                }
+            }
+        }
+        #titularSecundario2{        
+            display: grid;
+            justify-content: flex-start;
+            font-family: $font_impact;
+            .cajaTitular2{
+                width: 350px;
+                height: 340px; 
+                transform: translate(700px, -634px);
+                a{
+                    .imagenTitulo3{
+                        width: 350px;   
+                        transform: translate(0px, 0px)
+                    }
+                }       
+                .copete3{
+                    @include copete_index;
+                    transform: translate(4px, -170px);
+                }
+                .decoration{
+                    text-decoration: none;
+                    color: $text_black;
+                    .titulo3{
+                        width: 290px;
+                        color: $text_black;    
+                        transform: translate(0px, -20px);
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+                .subtitulo3{
+                    width: 357px;
+                    text-align: left;    
+                    font-family: $font_arial;
+                    font-size: 16px;   
+                    transform: translate(0px, -26px);
+                }
+            }
+        }
+
+    }
+    #otrosTitulares2{ 
+        height: 920px;       
+        #titularPrincipal{        
+            div{
+                transform: translateY(-29px); 
+                .copete{
+                    @include copete_index;
+                    transform: translate(20px, 30px);
+                    display: inline-block; 
+                }
+                a{
+                    .imagenPrincipal{
+                        width: 1050px;
+                    }
+                }
+                .decoration{
+                    text-decoration: none;
+                    color: $text_black;
+                    .tituloPrincipal{
+                        width: 800px;       
+                        text-align: center;    
+                        font-family: $font_impact;
+                        font-size: 70px;
+                        text-shadow: $text_shadow;
+                        color: $text_white;
+                        display: inline-block;
+                        transform: translate(120px, -300px);
+                        text-align: center;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+                .subtituloPrincipal{
+                    transform: translate(120px, -280px);
+                    left: 220px;
+                    width: 800px;   
+                    text-align: center;    
+                    font-family: $font_arial;
+                    font-size: 12px ;
+                    text-shadow: $text_shadow;
+                    color: $text_white;
+                }
+            }
+        }
+        #titularSecundario{
+            display: grid;
+            justify-content: flex-start;        
+            font-family: $font_impact;
+            .cajaTitular{
+                width: 348px;
+                height: 340px; 
+                transform: translateY(-214px);          
+                a{
+                    .imagenTitulo2{
+                        width: 348px; 
+                        transform: translate(-1px, 0px);
+                    }
+                }           
+                .copete2{
+                    width: 300px;
+                    @include copete_index;
+                    transform: translate(4px, -167px);
+                }            
+                .decoration{
+                    text-decoration: none;
+                    color: $text_black;
+                    .titular2{
+                        width: 350px;
+                        height: 50px;
+                        color: $text_black;                
+                        transform: translate(0px, -20px); 
+                        text-align: left;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+                .subtitulo3{
+                    width: 357px;
+                    text-align: left;    
+                    font-family: $font_arial;
+                    font-size: 16px;   
+                    transform: translate(0px, 25px);
+                }
+            }
+        }
+        #titularSecundario2{        
+            display: grid;
+            justify-content: flex-start;
+            font-family: $font_impact;
+            width: 350px;
+            transform: translate(700px, -555px);
+            .cajaTitular2{
+                width: 350px;
+                height: 340px; 
+                
+                a{
+                    .imagenTitulo3{
+                        width: 350px;   
+                        transform: translate(0px, 0px)
+                    }
+                }       
+                .copete3{
+                    @include copete_index;
+                    transform: translate(4px, -170px);
+                }
+                .decoration{
+                    text-decoration: none;
+                    color: $text_black;
+                    .titulo3{
+                        width: 290px;
+                        color: $text_black;    
+                        transform: translate(0px, -20px);
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+                .subtitulo3{
+                    width: 357px;
+                    text-align: left;    
+                    font-family: $font_arial;
+                    font-size: 16px;   
+                    transform: translate(0px, -26px);
+                }
+            }
+        }
+
+    }
+}

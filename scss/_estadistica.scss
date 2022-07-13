@@ -1,0 +1,173 @@
+/*ESTADISTICAS*/
+#tablaGrupo{
+    grid-area: tablaGrupo;    
+    div{
+        .tituloEstadisticas{
+            font-family: $font_impact;
+            width: 30px;
+        }
+        .nombreTorneo{
+            font-family: $font_arial;
+            font-weight: normal;
+        }
+    }
+    table{
+        tr{
+            .celda-grupo{
+                background-color: $bg_yg;
+                width: 774px;
+                height: 32px;
+                font-size: 15px;
+                font-weight: bold;
+                text-align: left;
+                padding-top: 6px;
+                padding-bottom: 6px;
+                padding-left: 6px;
+            }
+        }
+        tr{
+            .columnaPos{
+                background-color: $bg_light_gray;
+                width: 100px;
+                text-align: left;
+                display: inline-block;
+                padding-top: 4px;
+                padding-bottom: 4px;
+                padding-left: 6px;
+            }
+            .columnaEquipo{
+                @extend .columnaPos;
+                width: 175px;
+                height: 32px;    
+                text-align: center;                
+                padding-top: 7px; 
+             
+            }
+            .columnaPts{
+                @extend .columnaPos;                
+                text-align: center; 
+            }
+            .columnaJGEP{
+                @extend .columnaPos;  
+                width: 57px;
+                text-align: center;
+            }
+        }
+        tr{
+            .celdaPos{
+                width: 100px;
+                height: 32px;
+                text-align: left;
+                display: inline-block;
+                padding-top: 4px;
+                padding-bottom: 4px;
+                padding-left: 6px;
+            }
+            .celdaEquipo{
+                @extend .celdaPos;
+                width: 175px;
+                text-align: left;
+                .escudo-equipo{
+                    width: 20px;
+                    transform: translateX(-15px);                    
+                } 
+            }
+            .celdaPts{
+                @extend .celdaPos;
+                text-align: center;    
+                
+            }
+            .celdaJGEP{
+                @extend .celdaPos;
+                width: 57px;
+                text-align: center;
+            }
+        }
+        tr{
+            .celdaPosGris{
+                @extend .celdaPos;
+                background-color: $bg_light;
+            }
+            .celdaEquipoGris{
+                @extend .celdaPos;
+                background-color: $bg_light;   
+                width: 175px;
+                text-align: left;
+                .escudo-equipo{
+                    width: 20px;
+                    transform: translateX(-15px);
+                    
+                } 
+            }
+            .celdaPtsGris{
+                @extend .celdaPos;
+                background-color: $bg_light;
+                text-align: center;    
+            }
+            .celdaJGEPGris{
+                @extend .celdaPos;
+                background-color: $bg_light;
+                width: 57px;
+                text-align: center;
+            }
+        }        
+    }
+}
+
+/*FIXTURE COPAS*/
+#tablaFixture{    
+        tr{
+            .celda-fecha{
+                background-color: $bg_yg;                
+                font-size: 15px;
+                font-weight: bold;
+                text-align: left;
+                padding-top: 6px;
+                padding-bottom: 6px;
+                padding-left: 6px;
+            }
+        }
+        tr{
+            .columnaFecha{                
+                height: 32px;    
+                text-align: left;                
+                padding-top: 7px; 
+                padding-bottom: 7px;
+                padding-left: 10px; 
+                font-size: 12px;
+                background-color: $bg_light_gray;              
+            }
+            .faseEliminatoria{
+                @extend .columnaFecha;
+                text-align: right;
+                padding-right: 10px;
+            }
+        }
+        tr{
+            .celdaEquipo1{                
+                width: 250px;
+                text-align: right;
+                display: inline-block;
+                padding-top: 4px;
+                padding-right: 10px;
+                padding-bottom: 4px;
+                font-size: 12px;
+                .escudo-equipo{
+                    width: 20px;
+                    transform: translateX(15px);
+                }                
+            }
+            .celdaResultado{                
+                width: 100px;
+                text-align: center;
+            }
+            .celdaEquipo2{
+                @extend .celdaEquipo1;                
+                text-align: left;
+                .escudo-equipo{
+                    width: 20px;
+                    transform: translateX(-15px);
+                }
+            }
+        }
+    }

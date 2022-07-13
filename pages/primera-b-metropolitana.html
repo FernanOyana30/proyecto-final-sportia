@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Encontrá las últimas noticias del fútbol nacional. Fútbol de ascenso. Primera B Metropolitana. Resultados, estadísticas, comentarios y más.">
+    <meta name="keywords"  content="NOTICIAS, FUTBOL, PRIMERA B METROPOLITANA, PARTIDOS, ASCENSO, AFA">
+    <title>Sportia, portal de noticias deportivas - Primera B Metropolitana</title>
+    <!--RUTAS DE ESTILO-->
+    <link rel="stylesheet" href="../style/estilo.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="icon" href="../img/sportia-favicon.ico">
+</head>
+<body>    
+    <div id="padreSecciones">
+        <!--El logotipo funciona como botón de home-->
+        <header id="cabecera">
+            <a href="../index.html"><img src="../img/sportia-logo.png" alt="Sportia Logo" class="logoSportia"></a></li>
+        </header>
+        <!--INICIO NAV-->
+        <nav id="navegador">
+            <div id="menuDesplegable" class="position-absolute start-0">
+                <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+                    Secciones
+                </button>                  
+                <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="staticBackdropLabel">Secciones</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body ">
+                        <div class="columnaFooter">    
+                            <div>
+                                <div>
+                                    <span class="fw-bold">FUTBOL ARGENTINO</span>
+                                </div> 
+                                <div>
+                                    <a href="../pages/seleccion.html" class= "text-decoration-none text-black">Selección</a> 
+                                </div>
+                                <div>
+                                    <a href="../pages/primera-division.html" class= "text-decoration-none text-black">Primera División</a> 
+                                </div>
+                                <div>
+                                    <a href="../pages/primera-b-nacional.html" class= "text-decoration-none text-black">B Nacional</a> 
+                                </div>
+                                <div>
+                                    <a href="../pages/copa-argentina.html" class= "text-decoration-none text-black">Copa Argentina</a> 
+                                </div>
+                                <div>
+                                    <a href="../pages/primera-b-metropolitana.html" class= "text-decoration-none text-black">Primera B</a> 
+                                </div>
+                                <div>
+                                    <a href="../pages/primera-c.html" class= "text-decoration-none text-black">Primera C</a> 
+                                </div>
+                                <div>
+                                    <a href="../pages/primera-d.html" class= "text-decoration-none text-black">Primera D</a> 
+                                </div>
+                                <div>
+                                    <a href="../pages/estadisticas.html" class= "text-decoration-none text-black">Estadísticas</a> 
+                                </div>
+                            </div> 
+                            <br>
+                            <div>                     
+                                <div>
+                                    <span class="fw-bold">FUTBOL INTERNACIONAL</span>
+                                </div>
+                                <div>
+                                    <a href="../pages/copa-libertadores.html" class= "text-decoration-none text-black">Copa Libertadores</a>
+                                </div>
+                                <div>
+                                    <a href="../pages/copa-sudamericana.html" class= "text-decoration-none text-black">Copa Sudamericana</a>
+                                </div>
+                                <div>
+                                    <a href="../pages/america.html" class= "text-decoration-none text-black">América</a>
+                                </div>
+                                <div>
+                                    <a href="../pages/españa.html" class= "text-decoration-none text-black">España</a>
+                                </div>
+                                <div>
+                                    <a href="../pages/italia.html" class= "text-decoration-none text-black">Italia</a>
+                                </div>
+                                <div>
+                                    <a href="../pages/inglaterra.html" class= "text-decoration-none text-black">Inglaterra</a>
+                                </div>
+                                <div>
+                                    <a href="../pages/champions-league.html" class= "text-decoration-none text-black">Champions League</a>
+                                </div>
+                                <div>
+                                    <a href="../pages/europa-league.html" class= "text-decoration-none text-black">Europa League</a>
+                                </div>
+                                <div>
+                                    <a href="../pages/estadisticas.html" class= "text-decoration-none text-black">Estadísticas</a>
+                                </div>
+                            </div> 
+                            <br>
+                            <div>
+                                <div>
+                                    <span class="fw-bold">MÁS DEPORTES</span>
+                                </div>
+                                <div>
+                                    <a href="../pages/basquet.html" class= "text-decoration-none text-black">Basquet</a>
+                                </div>
+                                <div>
+                                    <a href="../pages/rugby.html" class= "text-decoration-none text-black">Rugby</a>
+                                </div>
+                                <div>
+                                    <a href="../pages/tenis.html" class= "text-decoration-none text-black">Tenis</a>
+                                </div>
+                                <div>
+                                    <a href="../pages/polideportivo.html" class= "text-decoration-none text-black">Polideportivo</a>
+                                </div>
+                            </div>     
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menuNav">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-decoration-none text-dark fs-5" href="../pages/estadisticas.html"><img src="../img/estadisticas.png" alt="Estadísticas torneos" width="30" height="24" class="d-inline-block align-text-top stat-icon"><span class="textoNav">Estadísticas</span></a>
+                    </li>                
+                    <li class="nav-item">
+                        <a class="nav-link text-decoration-none text-dark fs-5" href="../pages/agenda.html"><img src="../img/agenda.png" alt="Agenda partidos de hoy y mañana" width="30" height="30" class="d-inline-block align-text-top calendario-icon"><span class="textoNav">Agenda</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-decoration-none text-dark fs-5" href="../pages/ingresar.html"><span class="textoNav">Ingresar</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-decoration-none text-dark fs-5" href="../pages/suscribirme.html"><span class="suscribirme">SUSCRIBIRME</span></a>
+                    </li>                
+                </ul>
+            </div>          
+        </nav>
+        <!--FIN NAV-->
+        <!--INICIO MAIN-->
+        <main id="seccionTitulares">
+            <h1 class="tituloSecciones">Primera B</h1>
+            <div class="contenedor-breadcrumb">
+                <nav style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a class="text-decoration-underline text-black fw-bold" href="../pages/primera-b-nacional.html">B NACIONAL</a></li>
+                        <li class="breadcrumb-item"><a class="text-decoration-underline text-black fw-bold" href="../pages/primera-c.html">PRIMERA C</a></li>
+                        <li class="breadcrumb-item"><a class="text-decoration-underline text-black fw-bold" href="../pages/primera-d.html">PRIMERA D</a></li>
+                    </ol>
+                </nav> 
+            </div>            
+            <br>
+            <section id="titularSecundario">
+                <div class="cajaTitular">
+                    <a href="../pages/ituzaingo-triunfo-en-el-clasico-y-unico-puntero.html"><img src="../img/ituzaingo-merlo.jpg" alt="Ituzaingó Deportivo Merlo" class="imagenTitulo2"></a>                       
+                    <h5 class="copete2">B METRO / DEP. MERLO 0 - ITUZAINGÓ 1</h5> 
+                    <a href="../pages/ituzaingo-triunfo-en-el-clasico-y-unico-puntero.html" class="decoration"><h2 class="titulo2 fs-2">Ituzaingó: triunfo en el clásico y único puntero</h2></a> 
+                    <p class="subtitulo3">El Verde venció de manera agónica a Merlo, que terminó con diez, y aprovechó el 1-1 de Comu para ser líder.</p>
+                </div> 
+                <div class="cajaTitular2">                                    
+                    <a href="../pages/el-increible-empate-de-comu-y-el-resto-de-la-fecha.html"><img src="../img/comunicaciones.jpg" alt="Comunicaciones empate" class="imagenTitulo3"></a> 
+                    <h5 class="copete3">B METRO / COMUNICACIONES</h5>
+                    <a href="../pages/el-increible-empate-de-comu-y-el-resto-de-la-fecha.html" class="decoration"><h2 class="titulo3 fs-3">El increíble empate de Comu y el resto de la fecha</h2></a> 
+                    <p class="subtitulo3">El Cartero ganaba y seguía en la cima, pero Rodrigo Lastra se la regaló a un rival y vino el 1-1 final.</p> 
+                </div>            
+            </section>                  
+        </main>
+        <!--FIN MAIN-->
+        <!--INICIO FOOTER-->
+        <footer id="piePagina">                   
+            <div class="contacto">
+                <div><h2><strong>Sportia</strong></h2></div>
+                <br>
+                <div>© 2022 Fernando Oyanarte</div>
+                <br>
+                <div>Seguinos</div>
+                <br>
+                <div>
+                    <a href="https://www.facebook.com/"><img src="../img/facebook-icon.png" alt="facebook-icon" class="iconoRedes"></a>
+                    <a href="https://www.twitter.com/"><img src="../img/twitter-icon.png" alt="twitter-icon" class="iconoRedes"></a>
+                    <a href="https://www.instagram.com/"><img src="../img/igg-icon.png" alt="igg-icon" class="iconoRedes"></a>
+                    <a href="https://www.youtube.com/"><img src="../img/youtube-icon.png" alt="youtube-icon" class="iconoRedes"></a>
+                </div>                    
+            </div>                       
+            <div class="columnaFooter">    
+                <div>
+                    <div>
+                        <span class="negrita">FUTBOL ARGENTINO</span>
+                    </div>  
+                    <br>
+                    <div>
+                        <a href="../pages/seleccion.html" class= "decoration">Selección</a>
+                    </div>
+                    <div>
+                        <a href="../pages/primera-division.html" class= "decoration">Primera División</a>
+                    </div>
+                    <div>
+                        <a href="../pages/primera-b-nacional.html" class= "decoration">B Nacional</a>
+                    </div>
+                    <div>
+                        <a href="../pages/copa-argentina.html" class= "decoration">Copa Argentina</a>
+                    </div>
+                    <div>
+                        <a href="../pages/primera-b-metropolitana.html" class= "decoration">Primera B</a>
+                    </div>
+                    <div>
+                        <a href="../pages/primera-c.html" class= "decoration">Primera C</a>
+                    </div>
+                    <div>
+                        <a href="../pages/primera-d.html" class= "decoration">Primera D</a>
+                    </div>
+                    <div>
+                        <a href="../pages/estadisticas.html" class= "decoration">Estadísticas</a>
+                    </div>
+                </div> 
+                <div>                     
+                    <div>
+                        <span class="negrita">FUTBOL INTERNACIONAL</span>
+                    </div>
+                    <br>
+                    <div>
+                        <a href="../pages/copa-libertadores.html" class= "decoration">Copa Libertadores</a>
+                    </div>
+                    <div>
+                        <a href="../pages/copa-sudamericana.html" class= "decoration">Copa Sudamericana</a>
+                    </div>
+                    <div>
+                        <a href="../pages/america.html" class= "decoration">América</a>
+                    </div>
+                    <div>
+                        <a href="../pages/españa.html" class= "decoration">España</a>
+                    </div>
+                    <div>
+                        <a href="../pages/italia.html" class= "decoration">Italia</a>
+                    </div>
+                    <div>
+                        <a href="../pages/inglaterra.html" class= "decoration">Inglaterra</a>
+                    </div>
+                    <div>
+                        <a href="../pages/champions-league.html" class= "decoration">Champions League</a>
+                    </div>
+                    <div>
+                        <a href="../pages/europa-league.html" class= "decoration">Europa League</a>
+                    </div>
+                    <div>
+                        <a href="../pages/estadisticas.html" class= "decoration">Estadísticas</a>
+                    </div>
+                </div> 
+                <div>
+                    <div>
+                        <span class="negrita">MÁS DEPORTES</span>
+                    </div> 
+                    <br> 
+                    <div>
+                        <a href="../pages/basquet.html" class= "decoration">Basquet</a>
+                    </div>
+                    <div>
+                        <a href="../pages/rugby.html" class= "decoration">Rugby</a>
+                    </div>
+                    <div>
+                        <a href="../pages/tenis.html" class= "decoration">Tenis</a>
+                    </div>
+                    <div>
+                        <a href="../pages/polideportivo.html" class= "decoration">Polideportivo</a>
+                    </div>                   
+                </div>     
+            </div>
+        </footer>
+        <!--FIN FOOTER-->
+    </div>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>

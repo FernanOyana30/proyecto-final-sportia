@@ -1,0 +1,156 @@
+#seccionTitulares{
+    grid-area: seccionTitulares;
+    .tituloSecciones{
+        font-family: $font_impact;
+        font-size: 38px;
+    }
+    .contenedor-breadcrumb{
+        transform: translate(330px, -40px);        
+    }
+    #titularSecundario{        
+        display: grid;
+        justify-content: flex-start;        
+        font-family: $font_impact;
+        height: 700px;
+        .cajaTitular{
+            width: 348px;
+            height: 340px; 
+            transform: translateY(0px);          
+            a{
+                .imagenTitulo2{
+                    width: 348px; 
+                    transform: translate(-1px, 0px);
+                }
+            }           
+            .copete2{
+                width: 300px;
+                @include copete_index;
+                transform: translate(4px, -167px);
+            }            
+            .decoration{
+                text-decoration: none;
+                color: $text_black;
+                .titulo2{
+                    width: 350px;                    
+                    color: $text_black;                
+                    transform: translate(0px, -18px); 
+                    text-align: left;
+                    font-size: 22px;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+            .subtitulo3{
+                width: 357px;
+                text-align: left;    
+                font-family: $font_arial;
+                font-size: 16px;   
+                transform: translate(0px, -20px);
+            }
+        }
+        .cajaTitular2{
+            width: 350px;
+            height: 340px; 
+            transform: translate(700px, -340px);
+            a{
+                .imagenTitulo3{
+                    width: 350px;   
+                    transform: translate(0px, 0px)
+                }
+            }       
+            .copete3{
+                @include copete_index;
+                transform: translate(4px, -170px);
+            }
+            .decoration{
+                text-decoration: none;
+                color: $text_black;
+                .titulo3{
+                    width: 350px;
+                    color: $text_black;    
+                    transform: translate(0px, -20px);
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+            .subtitulo3{
+                width: 357px;
+                text-align: left;    
+                font-family: $font_arial;
+                font-size: 16px;   
+                transform: translate(0px, -26px);
+            }
+        }
+        .cajaTitular3{
+            width: 350px;
+            height: 340px; 
+            transform: translate(0px, -310px);
+            a{
+                .imagenTitulo4{
+                    width: 350px;   
+                    transform: translate(0px, 0px)
+                }
+            }       
+            .copete4{
+                @include copete_index;
+                transform: translate(4px, -170px);
+            }
+            .decoration{
+                text-decoration: none;
+                color: $text_black;
+                .titulo4{
+                    width: 320px;
+                    color: $text_black;    
+                    transform: translate(0px, -20px);
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+            .subtitulo3{
+                width: 357px;
+                text-align: left;    
+                font-family: $font_arial;
+                font-size: 16px;   
+                transform: translate(0px, -26px);
+            }
+        }
+        .cajaTitular4{
+            width: 350px;
+            height: 340px; 
+            transform: translate(700px, -650px);
+            a{
+                .imagenTitulo5{
+                    width: 350px;   
+                    transform: translate(0px, 0px)
+                }
+            }       
+            .copete5{
+                @include copete_index;
+                transform: translate(4px, -170px);
+            }
+            .decoration{
+                text-decoration: none;
+                color: $text_black;
+                .titulo4{
+                    width: 320px;
+                    color: $text_black;    
+                    transform: translate(0px, -20px);
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+            .subtitulo3{
+                width: 357px;
+                text-align: left;    
+                font-family: $font_arial;
+                font-size: 16px;   
+                transform: translate(0px, -26px);
+            }
+        }
+    }    
+}
+    

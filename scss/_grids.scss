@@ -1,0 +1,86 @@
+/*
+***
+*INICIO GRIDS
+***
+*Maquetación del layout con el sistema de grillas 
+***
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*INDEX*/
+#padreIndex{
+    display: grid;
+    grid-template-rows: 100px 128px auto 470px;
+    grid-template-columns: 100px 350px 350px 350px 100px;
+    grid-row-gap: 35px;
+    grid-template-areas:
+                        "cabecera navegador navegador navegador navegador"                        
+                        ". publicidad publicidad publicidad ."                        
+                        " . titulares titulares titulares ."
+                        "footer footer footer footer footer";
+}
+
+/*ARTICULOS*/
+#padreArticulo{  
+    display: grid;
+    grid-template-rows: 100px auto 470px;
+    grid-template-columns: 100px 920px 128px 100px;
+    grid-row-gap: 90px;
+    grid-template-areas:
+                        "cabecera navegador navegador navegador"
+                        ". articulo articulo ."                                                
+                        "footer footer footer footer";    
+}
+
+/*SECCIONES*/ 
+#padreSecciones{
+    display: grid;
+    grid-template-rows: 100px auto 470px;
+    grid-template-columns: 100px 350px 350px 100px;
+    grid-row-gap: 35px;
+    grid-template-areas:
+                        "cabecera navegador navegador navegador"                        
+                        " . seccionTitulares seccionTitulares ."
+                        "footer footer footer footer";
+}
+
+/*ESTADISTICAS*/
+#padreStats{
+    display: grid;    
+    grid-template-rows: 100px auto 470px;
+    grid-template-columns: 100px 700px 420px 100px;    
+    grid-row-gap: 50px;
+    grid-template-areas:
+                        "cabecera navegador navegador navegador"
+                        ". tablaGrupo tablaGrupo ."
+                        "footer footer footer footer";
+}
+
+/*AGENDA*/
+#padreAgenda{
+    display: grid;    
+    grid-template-rows: 100px auto 470px;
+    grid-template-columns: 100px 800px 248px 100px;    
+    grid-row-gap: 50px;
+    grid-template-areas:
+                        "cabecera navegador navegador navegador"
+                        " . agenda . ."                        
+                        "footer footer footer footer";
+}
+
+/*FORMULARIOS*/
+#padreForm{
+    display: grid;
+    grid-template-rows: 100px 500px 470px;
+    grid-template-columns: 100px 800px 300px 100px;
+    grid-row-gap: 10px;
+    grid-template-areas:
+                        "cabecera navegador navegador navegador"
+                        ". . formulario ."
+                        "footer footer footer  footer";
+}

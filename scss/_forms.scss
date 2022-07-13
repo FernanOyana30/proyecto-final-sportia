@@ -1,0 +1,110 @@
+/*FORMULARIOS*/
+#navegador{
+    grid-area: navegador;
+    .menuNav{           
+        .ingresar{
+            display: none;            
+        }              
+    }
+}
+
+/*Ingresar*/
+
+.fondo-form{
+    background-image: url(../img/fondo-formulario.jpg);
+    background-repeat: no-repeat;
+    background-size: 65%;
+    background-position: 0px 67px;
+}
+#formulario{
+    grid-area: formulario;
+    #formularioSuscribe{            
+        .caja-form-principal{
+            display: grid;
+            grid-template-rows: 22px 30px 200px 140px;
+            padding-top: 15px;
+            background-color: $bg_form;
+            font-family: $font_arial;
+            font-style: inherit; 
+            font-size: 12px;
+            text-align: center; 
+            border-color: $border_yg;
+            border-radius: 30px;
+            border-style: inset;
+            border-width: 3px;
+            width: 300px;
+            height: 450px;
+            padding-left: 10px;
+            padding-right: 10px;
+            transform: translateY(30px);        
+            form{
+                .campoDatos{
+                    width: 240px;
+                }
+                .botonContinuar{
+                    background-color: $bg_yg;
+                    width: 250px;
+                    height: 30px;
+                    color: $text_white;
+                    text-shadow: $text_shadow;
+                    border: $border_solid_gray;
+                    font-weight: bold;
+                    font-size: 11px;
+                }
+                .link-subscribe{
+                    color:$text_black;
+                    &:hover{
+                        color: $text_yg;
+                    }
+                }  
+            }
+            div{
+                .facebookLogin{
+                    width: 20px;
+                    display: inline-block;
+                    position: relative;
+                    left: -80px;
+                    bottom: -28px;
+                }
+                .googleLogin{
+                    width: 18px;
+                    display: inline-block;
+                    position: relative;    
+                    left: -104px;
+                    bottom: -57px;
+                }
+                .appleLogin{
+                    width: 15px;
+                    display: inline-block;
+                    position: relative;
+                    left: -123px;
+                    bottom: -87px;
+                }
+                form{
+                    .botonLogin{
+                        background-color: $bg_white;    
+                        width: 250px;
+                        height: 30px;
+                        font-size: 10px;
+                        font-weight: bold;
+                        border: $border_solid_gray;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*SUSCRIBIRME*/
+.botonForm:hover{
+    background-color: $button_green;
+}
+.enviar{
+    background-color: $bg_yg;
+    color: $text_white;
+    text-shadow: $text_shadow;
+    border: $border_solid_gray;
+    text-shadow: $text_shadow;
+    font-weight: bold;
+}
+

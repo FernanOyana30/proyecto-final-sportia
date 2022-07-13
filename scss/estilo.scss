@@ -1,0 +1,247 @@
+/*VARIABLES*/
+$font_impact: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+$font_franklin: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+$font_arial: Arial, Helvetica, sans-serif;
+$font_georgia: Georgia, 'Times New Roman', Times, serif;
+$font_apple: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+
+/*MAPS*/
+$bg:(
+    bg_yg: yellowgreen,
+    bg_black: black,
+    bg_white: white,
+    bg_light_gray: rgb(206, 201, 201),
+    bg_light: rgb(231, 229, 229),
+    bg_gray: rgb(94, 93, 92),
+    bg_form: rgb(221, 223, 219),
+    color_celda_agenda: rgb(230, 230, 227),
+);
+$bg_yg: map-get($bg, bg_yg );
+$bg_black: map-get($bg, bg_black );
+$bg_white: map-get($bg, bg_white );
+$bg_light_gray: map-get($bg, bg_light_gray );
+$bg_light: map-get($bg, bg_light );
+$bg_gray: map-get($bg, bg_gray );
+$bg_form: map-get($bg, bg_form );
+$color_celda_agenda: map-get($bg, color_celda_agenda);
+
+$text_color:(
+    text_shadow: 1px 1px black,
+    text_white: white,
+    text_black: black,
+    text_gray: rgb(80, 79, 79),
+    text_yg: yellowgreen,
+);
+$text_shadow: map-get($text-color, text_shadow );
+$text_white: map-get($text-color, text_white  );
+$text_black: map-get($text-color, text_black  );
+$text_gray: map-get($text-color, text_gray );
+$text_yg: map-get($text-color, text_yg );
+
+$borders:(
+    border_gray: gray,
+    border_ridge: ridge 1px 1px gray,   
+    border_solid_gray: solid 1px gray,  
+    border_inset: inset 3px gray,
+    border_solid: solid 1px black,
+    border_yg: yellowgreen,
+);
+$border_gray: map-get($borders, border_gray);
+$border_ridge: map-get($borders, border_ridge);
+$border_solid_gray: map-get($borders, border_solid_gray );
+$border_inset: map-get($borders, border_inset);
+$border_solid: map-get($borders, border_solid);
+$border_yg: map-get($borders, border_yg);
+
+$button:(
+    button_green: rgb(180, 240, 61),
+);
+$button_green: map-get($button, button_green );
+
+/*MIXINS*/
+/*Index*/
+@mixin copete_index{
+    color: $text_white;
+    text-shadow: $text_shadow;
+    font-family: $font_arial;
+    font-size: 10px;
+}
+
+/*Artículos*/
+@mixin copete{
+    background-color: $bg_yg;
+    color: $text_white;
+    text-shadow: $text_shadow;    
+    border: $border_ridge;   
+    font-family: $font_franklin;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+    padding-right: 18px;
+    padding-bottom: 10px;
+    padding-left: 18px;
+    width: 350px;
+}
+@mixin titular{
+    width: 840px;
+    height: 120px;
+    font-family: $font_impact;
+    font-size: 48px;  
+    line-height: 60px;
+}
+
+@mixin subtitulo{
+    width: 900px;
+    height: 50px;   
+    .subtitulo{
+        color: $text_gray;
+        font-family: $font_franklin;
+        font-size: 19px;
+    }
+}
+
+@mixin pieFoto{
+    width: 700px;   
+    margin-right: 100px;
+    padding-right: 10px;
+    font-family: $font_arial;
+    font-weight: bold;
+    font-size: 14px;
+    color: $text_gray;
+}
+
+@mixin marcador{    
+        width: 900px;
+        height: 150px;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 350px 200px 350px;
+        grid-template-rows: 140px;                
+        justify-content: space-between; 
+        align-items: center;
+        background-color: rgb(49, 47, 47);                 
+        .equipo-local{
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: $text_white;            
+            font-size: 30px;
+            display: flex;
+            flex-direction: row; 
+            justify-content: flex-end;               
+            width: 320px;                 
+            p{                
+                .escudoLocal{
+                width: 70px;
+                height: 70px;
+                }
+            }            
+        }
+        .resultado{
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: $text_white;
+            text-align: center;
+            font-size: 50px;
+            background-color: orange;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: translateY(5px);
+        }
+        .equipo-visitante{
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: $text_white;
+            text-align: center;
+            font-size: 30px;
+            display: flex;
+            flex-direction: row; 
+            justify-content: flex-start; 
+            width: 320px;              
+            transform: translateX(30px);                             
+            .escudo{
+                width: 70px;
+                height: 70px;
+            }
+        }
+        span{
+            .goles-local{                        
+                width: 145px;
+                height: 50px;
+                transform: translate(110px, -60px);
+                color: $text_white;
+                font-size: 12px;
+            }
+            .goles-visitante{                        
+                width: 150px;
+                height: 50px;
+                transform: translate(640px, -130px);
+                color: $text_white;                        
+                font-size: 12px;
+            }
+        }
+    }
+
+
+@mixin nota{
+    width: 500px;
+    font-family: $font_georgia;
+    font-size: 16px;
+    line-height:30px;
+    p{
+        .negrita{
+            font-weight: bold;
+        }
+    } 
+}
+
+@mixin videoResumen{
+    font-family: $font_franklin;
+    font-size: 22px;
+}
+
+@mixin cajaComentarios{
+    .comentarios{
+        display: grid;
+        grid-template-rows: 30px 30px 150px ;
+        .resumenPartido{
+            font-family: $font_franklin;
+            font-size: 22px;
+        }
+    }
+    form{
+        .botonForm:hover{
+            background-color: $button_green;
+        }
+    }
+}
+
+/*IMPORTS*/
+
+@import "grids";
+@import "header";
+@import "nav";
+@import "aside";
+@import "index";
+@import "articulo";
+@import "agenda";
+@import "estadistica";
+@import "secciones";
+@import "forms";
+@import "footer";
+@import "queries";
+
+
+
+
+
+
+
+
+
+
+
+
+

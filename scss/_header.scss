@@ -1,0 +1,32 @@
+/*
+***
+*ESTILOS GENERALES
+***
+*INDEX
+***
+*Estilos para los elementos del index
+*(Header, Nav, titulares)
+***
+*/
+/*HEADER*/
+#cabecera{    
+    grid-area: cabecera;
+    height: 100px;
+        display: flex;  
+        background-image: linear-gradient(to top, rgb(115, 163, 20), rgb(158, 211, 51));  
+        width: 100px;    
+        border-bottom: $border_inset;
+        justify-content: center;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: 3;
+        a{
+            .logoSportia{
+                width: 100px;
+                height: 100px;
+                display: flex;
+                padding-top: 5px;
+            }
+        }   
+}

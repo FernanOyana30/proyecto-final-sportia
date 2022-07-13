@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Consultá las estadísticas de los torneos más recientes. Copa de la Liga Profesional Argentina.">
+    <meta name="keywords"  content="ESTADISTICAS, LIGA PROFESIONAL ARGENTINA, TABLA DE POSICIONES, GRUPO A, GRUPO B, PUNTOS, GANADOS, EMPATADOS, PERDIDOS, DIFERENCIA DE GOL">
+    <title>Sportia, portal de noticias deportivas - Estadísticas</title>
+    <!--RUTAS DE ESTILO-->
+    <link rel="stylesheet" href="../style/estilo.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="icon" href="../img/sportia-favicon.ico">
+</head>
+<body>    
+    <div id="padreStats">
+        <!--El logotipo funciona como botón de home-->
+        <header id="cabecera">
+            <a href="../index.html"><img src="../img/sportia-logo.png" alt="Sportia Logo" class="logoSportia"></a></li>
+        </header>
+        <!--INICIO NAV-->
+        <nav id="navegador">
+            <div id="menuDesplegable" class="position-absolute start-0">
+                <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+                    Secciones
+                </button>                  
+                <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="staticBackdropLabel">Secciones</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body ">
+                        <div class="columnaFooter">    
+                            <div>
+                                <div>
+                                    <span class="fw-bold">FUTBOL ARGENTINO</span></div> 
+                                <div>
+                                    <a href="../pages/seleccion.html" class= "text-decoration-none text-black">Selección</a> 
+                                </div>
+                                <div>
+                                    <a href="../pages/primera-division.html" class= "text-decoration-none text-black">Primera División</a> 
+                                </div>
+                                <div>
+                                    <a href="../pages/primera-b-nacional.html" class= "text-decoration-none text-black">B Nacional</a> 
+                                </div>
+                                <div>
+                                    <a href="../pages/copa-argentina.html" class= "text-decoration-none text-black">Copa Argentina</a> 
+                                </div>
+                                <div>
+                                    <a href="../pages/primera-b-metropolitana.html" class= "text-decoration-none text-black">Primera B</a> 
+                                </div>
+                                <div>
+                                    <a href="../pages/primera-c.html" class= "text-decoration-none text-black">Primera C</a> 
+                                </div>
+                                <div>
+                                    <a href="../pages/primera-d.html" class= "text-decoration-none text-black">Primera D</a> 
+                                </div>
+                                <div>
+                                    <a href="../pages/estadisticas.html" class= "text-decoration-none text-black">Estadísticas</a> 
+                                </div>
+                            </div> 
+                            <br>
+                            <div>                     
+                                <div>
+                                    <span class="fw-bold">FUTBOL INTERNACIONAL</span>
+                                </div>
+                                <div>
+                                    <a href="../pages/copa-libertadores.html" class= "text-decoration-none text-black">Copa Libertadores</a>
+                                </div>
+                                <div>
+                                    <a href="../pages/copa-sudamericana.html" class= "text-decoration-none text-black">Copa Sudamericana</a>
+                                </div>
+                                <div>
+                                    <a href="../pages/america.html" class= "text-decoration-none text-black">América</a>
+                                </div>
+                                <div>
+                                    <a href="../pages/españa.html" class= "text-decoration-none text-black">España</a>
+                                </div>
+                                <div>
+                                    <a href="../pages/italia.html" class= "text-decoration-none text-black">Italia</a>
+                                </div>
+                                <div>
+                                    <a href="../pages/inglaterra.html" class= "text-decoration-none text-black">Inglaterra</a>
+                                </div>
+                                <div>
+                                    <a href="../pages/champions-league.html" class= "text-decoration-none text-black">Champions League</a>
+                                </div>
+                                <div>
+                                    <a href="../pages/europa-league.html" class= "text-decoration-none text-black">Europa League</a>
+                                </div>
+                                <div>
+                                    <a href="../pages/estadisticas.html" class= "text-decoration-none text-black">Estadísticas</a>
+                                </div>
+                            </div> 
+                            <br>
+                            <div>
+                                <div>
+                                    <span class="fw-bold">MÁS DEPORTES</span>
+                                </div>
+                                <div>
+                                    <a href="../pages/basquet.html" class= "text-decoration-none text-black">Basquet</a>
+                                </div>
+                                <div>
+                                    <a href="../pages/rugby.html" class= "text-decoration-none text-black">Rugby</a>
+                                </div>
+                                <div>
+                                    <a href="../pages/tenis.html" class= "text-decoration-none text-black">Tenis</a>
+                                </div>
+                                <div>
+                                    <a href="../pages/polideportivo.html" class= "text-decoration-none text-black">Polideportivo</a>
+                                </div>
+                            </div>     
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menuNav">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-decoration-none text-dark fs-5" href="../pages/estadisticas.html"><img src="../img/estadisticas.png" alt="Estadísticas torneos" width="30" height="24" class="d-inline-block align-text-top stat-icon"><span class="textoNav">Estadísticas</span></a>
+                    </li>                
+                    <li class="nav-item">
+                        <a class="nav-link text-decoration-none text-dark fs-5" href="../pages/agenda.html"><img src="../img/agenda.png" alt="Agenda partidos de hoy y mañana" width="30" height="30" class="d-inline-block align-text-top calendario-icon"><span class="textoNav">Agenda</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-decoration-none text-dark fs-5" href="../pages/ingresar.html"><span class="textoNav">Ingresar</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-decoration-none text-dark fs-5" href="../pages/suscribirme.html"><span class="suscribirme">SUSCRIBIRME</span></a>
+                    </li>                
+                </ul>
+            </div>           
+        </nav>
+        <!--FIN NAV-->
+        <!--INICIO MAIN-->
+        <main id="tablaGrupo">
+            <section>
+                <div>
+                    <h2 class="tituloEstadisticas">Estadisticas</h2>
+                </div>
+                <!--INICIO ACORDEON TORNEOS-->
+                <div>
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                              Fútbol de Argentina
+                            </button>
+                          </h2>
+                          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <ul class="list-group">
+                                    <li class="list-group-item">Liga Profesional Argentina (Copa)</li>
+                                    <li class="list-group-item"><a class="text-decoration-none" href="./estadisticas-primera-b-nacional.html">Primera B Nacional</a></li>
+                                    <li class="list-group-item"><a class="text-decoration-none" href="./estadisticas-primera-b-metropolitana.html">Primera B Metropolitana</a></li>
+                                    <li class="list-group-item"><a class="text-decoration-none" href="./estadisticas-primera-c.html">Primera C</a></li>
+                                    <li class="list-group-item"><a class="text-decoration-none" href="./estadisticas-copa-argentina.html">Copa Argentina</a></li>
+                                </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                  Fútbol de Europa
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <ul class="list-group">
+                                        <li class="list-group-item"><a class="text-decoration-none" href="./estadisticas-champions-league.html">UEFA Champions League</a></li>
+                                        <li class="list-group-item"><a class="text-decoration-none" href="./estadisticas-europa-league.html">UEFA Europa League</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                    Fútbol de América
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <ul class="list-group">
+                                        <li class="list-group-item"><a class="text-decoration-none" href="./estadisticas-copa-libertadores.html">Copa Libertadores</a></li>
+                                        <li class="list-group-item"><a class="text-decoration-none" href="./estadisticas-copa-sudamericana.html">Copa Sudamericana</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--FIN ACORDEON TORNEOS-->
+                <br>
+                <div>
+                    <p class="nombreTorneo">Liga Profesional Argentina (Copa)</p>                    
+                    <!--INICIO TABLA GRUPO A-->
+                    <table>
+                        <tr>
+                            <th class="celda-grupo">Grupo A</th>
+                        </tr>
+                        <tr><!-- inicio de fila-->
+                            <th class="columnaPos">Pos. </th>
+                            <th class="columnaEquipo"> </th>
+                            <th class="columnaPts">Pts.</th>
+                            <th class="columnaJGEP">PJ</th>
+                            <th class="columnaJGEP">G</th>
+                            <th class="columnaJGEP">E</th>
+                            <th class="columnaJGEP">P</th>
+                            <th class="columnaJGEP">GF</th>
+                            <th class="columnaJGEP">GC</th>
+                            <th class="columnaJGEP">DG</th>            
+                        </tr><!-- cierre de fila-->
+                        <tr><!-- inicio de otra fila-->
+                            <th class="celdaPos">1</th>
+                            <td class="celdaEquipo"><img class="escudo-equipo" src="../img/escudos/racing-escudo.png" alt="Racing">Racing</td>
+                            <td class="celdaPts">28</td>
+                            <td class="celdaJGEP">12</td>
+                            <td class="celdaJGEP">8</td>
+                            <td class="celdaJGEP">4</td>
+                            <td class="celdaJGEP">0</td>
+                            <td class="celdaJGEP">23</td>
+                            <td class="celdaJGEP">8</td>                            
+                            <td class="celdaJGEP">15</td>
+                        </tr><!-- cierre 2° fila-->
+                        <tr><!-- inicio de otra fila-->
+                            <th class="celdaPosGris">2</th>
+                            <td class="celdaEquipoGris"><img class="escudo-equipo" src="../img/escudos/river-escudo.webp" alt="River Plate">River Plate</td>
+                            <td class="celdaPtsGris">23</td>
+                            <td class="celdaJGEPGris">12</td>
+                            <td class="celdaJGEPGris">7</td>
+                            <td class="celdaJGEPGris">2</td>
+                            <td class="celdaJGEPGris">3</td>
+                            <td class="celdaJGEPGris">22</td>
+                            <td class="celdaJGEPGris">11</td>                            
+                            <td class="celdaJGEPGris">11</td>
+                        </tr><!-- cierre 3° fila-->
+                        <tr><!-- inicio de otra fila-->
+                            <th class="celdaPos">3</th>
+                            <td class="celdaEquipo"><img class="escudo-equipo" src="../img/escudos/nob-escudo.png" alt="Newell's">Newell's Old Boys</td>
+                            <td class="celdaPts">23</td>
+                            <td class="celdaJGEP">12</td>
+                            <td class="celdaJGEP">7</td>
+                            <td class="celdaJGEP">2</td>
+                            <td class="celdaJGEP">3</td>
+                            <td class="celdaJGEP">15</td>
+                            <td class="celdaJGEP">10</td>                            
+                            <td class="celdaJGEP">5</td>
+                        </tr><!-- cierre 4° fila-->
+                        <tr><!-- inicio de otra fila-->
+                            <th class="celdaPosGris">4</th>
+                            <td class="celdaEquipoGris"><img class="escudo-equipo" src="../img/escudos/argentinos-escudo.png" alt="Argentinos">Argentinos Juniors</td>
+                            <td class="celdaPtsGris">21</td>
+                            <td class="celdaJGEPGris">12</td>
+                            <td class="celdaJGEPGris">6</td>
+                            <td class="celdaJGEPGris">3</td>
+                            <td class="celdaJGEPGris">3</td>
+                            <td class="celdaJGEPGris">18</td>
+                            <td class="celdaJGEPGris">14</td>                            
+                            <td class="celdaJGEPGris">4</td>
+                        </tr><!-- cierre 5° fila-->
+                        <tr><!-- inicio de otra fila-->
+                            <th class="celdaPos">5</th>
+                            <td class="celdaEquipo"><img class="escudo-equipo" src="../img/escudos/sarmiento-escudo.webp" alt="Sarmiento">Sarmiento</td>
+                            <td class="celdaPts">21</td>
+                            <td class="celdaJGEP">12</td>
+                            <td class="celdaJGEP">6</td>
+                            <td class="celdaJGEP">3</td>
+                            <td class="celdaJGEP">3</td>
+                            <td class="celdaJGEP">17</td>
+                            <td class="celdaJGEP">15</td>                            
+                            <td class="celdaJGEP">2</td>
+                        </tr><!-- cierre 6° fila-->
+                        <tr><!-- inicio de otra fila-->
+                            <th class="celdaPosGris">6</th>
+                            <td class="celdaEquipoGris"><img class="escudo-equipo" src="../img/escudos/defensa-y-justicia-escudo.png" alt="Defensa y Justicia">Defensa Y Justicia</td>
+                            <td class="celdaPtsGris">19</td>
+                            <td class="celdaJGEPGris">12</td>
+                            <td class="celdaJGEPGris">5</td>
+                            <td class="celdaJGEPGris">4</td>
+                            <td class="celdaJGEPGris">3</td>
+                            <td class="celdaJGEPGris">23</td>
+                            <td class="celdaJGEPGris">18</td>                            
+                            <td class="celdaJGEPGris">5</td>
+                        </tr><!-- cierre 7° fila-->
+                        <tr><!-- inicio de otra fila-->
+                            <th class="celdaPos">7</th>
+                            <td class="celdaEquipo"><img class="escudo-equipo" src="../img/escudos/gimnasia-escudo.png" alt="Gimnasia">Gimnasia</td>
+                            <td class="celdaPts">18</td>
+                            <td class="celdaJGEP">12</td>
+                            <td class="celdaJGEP">5</td>
+                            <td class="celdaJGEP">3</td>
+                            <td class="celdaJGEP">4</td>
+                            <td class="celdaJGEP">15</td>
+                            <td class="celdaJGEP">19</td>                            
+                            <td class="celdaJGEP">-4</td>
+                        </tr><!-- cierre 8° fila-->
+                        <tr><!-- inicio de otra fila-->
+                            <th class="celdaPosGris">8</th>
+                            <td class="celdaEquipoGris"><img class="escudo-equipo" src="../img/escudos/banfield-escudo.png" alt="Banfield">Banfield</td>
+                            <td class="celdaPtsGris">17</td>
+                            <td class="celdaJGEPGris">12</td>
+                            <td class="celdaJGEPGris">5</td>
+                            <td class="celdaJGEPGris">2</td>
+                            <td class="celdaJGEPGris">5</td>
+                            <td class="celdaJGEPGris">16</td>
+                            <td class="celdaJGEPGris">13</td>                            
+                            <td class="celdaJGEPGris">3</td>
+                        </tr><!-- cierre 9° fila-->
+                        <tr><!-- inicio de otra fila-->
+                            <th class="celdaPos">9</th>
+                            <td class="celdaEquipo"><img class="escudo-equipo" src="../img/escudos/union-escudo.png" alt="Unión">Unión</td>
+                            <td class="celdaPts">17</td>
+                            <td class="celdaJGEP">12</td>
+                            <td class="celdaJGEP">5</td>
+                            <td class="celdaJGEP">2</td>
+                            <td class="celdaJGEP">5</td>
+                            <td class="celdaJGEP">9</td>
+                            <td class="celdaJGEP">9</td>                            
+                            <td class="celdaJGEP">0</td>
+                        </tr><!-- cierre 10° fila-->
+                        <tr><!-- inicio de otra fila-->
+                            <th class="celdaPosGris">10</th>
+                            <td class="celdaEquipoGris"><img class="escudo-equipo" src="../img/escudos/san-lorenzo-escudo.png" alt="San Lorenzo">San Lorenzo</td>
+                            <td class="celdaPtsGris">11</td>
+                            <td class="celdaJGEPGris">12</td>
+                            <td class="celdaJGEPGris">2</td>
+                            <td class="celdaJGEPGris">5</td>
+                            <td class="celdaJGEPGris">5</td>
+                            <td class="celdaJGEPGris">12</td>
+                            <td class="celdaJGEPGris">15</td>                            
+                            <td class="celdaJGEPGris">-3</td>
+                        </tr><!-- cierre 11° fila-->
+                        <tr><!-- inicio de otra fila-->
+                            <th class="celdaPos">11</th>
+                            <td class="celdaEquipo"><img class="escudo-equipo" src="../img/escudos/patronato-escudo.png" alt="Patronato">Patronato</td>
+                            <td class="celdaPts">10</td>
+                            <td class="celdaJGEP">12</td>
+                            <td class="celdaJGEP">3</td>
+                            <td class="celdaJGEP">1</td>
+                            <td class="celdaJGEP">8</td>
+                            <td class="celdaJGEP">10</td>
+                            <td class="celdaJGEP">18</td>                            
+                            <td class="celdaJGEP">-8</td>
+                        </tr><!-- cierre 12° fila-->
+                        <tr><!-- inicio de otra fila-->
+                            <th class="celdaPosGris">12</th>
+                            <td class="celdaEquipoGris"><img class="escudo-equipo" src="../img/escudos/platense-escudo.png" alt="Platense">Platense</td>
+                            <td class="celdaPtsGris">9</td>
+                            <td class="celdaJGEPGris">12</td>
+                            <td class="celdaJGEPGris">2</td>
+                            <td class="celdaJGEPGris">3</td>
+                            <td class="celdaJGEPGris">7</td>
+                            <td class="celdaJGEPGris">10</td>
+                            <td class="celdaJGEPGris">20</td>                            
+                            <td class="celdaJGEPGris">-10</td>
+                        </tr><!-- cierre 13° fila-->
+                        <tr><!-- inicio de otra fila-->
+                            <th class="celdaPos">13</th>
+                            <td class="celdaEquipo"><img class="escudo-equipo" src="../img/escudos/talleres-escudo.webp" alt="Talleres">Talleres</td>
+                            <td class="celdaPts">8</td>
+                            <td class="celdaJGEP">12</td>
+                            <td class="celdaJGEP">2</td>
+                            <td class="celdaJGEP">2</td>
+                            <td class="celdaJGEP">8</td>
+                            <td class="celdaJGEP">8</td>
+                            <td class="celdaJGEP">18</td>                            
+                            <td class="celdaJGEP">-10</td>
+                        </tr><!-- cierre 14° fila-->
+                        <tr><!-- inicio de otra fila-->
+                            <th class="celdaPosGris">14</th>
+                            <td class="celdaEquipoGris"><img class="escudo-equipo" src="../img/escudos/atletico-tucuman-escudo.png" alt="Atlético Tucumán">Atlético Tucumán</td>
+                            <td class="celdaPtsGris">7</td>
+                            <td class="celdaJGEPGris">12</td>
+                            <td class="celdaJGEPGris">1</td>
+                            <td class="celdaJGEPGris">4</td>
+                            <td class="celdaJGEPGris">7</td>
+                            <td class="celdaJGEPGris">9</td>
+                            <td class="celdaJGEPGris">22</td>                            
+                            <td class="celdaJGEPGris">-13</td>
+                        </tr><!-- cierre 15° fila-->
+                    </table>
+                    <!--FIN TABLA GRUPO A-->
+                </div>          
+                <div>
+                    <!--INICIO TABLA GRUPO B-->
+                    <table>
+                        <tr><th class="celda-grupo">Grupo B</th></tr>                    
+                            <tr><!-- inicio de fila-->
+                            <th class="columnaPos">Pos. </th>
+                            <th class="columnaEquipo"> </th>
+                            <th class="columnaPts">Pts.</th>
+                            <th class="columnaJGEP">PJ</th>
+                            <th class="columnaJGEP">G</th>
+                            <th class="columnaJGEP">E</th>
+                            <th class="columnaJGEP">P</th>
+                            <th class="columnaJGEP">GF</th>
+                            <th class="columnaJGEP">GC</th>
+                            <th class="columnaJGEP">DG</th>              
+                        </tr><!-- cierre de fila-->
+                            <tr><!-- inicio de otra fila-->
+                            <th class="celdaPos">1</th>
+                            <td class="celdaEquipo"><img class="escudo-equipo" src="../img/escudos/estudiantes-escudo.png" alt="Estudiantes">Estudiantes (LP)</td>
+                            <td class="celdaPts">25</td>
+                            <td class="celdaJGEP">12</td>
+                            <td class="celdaJGEP">7</td>
+                            <td class="celdaJGEP">4</td>
+                            <td class="celdaJGEP">1</td>
+                            <td class="celdaJGEP">30</td>
+                            <td class="celdaJGEP">16</td>                            
+                            <td class="celdaJGEP">14</td>
+                        </tr><!-- cierre 2° fila-->
+                        <tr><!-- inicio de otra fila-->
+                            <th class="celdaPosGris">2</th>
+                            <td class="celdaEquipoGris"><img class="escudo-equipo" src="../img/escudos/boca-escudo.png" alt="Boca Juniors">Boca Juniors</td>
+                            <td class="celdaPtsGris">21</td>
+                            <td class="celdaJGEPGris">12</td>
+                            <td class="celdaJGEPGris">5</td>
+                            <td class="celdaJGEPGris">6</td>
+                            <td class="celdaJGEPGris">1</td>
+                            <td class="celdaJGEPGris">15</td>
+                            <td class="celdaJGEPGris">11</td>                            
+                            <td class="celdaJGEPGris">4</td>
+                        </tr><!-- cierre 3° fila-->
+                        <tr><!-- inicio de otra fila-->
+                            <th class="celdaPos">3</th>
+                            <td class="celdaEquipo"><img class="escudo-equipo" src="../img/escudos/tigre-escudo.webp" alt="Tigre">Tigre</td>
+                            <td class="celdaPts">20</td>
+                            <td class="celdaJGEP">12</td>
+                            <td class="celdaJGEP">5</td>
+                            <td class="celdaJGEP">5</td>
+                            <td class="celdaJGEP">2</td>
+                            <td class="celdaJGEP">15</td>
+                            <td class="celdaJGEP">7</td>                            
+                            <td class="celdaJGEP">8</td>
+                        </tr><!-- cierre 4° fila-->
+                        <tr><!-- inicio de otra fila-->
+                            <th class="celdaPosGris">4</th>
+                            <td class="celdaEquipoGris"><img class="escudo-equipo" src="../img/escudos/aldosivi-escudo.png" alt="Aldosivi">Aldosivi</td>
+                            <td class="celdaPtsGris">20</td>
+                            <td class="celdaJGEPGris">12</td>
+                            <td class="celdaJGEPGris">6</td>
+                            <td class="celdaJGEPGris">2</td>
+                            <td class="celdaJGEPGris">4</td>
+                            <td class="celdaJGEPGris">15</td>
+                            <td class="celdaJGEPGris">12</td>                            
+                            <td class="celdaJGEPGris">3</td>
+                        </tr><!-- cierre 5° fila-->
+                        <tr><!-- inicio de otra fila-->
+                            <th class="celdaPos">5</th>
+                            <td class="celdaEquipo"><img class="escudo-equipo" src="../img/escudos/colon-escudo.png" alt="Colón">Colón</td>
+                            <td class="celdaPts">16</td>
+                            <td class="celdaJGEP">12</td>
+                            <td class="celdaJGEP">3</td>
+                            <td class="celdaJGEP">7</td>
+                            <td class="celdaJGEP">2</td>
+                            <td class="celdaJGEP">17</td>
+                            <td class="celdaJGEP">15</td>                            
+                            <td class="celdaJGEP">2</td>
+                        </tr><!-- cierre 6° fila-->
+                        <tr><!-- inicio de otra fila-->
+                            <th class="celdaPosGris">6</th>
+                            <td class="celdaEquipoGris"><img class="escudo-equipo" src="../img/escudos/barracas-escudo.png" alt="Barracas Central">Barracas Central</td>
+                            <td class="celdaPtsGris">16</td>
+                            <td class="celdaJGEPGris">12</td>
+                            <td class="celdaJGEPGris">5</td>
+                            <td class="celdaJGEPGris">1</td>
+                            <td class="celdaJGEPGris">6</td>
+                            <td class="celdaJGEPGris">14</td>
+                            <td class="celdaJGEPGris">21</td>                            
+                            <td class="celdaJGEPGris">-7</td>
+                        </tr><!-- cierre 7° fila-->
+                        <tr><!-- inicio de otra fila-->
+                            <th class="celdaPos">7</th>
+                            <td class="celdaEquipo"><img class="escudo-equipo" src="../img/escudos/huracan-escudo.png" alt="Huracán">Huracán</td>
+                            <td class="celdaPts">15</td>
+                            <td class="celdaJGEP">12</td>
+                            <td class="celdaJGEP">4</td>
+                            <td class="celdaJGEP">3</td>
+                            <td class="celdaJGEP">5</td>
+                            <td class="celdaJGEP">15</td>
+                            <td class="celdaJGEP">15</td>                            
+                            <td class="celdaJGEP">0</td>
+                        </tr><!-- cierre 8° fila-->
+                        <tr><!-- inicio de otra fila-->
+                            <th class="celdaPosGris">8</th>
+                            <td class="celdaEquipoGris"><img class="escudo-equipo" src="../img/escudos/central-cordoba-escudo.png" alt="Central Córdoba">Central Córdoba</td>
+                            <td class="celdaPtsGris">14</td>
+                            <td class="celdaJGEPGris">12</td>
+                            <td class="celdaJGEPGris">3</td>
+                            <td class="celdaJGEPGris">5</td>
+                            <td class="celdaJGEPGris">4</td>
+                            <td class="celdaJGEPGris">14</td>
+                            <td class="celdaJGEPGris">19</td>                            
+                            <td class="celdaJGEPGris">-5</td>
+                        </tr><!-- cierre 9° fila-->
+                        <tr><!-- inicio de otra fila-->
+                            <th class="celdaPos">9</th>
+                            <td class="celdaEquipo"><img class="escudo-equipo" src="../img/escudos/godoy-cruz-escudo.png" alt="Godoy Cruz">Godoy Cruz</td>
+                            <td class="celdaPts">13</td>
+                            <td class="celdaJGEP">12</td>
+                            <td class="celdaJGEP">2</td>
+                            <td class="celdaJGEP">7</td>
+                            <td class="celdaJGEP">3</td>
+                            <td class="celdaJGEP">19</td>
+                            <td class="celdaJGEP">21</td>                            
+                            <td class="celdaJGEP">-2</td>
+                        </tr><!-- cierre 10° fila-->
+                        <tr><!-- inicio de otra fila-->
+                            <th class="celdaPosGris">10</th>
+                            <td class="celdaEquipoGris"><img class="escudo-equipo" src="../img/escudos/independiente-escudo.png" alt="Independiente">Independiente</td>
+                            <td class="celdaPtsGris">13</td>
+                            <td class="celdaJGEPGris">12</td>
+                            <td class="celdaJGEPGris">2</td>
+                            <td class="celdaJGEPGris">7</td>
+                            <td class="celdaJGEPGris">3</td>
+                            <td class="celdaJGEPGris">14</td>
+                            <td class="celdaJGEPGris">17</td>                            
+                            <td class="celdaJGEPGris">-3</td>
+                        </tr><!-- cierre 11° fila-->
+                        <tr><!-- inicio de otra fila-->
+                            <th class="celdaPos">11</th>
+                            <td class="celdaEquipo"><img class="escudo-equipo" src="../img/escudos/velez-escudo.webp" alt="Vélez Sarsfield">Vélez Sarsfield</td>
+                            <td class="celdaPts">12</td>
+                            <td class="celdaJGEP">12</td>
+                            <td class="celdaJGEP">2</td>
+                            <td class="celdaJGEP">6</td>
+                            <td class="celdaJGEP">4</td>
+                            <td class="celdaJGEP">8</td>
+                            <td class="celdaJGEP">9</td>                            
+                            <td class="celdaJGEP">-1</td>
+                        </tr><!-- cierre 12° fila-->
+                        <tr><!-- inicio de otra fila-->
+                            <th class="celdaPosGris">12</th>
+                            <td class="celdaEquipoGris"><img class="escudo-equipo" src="../img/escudos/arsenal-escudo.png" alt="Arsenal">Arsenal</td>
+                            <td class="celdaPtsGris">11</td>
+                            <td class="celdaJGEPGris">12</td>
+                            <td class="celdaJGEPGris">1</td>
+                            <td class="celdaJGEPGris">8</td>
+                            <td class="celdaJGEPGris">3</td>
+                            <td class="celdaJGEPGris">16</td>
+                            <td class="celdaJGEPGris">18</td>                            
+                            <td class="celdaJGEPGris">-2</td>
+                        </tr><!-- cierre 13° fila-->
+                        <tr><!-- inicio de otra fila-->
+                            <th class="celdaPos">13</th>
+                            <td class="celdaEquipo"><img class="escudo-equipo" src="../img/escudos/lanus-escudo.png" alt="Lanús">Lanús</td>
+                            <td class="celdaPts">11</td>
+                            <td class="celdaJGEP">12</td>
+                            <td class="celdaJGEP">2</td>
+                            <td class="celdaJGEP">5</td>
+                            <td class="celdaJGEP">5</td>
+                            <td class="celdaJGEP">13</td>
+                            <td class="celdaJGEP">15</td>                            
+                            <td class="celdaJGEP">-2</td>
+                        </tr><!-- cierre 14° fila-->
+                        <tr><!-- inicio de otra fila-->
+                            <th class="celdaPosGris">14</th>
+                            <td class="celdaEquipoGris"><img class="escudo-equipo" src="../img/escudos/rosario-central-escudo.png" alt="Rosario Central">Rosario Central</td>
+                            <td class="celdaPtsGris">11</td>
+                            <td class="celdaJGEPGris">12</td>
+                            <td class="celdaJGEPGris">3</td>
+                            <td class="celdaJGEPGris">2</td>
+                            <td class="celdaJGEPGris">7</td>
+                            <td class="celdaJGEPGris">12</td>
+                            <td class="celdaJGEPGris">17</td>                            
+                            <td class="celdaJGEPGris">-5</td>
+                        </tr><!-- cierre 15° fila-->
+                    </table>
+                    <!--FIN TABLA GRUPO B-->
+                </div>                                
+            </section>      
+        </main>
+        <!--FIN MAIN-->
+        <!--INICIO FOOTER-->
+        <footer id="piePagina">                   
+            <div class="contacto">
+                <div><h2><strong>Sportia</strong></h2></div>
+                <br>
+                <div>© 2022 Fernando Oyanarte</div>
+                <br>
+                <div>Seguinos</div>
+                <br>
+                <div>
+                    <a href="https://www.facebook.com/"><img src="../img/facebook-icon.png" alt="facebook-icon" class="iconoRedes"></a>
+                    <a href="https://www.twitter.com/"><img src="../img/twitter-icon.png" alt="twitter-icon" class="iconoRedes"></a>
+                    <a href="https://www.instagram.com/"><img src="../img/igg-icon.png" alt="igg-icon" class="iconoRedes"></a>
+                    <a href="https://www.youtube.com/"><img src="../img/youtube-icon.png" alt="youtube-icon" class="iconoRedes"></a>
+                </div>                    
+            </div>                       
+            <div class="columnaFooter">    
+                <div>
+                    <div>
+                        <span class="negrita">FUTBOL ARGENTINO</span>
+                    </div>  
+                    <br>
+                    <div>
+                        <a href="../pages/seleccion.html" class= "decoration">Selección</a>
+                    </div>
+                    <div>
+                        <a href="../pages/primera-division.html" class= "decoration">Primera División</a>
+                    </div>
+                    <div>
+                        <a href="../pages/primera-b-nacional.html" class= "decoration">B Nacional</a>
+                    </div>
+                    <div>
+                        <a href="../pages/copa-argentina.html" class= "decoration">Copa Argentina</a>
+                    </div>
+                    <div>
+                        <a href="../pages/primera-b-metropolitana.html" class= "decoration">Primera B</a>
+                    </div>
+                    <div>
+                        <a href="../pages/primera-c.html" class= "decoration">Primera C</a>
+                    </div>
+                    <div>
+                        <a href="../pages/primera-d.html" class= "decoration">Primera D</a>
+                    </div>
+                    <div>
+                        <a href="../pages/estadisticas.html" class= "decoration">Estadísticas</a>
+                    </div>
+                </div> 
+                <div>                     
+                    <div>
+                        <span class="negrita">FUTBOL INTERNACIONAL</span>
+                    </div>
+                    <br>
+                    <div>
+                        <a href="../pages/copa-libertadores.html" class= "decoration">Copa Libertadores</a>
+                    </div>
+                    <div>
+                        <a href="../pages/copa-sudamericana.html" class= "decoration">Copa Sudamericana</a>
+                    </div>
+                    <div>
+                        <a href="../pages/america.html" class= "decoration">América</a>
+                    </div>
+                    <div>
+                        <a href="../pages/españa.html" class= "decoration">España</a>
+                    </div>
+                    <div>
+                        <a href="../pages/italia.html" class= "decoration">Italia</a>
+                    </div>
+                    <div>
+                        <a href="../pages/inglaterra.html" class= "decoration">Inglaterra</a>
+                    </div>
+                    <div>
+                        <a href="../pages/champions-league.html" class= "decoration">Champions League</a>
+                    </div>
+                    <div>
+                        <a href="../pages/europa-league.html" class= "decoration">Europa League</a>
+                    </div>
+                    <div>
+                        <a href="../pages/estadisticas.html" class= "decoration">Estadísticas</a>
+                    </div>
+                </div> 
+                <div>
+                    <div>
+                        <span class="negrita">MÁS DEPORTES</span>
+                    </div> 
+                    <br> 
+                    <div>
+                        <a href="../pages/basquet.html" class= "decoration">Basquet</a>
+                    </div>
+                    <div>
+                        <a href="../pages/rugby.html" class= "decoration">Rugby</a>
+                    </div>
+                    <div>
+                        <a href="../pages/tenis.html" class= "decoration">Tenis</a>
+                    </div>
+                    <div>
+                        <a href="../pages/polideportivo.html" class= "decoration">Polideportivo</a>
+                    </div>                   
+                </div>     
+            </div>
+        </footer>
+        <!--FIN FOOTER-->
+    </div>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>

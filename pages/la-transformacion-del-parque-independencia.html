@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Todo sobre el partido Colo Colo vs. River Plate por la fase de grupos de la Copa Libertadores de América">
+    <meta name="keywords"  content="POLIDEPORTIVO, JUEGOS SURAMERICANOS DE LA JUVENTUD, ROSARIO, MASCOTA, IGNACIO VALENTINI, TETE">
+    <title>Sportia, portal de noticias deportivas - Polideportivo, JJ Suramericanos de la Juventud</title>
+    <!--RUTAS DE ESTILO-->
+    <link rel="stylesheet" href="../style/estilo.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="icon" href="../img/sportia-favicon.ico">
+</head>
+<body>
+    <div id="padreArticulo"> 
+        <!--El logotipo funciona como botón de home-->   
+        <header id="cabecera" >  
+            <a href="../index.html"><img src="../img/sportia-logo.png" alt="Sportia Logo" class="logoSportia"></a></li>
+        </header>
+        <!--INICIO NAV--> 
+        <nav id="navegador">
+            <div id="menuDesplegable" class="position-absolute start-0">
+                <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+                    Secciones
+                </button>                  
+                <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="staticBackdropLabel">Secciones</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body ">
+                        <div class="columnaFooter">    
+                            <div>
+                                <div>
+                                    <span class="fw-bold">FUTBOL ARGENTINO</span>
+                                </div> 
+                                <div>
+                                    <a href="../pages/seleccion.html" class= "text-decoration-none text-black">Selección</a> 
+                                </div>
+                                <div>
+                                    <a href="../pages/primera-division.html" class= "text-decoration-none text-black">Primera División</a> 
+                                </div>
+                                <div>
+                                    <a href="../pages/primera-b-nacional.html" class= "text-decoration-none text-black">B Nacional</a> 
+                                </div>
+                                <div>
+                                    <a href="../pages/copa-argentina.html" class= "text-decoration-none text-black">Copa Argentina</a> 
+                                </div>
+                                <div>
+                                    <a href="../pages/primera-b-metropolitana.html" class= "text-decoration-none text-black">Primera B</a> 
+                                </div>
+                                <div>
+                                    <a href="../pages/primera-c.html" class= "text-decoration-none text-black">Primera C</a> 
+                                </div>
+                                <div>
+                                    <a href="../pages/primera-d.html" class= "text-decoration-none text-black">Primera D</a> 
+                                </div>
+                                <div>
+                                    <a href="../pages/estadisticas.html" class= "text-decoration-none text-black">Estadísticas</a> 
+                                </div>
+                            </div> 
+                            <br>
+                            <div>                     
+                                <div>
+                                    <span class="fw-bold">FUTBOL INTERNACIONAL</span>
+                                </div>
+                                <div>
+                                    <a href="../pages/copa-libertadores.html" class= "text-decoration-none text-black">Copa Libertadores</a>
+                                </div>
+                                <div>
+                                    <a href="../pages/copa-sudamericana.html" class= "text-decoration-none text-black">Copa Sudamericana</a>
+                                </div>
+                                <div>
+                                    <a href="../pages/america.html" class= "text-decoration-none text-black">América</a>
+                                </div>
+                                <div>
+                                    <a href="../pages/españa.html" class= "text-decoration-none text-black">España</a>
+                                </div>
+                                <div>
+                                    <a href="../pages/italia.html" class= "text-decoration-none text-black">Italia</a>
+                                </div>
+                                <div>
+                                    <a href="../pages/inglaterra.html" class= "text-decoration-none text-black">Inglaterra</a>
+                                </div>
+                                <div>
+                                    <a href="../pages/champions-league.html" class= "text-decoration-none text-black">Champions League</a>
+                                </div>
+                                <div>
+                                    <a href="../pages/europa-league.html" class= "text-decoration-none text-black">Europa League</a>
+                                </div>
+                                <div>
+                                    <a href="../pages/estadisticas.html" class= "text-decoration-none text-black">Estadísticas</a>
+                                </div>
+                            </div> 
+                            <br>
+                            <div>
+                                <div>
+                                    <span class="fw-bold">MÁS DEPORTES</span>
+                                </div>
+                                <div>
+                                    <a href="../pages/basquet.html" class= "text-decoration-none text-black">Basquet</a>
+                                </div>
+                                <div>
+                                    <a href="../pages/rugby.html" class= "text-decoration-none text-black">Rugby</a>
+                                </div>
+                                <div>
+                                    <a href="../pages/tenis.html" class= "text-decoration-none text-black">Tenis</a>
+                                </div>
+                                <div>
+                                    <a href="../pages/polideportivo.html" class= "text-decoration-none text-black">Polideportivo</a>
+                                </div>
+                            </div>     
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menuNav">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-decoration-none text-dark fs-5" href="../pages/estadisticas.html"><img src="../img/estadisticas.png" alt="Estadísticas torneos" width="30" height="24" class="d-inline-block align-text-top stat-icon"><span class="textoNav">Estadísticas</span></a>
+                    </li>                
+                    <li class="nav-item">
+                        <a class="nav-link text-decoration-none text-dark fs-5" href="../pages/agenda.html"><img src="../img/agenda.png" alt="Agenda partidos de hoy y mañana" width="30" height="30" class="d-inline-block align-text-top calendario-icon"><span class="textoNav">Agenda</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-decoration-none text-dark fs-5" href="../pages/ingresar.html"><span class="textoNav">Ingresar</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-decoration-none text-dark fs-5" href="../pages/suscribirme.html"><span class="suscribirme">SUSCRIBIRME</span></a>
+                    </li>                
+                </ul>
+            </div>          
+        </nav>
+        <!--FIN NAV-->        
+        <main id="articulo">
+            <!--INICIO ARTICULO PERIODISTICO-->
+            <section id="notaPartido" >
+                <div class="divNota2">
+                    <div >
+                        <h5 class="copeteNota">POLIDEPORTIVO / JJ. SURAMERICANOS</h5>
+                    </div>
+                    <div>
+                        <h1 class="titular fs-1 w-75">La transformación del Parque Independencia, la sede única de los Juegos Suramericanos de la Juventud Rosario 2022</h1>
+                        <br>
+                    </div>
+                    <div id="cajaSubtitulo">
+                        <p class="subtitulo">La competencia se disputará en siete clústeres y 17 escenarios, desde el 28 de abril hasta el 8 de mayo.</p>
+                    </div>  
+                    <img class="fotoArticulo w-75" src="../img/parque-independencia_862x485.jpg" alt="Parque Independencia, sede única de los Juegos Suramericanos de la Juventud">
+                    <p id="fecha-nota" class="fw-bold fs-6">27 de Abril - 20:12h. / Sportia Polideportivo</p>
+                    <div class="notaPeriodistica">
+                        <p>Rosario, ciudad que transpira pasión por el deporte, está lista para vivir el evento deportivo más importante de su historia: los III Juegos Suramericanos de la Juventud 2022, que se disputan desde el jueves 28 de abril hasta el 8 de mayo. En esta edición, <span class="negrita">por primera vez todo se desarrolla en una sede única: el Parque Independencia</span>.</p>
+                        <br>
+                        <p>Los trabajos para acondicionar todos los espacios comenzaron hace dos años. El Parque Único Suramericano contará con siete clústeres: <span class="negrita">La Rural, el Hipódromo (que tendrá rugby 7 y hockey en canchas de césped sintético), estadio Municipal, Paseo 21, Newell's, el club Provincial y el Lago</span>, donde se realizarán tanto la Ceremonia de Apertura (este jueves desde las 20) como la Ceremonia de Clausura, el último día.</p>
+                        <br>
+                        <p>A su vez, también habrá un Fan Fest (que contará con una plaza gastronómica y espacios predeportivos), un Centro Principal de Premiación (sobre Bulevar Oroño) y una carpa de E-Sports. <span>Los organizadores esperan recibir un millón de personas a lo largo de la competencia</span>.</p>
+                        <br>
+                        <img class="fotoArticulo w-100" src="../img/hockey-y-tiro-con-arco-rosario-2022_w862.jpg" alt="Hockey y tiro con arco">
+                        <p>Hockey 5 y tiro con arco comparten espacio en el hipódromo, en Rosario 2022. Foto: TyC Sports</p>
+                        <br>
+                        <p>Cerca de <span class="negrita">2500 jóvenes deportistas de entre 14 y 18 años, de 15 países distintos, competirán (en 26 disciplinas)</span>. en los Juegos Suramericanos de la Juventud Rosario 2022, el evento deportivo más importante de la ciudad desde los II Juegos Cruz del Sur 1982.</p>
+                        <br>
+                        <h2 class="title-franklin fs-4">Uno por uno: donde se compiten todos los deportes de los Juegos Suramericanos de la Juventud Rosario 2022</h2>
+                        <br>
+                        <ul>
+                            <li><span class="negrita">Hipódromo</span>: Rugby 7, Hockey 5 y Tiro con arco.</li>
+                            <li><span class="negrita">La Rural</span>: Será el lugar que mayor cantidad de deportes recibirá. Taekwondo, esgrima y karate (Pabellón A), tenis de mesa, judo y levantamiento de pesas (Pabellón B), boxeo y la lucha (Pabellón C). A su vez, se competirá beach voley y beach handball en el Estadio Arena, al aire libre y con capacidad para 3 mil personas.</li>
+                        </ul>
+                        <br>
+                        <img class="fotoArticulo w-100" src="../img/tenis-de-mesa-rosario-2022_w862.jpg" alt="Tenis de mesa Rosario">
+                        <p>Tenis de mesa, en el Pabellón B de La Rural. Foto: Sportia</p>
+                        <br>
+                        <img class="fotoArticulo w-100" src="../img/beach-voley-rosario-2022_w862.jpg" alt="Beach Voley Rosario">
+                        <br>
+                        <p><span class="negrita">El Estadio Arena, al aire libre, recibirá tanto beach voley como beach handball. Foto. Sportia</span></p>
+                        <br>
+                        <ul>
+                            <li><span class="negrita">Paseo 21</span>: escalada, skateboarding y básquet 3x3.</li>
+                            <li><span class="negrita">Estadio Municipal Jorge Newbery</span>: Atletismo, patinaje de velocidad, patinaje artístico. </li>
+                            <li><span class="negrita">Lago</span>: triatlón y ciclismo. Además, en el Lago se desarrollarán las Ceremonias de Apertura y Clausura.</li>
+                            <li><span class="negrita">Club Provincial</span>: Tenis, Futsal y Gimnasia Artística.</li>
+                            <li><span class="negrita">Newell's</span>: Bádminton y Natación.</li>
+                        </ul>
+                    </div> 
+                    <!--FIN ARTICULO PERIODISTICO-->
+            </section>
+            <br>
+            <!--INICIO COMENTARIOS-->    
+            <section id="cajaComentarios">
+                <div class="comentarios" >
+                    <h3 class="title-impact fs-4">COMENTARIOS</h3> 
+                    <P>Comentar las notas de Sportia es exclusivo para usuarios logueados.</P>
+                    <form action="#">
+                        <textarea name="" id="" cols="60" rows="3" class="area-texto"></textarea>
+                        <br>
+                        <input type="submit" value="Cancelar" class="botonForm">
+                        <input type="submit" value="Publicar" class="botonForm">
+                    </form> 
+                </div>
+            </section>      
+            <!--FIN COMENTARIOS-->
+            <!--NOTICIAS RELACIONADAS-->
+            <section id="noticiasRelacionadas">
+                <div class="contenedor-noticias">
+                    <h3 class="title-impact fs-4">TE PUEDE INTERESAR</h3>
+                    <div class="noticiaRelacionada">                                    
+                        <a href="../pages/cuando-vuelve-roger-federer.html"><img src="../img/roger-federer_862x485.jpg" alt="Roger Federer" class="imagen-noticia"> </a> 
+                        <a href="../pages/cuando-vuelve-roger-federer.html" class="decoration"><h2 class="titulo3 fs-5">Cuándo vuelve Roger Federer: afirman que jugará el ATP de Basilea</h2></a> 
+                    </div>
+                    <div class="noticiaRelacionada2">                                    
+                        <a href="../pages/schwartzman-se-bajo-del-atp-250-de-estoril.html"><img src="../img/schwartzman_862x485.jpg" alt="Diego Schwartzman" class="imagen-noticia2"> </a> 
+                        <a href="../pages/schwartzman-se-bajo-del-atp-250-de-estoril.html" class="decoration"><h2 class="titulo3 fs-5 w-100 p-1">Schwartzman se bajó del ATP 250 de Estoril: el motivo y cuántos argentinos quedan</h2></a> 
+                    </div>
+                    <div class="noticiaRelacionada3">
+                        <a href="../pages/hincha-de-newells-y-diseño-botines-para-messi.html"><img src="../img/tete-ignacio-valentini-rosario-2022_862x485.jpg" alt="Teté Mascota Juegos Suramericanos de la Juventud" class="imagen-noticia3"></a>                       
+                        <a href="../pages/hincha-de-newells-y-diseño-botines-para-messi.html" class="decoration"><h2 class="titulo2 fs-5">Hincha de Newell's y diseñó botines para Messi: la historia del creador de Teté, la mascota de Rosario 2022</h2></a> 
+                    </div>
+                    <div class="noticiaRelacionada4">
+                        <a href="../pages/playoffs-de-la-NBA-los-heat-eliminaron-a-los-hawks-y-se-erigen-como-candidatos.html"><img src="../img/victor-oladipo-miami-heat_862x485.jpg" alt="Victor Oladipo Miami Heat" class="imagen-noticia4"></a>                       
+                        <a href="../pages/playoffs-de-la-NBA-los-heat-eliminaron-a-los-hawks-y-se-erigen-como-candidatos.html" class="decoration"><h2 class="titulo2 fs-5">Playoffs de la NBA: Los Heat eliminaron a los Hawks y se erigen como candidatos al título</h2></a> 
+                    </div>
+                    <div class="noticiaRelacionada5">
+                        <a href="../pages/jaguares-xv-con-equipo-alternativo-para-enfrentar-a-selknam.html"><img src="../img/jaguares-xv_862x485.jpg" alt="Jaguares XV" class="imagen-noticia5"></a>                       
+                        <a href="../pages/jaguares-xv-con-equipo-alternativo-para-enfrentar-a-selknam.html" class="decoration"><h2 class="titulo2 fs-5">Jaguares XV con equipo alternativo para enfrentar a Selknam</h2></a> 
+                    </div> 
+                    <div class="noticiaRelacionada6">
+                        <a href="../pages/german-pezella-a-fondo.html"><img src="../img/german-pezzella_862x485.jpg" alt="Germán Pezzella" class="imagen-noticia6"></a>                       
+                        <a href="../pages/german-pezella-a-fondo.html" class="decoration"><h2 class="titulo2 ">Germán Pezzella, a fondo: el campeonato con el Betis, la Selección Argentina y más</h2></a> 
+                    </div>  
+                </div>
+            </section>
+        </main>   
+        <!--INICIO FOOTER-->
+        <footer id="piePagina">                        
+            <div class="contacto">
+                <div><h2><strong>Sportia</strong></h2></div>
+                <br>
+                <div>© 2022 Fernando Oyanarte</div>
+                <br>
+                <div>Seguinos</div>
+                <br>
+                <div>
+                    <a href="https://www.facebook.com/"><img src="../img/facebook-icon.png" alt="facebook-icon" class="iconoRedes"></a>
+                    <a href="https://www.twitter.com/"><img src="../img/twitter-icon.png" alt="twitter-icon" class="iconoRedes"></a>
+                    <a href="https://www.instagram.com/"><img src="../img/igg-icon.png" alt="igg-icon" class="iconoRedes"></a>
+                    <a href="https://www.youtube.com/"><img src="../img/youtube-icon.png" alt="youtube-icon" class="iconoRedes"></a>
+                </div>                    
+            </div>                     
+            <div class="columnaFooter">    
+                <div>
+                    <div>
+                        <span class="negrita">FUTBOL ARGENTINO</span>
+                    </div>  
+                    <br>
+                    <div>
+                        <a href="../pages/seleccion.html" class= "decoration">Selección</a>
+                    </div>
+                    <div>
+                        <a href="../pages/primera-division.html" class= "decoration">Primera División</a>
+                    </div>
+                    <div>
+                        <a href="../pages/primera-b-nacional.html" class= "decoration">B Nacional</a>
+                    </div>
+                    <div>
+                        <a href="../pages/copa-argentina.html" class= "decoration">Copa Argentina</a>
+                    </div>
+                    <div>
+                        <a href="../pages/primera-b-metropolitana.html" class= "decoration">Primera B</a>
+                    </div>
+                    <div>
+                        <a href="../pages/primera-c.html" class= "decoration">Primera C</a>
+                    </div>
+                    <div>
+                        <a href="../pages/primera-d.html" class= "decoration">Primera D</a>
+                    </div>
+                    <div>
+                        <a href="../pages/estadisticas.html" class= "decoration">Estadísticas</a>
+                    </div>
+                </div> 
+                <div>                     
+                    <div>
+                        <span class="negrita">FUTBOL INTERNACIONAL</span>
+                    </div>
+                    <br>
+                    <div>
+                        <a href="../pages/copa-libertadores.html" class= "decoration">Copa Libertadores</a>
+                    </div>
+                    <div>
+                        <a href="../pages/copa-sudamericana.html" class= "decoration">Copa Sudamericana</a>
+                    </div>
+                    <div>
+                        <a href="../pages/america.html" class= "decoration">América</a>
+                    </div>
+                    <div>
+                        <a href="../pages/españa.html" class= "decoration">España</a>
+                    </div>
+                    <div>
+                        <a href="../pages/italia.html" class= "decoration">Italia</a>
+                    </div>
+                    <div>
+                        <a href="../pages/inglaterra.html" class= "decoration">Inglaterra</a>
+                    </div>
+                    <div>
+                        <a href="../pages/champions-league.html" class= "decoration">Champions League</a>
+                    </div>
+                    <div>
+                        <a href="../pages/europa-league.html" class= "decoration">Europa League</a>
+                    </div>
+                    <div>
+                        <a href="../pages/estadisticas.html" class= "decoration">Estadísticas</a>
+                    </div>
+                </div> 
+                <div>
+                    <div>
+                        <span class="negrita">MÁS DEPORTES</span>
+                    </div> 
+                    <br> 
+                    <div>
+                        <a href="../pages/basquet.html" class= "decoration">Basquet</a>
+                    </div>
+                    <div>
+                        <a href="../pages/rugby.html" class= "decoration">Rugby</a>
+                    </div>
+                    <div>
+                        <a href="../pages/tenis.html" class= "decoration">Tenis</a>
+                    </div>
+                    <div>
+                        <a href="../pages/polideportivo.html" class= "decoration">Polideportivo</a>
+                    </div>                   
+                </div>     
+            </div>
+        </footer>
+        <!--FIN FOOTER-->   
+    </div>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>     
+</body>
+</html>
