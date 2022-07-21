@@ -481,7 +481,7 @@
       width: 350px; }
     #articulo #notaPartido .divNota div .titular {
       width: 840px;
-      height: 120px;
+      height: auto;
       font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
       font-size: 48px;
       line-height: 60px; }
@@ -761,7 +761,7 @@
       width: 180px; }
     #articulo #notaPartido .divNota2 div .titular {
       width: 840px;
-      height: 120px;
+      height: auto;
       font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
       font-size: 48px;
       line-height: 60px;
@@ -1368,16 +1368,19 @@
     z-index: 3; }
     #cabecera .logoSportia {
       display: flex;
-      width: 60px;
-      height: 60px;
+      width: 20px;
+      height: 20px;
       justify-items: center;
-      transform: translateY(10px); }
+      transform: translateY(5px); }
   /*Nav*/
   #navegador {
-    grid-area: navegador; }
+    grid-area: navegador;
+    width: 100%; }
+    #navegador #menuDesplegable {
+      z-index: 4; }
     #navegador .menuNav {
       width: 292px;
-      transform: translate(50px, 10px);
+      transform: translate(46px, 10px);
       position: fixed;
       display: flex;
       flex-direction: row;
@@ -1385,7 +1388,7 @@
       z-index: 3; }
       #navegador .menuNav ul li a .stat-icon {
         width: 30px;
-        transform: translateX(40px); }
+        transform: translateX(50px); }
       #navegador .menuNav ul li a .textoNav {
         display: none; }
       #navegador .menuNav ul li a .calendario-icon {
@@ -1398,12 +1401,14 @@
         font-family: Arial, Helvetica, sans-serif;
         padding: 10px 10px 10px 10px;
         text-decoration: none;
-        transform: translate(-60px, 3px); }
+        transform: translate(-55px, 3px); }
   /*Aside*/
   #publicidad {
-    grid-area: aside; }
+    grid-area: aside;
+    width: 400px; }
     #publicidad .bannerPublicitario {
-      width: 400px; }
+      width: 400px;
+      transform: translateX(0px); }
   /*MAIN*/
   #titulares {
     grid-area: titulares;
@@ -1683,36 +1688,105 @@
             text-align: left;
             font-family: Arial, Helvetica, sans-serif;
             font-size: 16px;
-            transform: translate(0px, -26px); } }
+            transform: translate(0px, -26px); }
+  /*Footer*/
+  #piePagina {
+    grid-area: footer;
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    justify-items: flex-start;
+    width: 100%; }
+    #piePagina .contacto {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      width: 500px;
+      height: 250px;
+      font-size: 20px;
+      text-align: center; }
+      #piePagina .contacto div .iconoRedes {
+        width: 25px;
+        height: 25px; }
+    #piePagina .columnaFooter {
+      display: none; } }
 
 /*ARTICULO*/
 @media (min-width: 0px) and (max-width: 425px) {
   #padreArticulo {
     display: grid;
-    grid-template-areas: "cabecera navegador"   ". articulo "  "footer footer  ";
+    grid-template-areas: "cabecera navegador"   ". articulo"  "footer footer";
     grid-template-columns: 10px 415px;
     grid-template-rows: 100px auto 400px;
     grid-row-gap: 40px; }
+  /*Header*/
+  #cabecera {
+    display: grid;
+    grid-area: cabecera;
+    z-index: 3; }
+    #cabecera .logoSportia {
+      display: flex;
+      width: 20px;
+      height: 20px;
+      justify-items: center;
+      transform: translateY(5px); }
+  /*Nav*/
+  #navegador {
+    grid-area: navegador;
+    width: 100%; }
+    #navegador #menuDesplegable {
+      z-index: 4; }
+    #navegador .menuNav {
+      width: 292px;
+      transform: translate(46px, 10px);
+      position: fixed;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      z-index: 3; }
+      #navegador .menuNav ul li a .stat-icon {
+        width: 30px;
+        transform: translateX(50px); }
+      #navegador .menuNav ul li a .textoNav {
+        display: none; }
+      #navegador .menuNav ul li a .calendario-icon {
+        width: 30px;
+        transform: translateX(40px); }
+      #navegador .menuNav ul li .suscribirme {
+        background-color: black;
+        color: white;
+        font-size: 12px;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 10px 10px 10px 10px;
+        text-decoration: none;
+        transform: translate(-55px, 3px); }
   /*Articulo*/
   #articulo {
     grid-area: articulo; }
     #articulo #notaPartido {
       display: flex; }
       #articulo #notaPartido .divNota {
+        width: 415px;
         display: grid;
-        grid-template-rows: 50px auto 140px 200px 50px 110px 85px auto 260px 50px auto 250px; }
-        #articulo #notaPartido .divNota div .copeteNota {
-          width: 275px;
-          font-size: 11px;
-          padding-top: 10px;
-          padding-right: 18px;
-          padding-bottom: 10px;
-          padding-left: 18px; }
+        grid-template-rows: 50px auto 140px 200px 50px 110px 85px auto 260px 50px auto 250px;
+        grid-template-columns: 415px; }
+        #articulo #notaPartido .divNota div {
+          width: 415px; }
+          #articulo #notaPartido .divNota div .copeteNota {
+            width: 283px;
+            font-size: 11px;
+            padding-top: 10px;
+            padding-right: 18px;
+            padding-bottom: 10px;
+            padding-left: 18px; }
         #articulo #notaPartido .divNota div .titular {
           width: 410px;
-          font-size: 35px; }
+          height: auto;
+          font-size: 35px;
+          line-height: 53px; }
         #articulo #notaPartido .divNota #cajaSubtitulo {
-          width: 402px; }
+          width: 402px;
+          height: auto; }
         #articulo #notaPartido .divNota .fotoArticulo {
           width: 400px; }
         #articulo #notaPartido .divNota .cajaPie {
@@ -1789,7 +1863,7 @@
               width: 60px;
               height: 60px; }
           #articulo #notaPartido .divNota .marcador-partido .resultado {
-            transform: translate(-200px, -25px);
+            transform: translate(-200px, -20px);
             width: 100px;
             height: 100px;
             font-size: 35px; }
@@ -1822,6 +1896,34 @@
           height: auto; }
         #articulo #notaPartido .divNota .cronologia {
           overflow: auto; }
+      #articulo #notaPartido .divNota2 {
+        width: 415px;
+        display: grid;
+        grid-template-rows: 50px auto 140px 200px 50px auto;
+        grid-template-columns: 415px; }
+        #articulo #notaPartido .divNota2 div {
+          width: 415px; }
+          #articulo #notaPartido .divNota2 div .copeteNota2 {
+            width: 200px;
+            font-size: 11px;
+            padding-top: 10px;
+            padding-right: 18px;
+            padding-bottom: 10px;
+            padding-left: 18px; }
+        #articulo #notaPartido .divNota2 div .titular {
+          width: 410px;
+          height: auto;
+          font-size: 35px;
+          line-height: 53px; }
+        #articulo #notaPartido .divNota2 #cajaSubtitulo {
+          width: 402px;
+          height: auto; }
+        #articulo #notaPartido .divNota2 .fotoArticulo {
+          width: 400px; }
+        #articulo #notaPartido .divNota2 #fecha-nota {
+          width: 400px; }
+        #articulo #notaPartido .divNota2 .notaPeriodistica {
+          width: 300px; }
     #articulo #cajaComentarios {
       display: flex; }
       #articulo #cajaComentarios .comentarios {
@@ -1833,7 +1935,7 @@
           width: 300px;
           height: 50px; }
     #articulo #noticiasRelacionadas {
-      background-color: aqua;
+      width: 350px;
       height: 1550px;
       display: grid;
       grid-template-rows: 400px 400px; }
@@ -1990,26 +2092,31 @@
 @media (min-width: 0px) and (max-width: 425px) {
   #padreSecciones {
     display: grid;
-    grid-template-rows: 100px auto auto auto 465px;
+    grid-template-rows: 100px auto 400px;
     grid-template-columns: 10px 415px;
     grid-row-gap: 35px;
-    grid-template-areas: "cabecera navegador"                         " . seccionTitulares" " . seccionTitulares" " . seccionTitulares" "footer footer"; }
+    grid-template-areas: "cabecera navegador"                         " . seccionTitulares"                             "footer footer"; }
   #seccionTitulares {
-    grid-area: seccionTitulares; }
+    grid-area: seccionTitulares;
+    background-color: red;
+    width: 400px; }
     #seccionTitulares .tituloSecciones {
       font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; }
     #seccionTitulares .contenedor-breadcrumb {
       transform: translate(0px, 0px); }
     #seccionTitulares #titularSecundario {
+      background-color: aqua;
       display: grid;
       justify-content: flex-start;
-      font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; }
+      font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      width: 400px;
+      height: auto; }
       #seccionTitulares #titularSecundario .cajaTitular {
         width: 348px;
         height: 340px;
         transform: translateY(0px); }
         #seccionTitulares #titularSecundario .cajaTitular a .imagenTitulo2 {
-          width: 348px;
+          width: 400px;
           transform: translate(-1px, 0px); }
         #seccionTitulares #titularSecundario .cajaTitular .copete2 {
           width: 300px;
@@ -2017,13 +2124,13 @@
           text-shadow: 1px 1px black;
           font-family: Arial, Helvetica, sans-serif;
           font-size: 10px;
-          transform: translate(4px, -167px); }
+          transform: translate(4px, -192px); }
         #seccionTitulares #titularSecundario .cajaTitular .decoration {
           text-decoration: none;
           color: black; }
           #seccionTitulares #titularSecundario .cajaTitular .decoration .titulo2 {
-            width: 350px;
-            height: 54px;
+            width: 400px;
+            height: auto;
             color: black;
             transform: translate(0px, -18px);
             text-align: left;
@@ -2032,44 +2139,47 @@
               text-decoration: underline; }
         #seccionTitulares #titularSecundario .cajaTitular .subtitulo3 {
           width: 357px;
+          height: auto;
           text-align: left;
           font-family: Arial, Helvetica, sans-serif;
           font-size: 16px;
-          transform: translate(0px, 0px); }
+          transform: translate(0px, -20px); }
       #seccionTitulares #titularSecundario .cajaTitular2 {
-        width: 350px;
-        height: 340px;
-        transform: translate(0px, 20px); }
+        width: 400px;
+        height: auto;
+        transform: translate(0px, 0px); }
         #seccionTitulares #titularSecundario .cajaTitular2 a .imagenTitulo3 {
-          width: 350px;
+          width: 400px;
           transform: translate(0px, 0px); }
         #seccionTitulares #titularSecundario .cajaTitular2 .copete3 {
           color: white;
           text-shadow: 1px 1px black;
           font-family: Arial, Helvetica, sans-serif;
           font-size: 10px;
-          transform: translate(4px, -170px); }
+          transform: translate(4px, -192px); }
         #seccionTitulares #titularSecundario .cajaTitular2 .decoration {
           text-decoration: none;
           color: black; }
           #seccionTitulares #titularSecundario .cajaTitular2 .decoration .titulo3 {
-            width: 290px;
+            width: 400px;
+            height: auto;
             color: black;
             transform: translate(0px, -20px); }
             #seccionTitulares #titularSecundario .cajaTitular2 .decoration .titulo3:hover {
               text-decoration: underline; }
         #seccionTitulares #titularSecundario .cajaTitular2 .subtitulo3 {
           width: 357px;
+          height: auto;
           text-align: left;
           font-family: Arial, Helvetica, sans-serif;
           font-size: 16px;
-          transform: translate(0px, -26px); }
+          transform: translate(0px, -20px); }
       #seccionTitulares #titularSecundario .cajaTitular3 {
-        width: 350px;
-        height: 340px;
-        transform: translate(0px, 30px); }
+        width: 400px;
+        height: auto;
+        transform: translate(0px, 0px); }
         #seccionTitulares #titularSecundario .cajaTitular3 a .imagenTitulo4 {
-          width: 350px;
+          width: 400px;
           transform: translate(0px, 0px); }
         #seccionTitulares #titularSecundario .cajaTitular3 .copete4 {
           color: white;
@@ -2081,23 +2191,25 @@
           text-decoration: none;
           color: black; }
           #seccionTitulares #titularSecundario .cajaTitular3 .decoration .titulo4 {
-            width: 320px;
+            width: 400px;
+            height: auto;
             color: black;
             transform: translate(0px, -20px); }
             #seccionTitulares #titularSecundario .cajaTitular3 .decoration .titulo4:hover {
               text-decoration: underline; }
         #seccionTitulares #titularSecundario .cajaTitular3 .subtitulo3 {
           width: 357px;
+          height: auto;
           text-align: left;
           font-family: Arial, Helvetica, sans-serif;
           font-size: 16px;
-          transform: translate(0px, -26px); }
+          transform: translate(0px, -20px); }
       #seccionTitulares #titularSecundario .cajaTitular4 {
-        width: 350px;
+        width: 400px;
         height: 340px;
-        transform: translate(0px, 40px); }
+        transform: translate(0px, 0px); }
         #seccionTitulares #titularSecundario .cajaTitular4 a .imagenTitulo5 {
-          width: 350px;
+          width: 400px;
           transform: translate(0px, 0px); }
         #seccionTitulares #titularSecundario .cajaTitular4 .copete5 {
           color: white;
@@ -2109,27 +2221,12 @@
           text-decoration: none;
           color: black; }
           #seccionTitulares #titularSecundario .cajaTitular4 .decoration .titulo4 {
-            width: 320px;
+            width: 400px;
+            height: auto;
             color: black;
             transform: translate(0px, -20px); }
             #seccionTitulares #titularSecundario .cajaTitular4 .decoration .titulo4:hover {
-              text-decoration: underline; }
-        #seccionTitulares #titularSecundario .cajaTitular4 .subtitulo3 {
-          width: 357px;
-          text-align: left;
-          font-family: Arial, Helvetica, sans-serif;
-          font-size: 16px;
-          transform: translate(0px, -26px); }
-    #seccionTitulares #titularSecundario2 {
-      display: grid;
-      justify-content: flex-start;
-      font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-      transform: translate(-702px, 360px); }
-    #seccionTitulares #titularSecundario3 {
-      display: grid;
-      justify-content: flex-start;
-      font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-      transform: translate(0px, 360px); } }
+              text-decoration: underline; } }
 
 /*ESTADISTICAS*/
 @media (min-width: 0px) and (max-width: 425px) {
@@ -2216,7 +2313,7 @@
     display: grid;
     grid-template-areas: "cabecera navegador " ". agenda " "footer footer ";
     grid-template-rows: 100px auto 470px;
-    grid-template-columns: 10px 310px;
+    grid-template-columns: 10px 415px;
     grid-row-gap: 10px; }
   #agenda {
     grid-area: agenda;
@@ -2255,7 +2352,7 @@
   #padreForm {
     display: grid;
     grid-template-rows: 100px 500px 470px;
-    grid-template-columns: 10px 310px;
+    grid-template-columns: 10px 415px;
     grid-template-areas: "cabecera navegador" ".  formulario" "footer footer";
     grid-row-gap: 10px; }
   #formulario {
@@ -2264,7 +2361,7 @@
       display: flex;
       justify-content: flex-end;
       padding-top: 50px;
-      transform: translate(10px, -80px); }
+      transform: translate(-50px, -80px); }
       #formulario #formularioSuscribe #caja-form-principal {
         display: grid;
         grid-template-rows: 50px 300px;
@@ -2272,5 +2369,5 @@
   .fondo-form {
     background-image: url(../img/fondo-formulario.jpg);
     background-repeat: no-repeat;
-    background-size: 319%;
+    background-size: 192%;
     background-position: -170px 100px; } }

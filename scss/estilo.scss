@@ -85,7 +85,7 @@ $button_green: map-get($button, button_green );
 }
 @mixin titular{
     width: 840px;
-    height: 120px;
+    height: auto;
     font-family: $font_impact;
     font-size: 48px;  
     line-height: 60px;
