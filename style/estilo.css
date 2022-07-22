@@ -87,7 +87,7 @@
   position: fixed;
   top: 0px;
   left: 0px;
-  z-index: 3; }
+  z-index: 2; }
   #cabecera a .logoSportia {
     width: 100px;
     height: 100px;
@@ -99,16 +99,18 @@
   grid-area: navegador;
   background-image: linear-gradient(to top, #73a314, #9ed333);
   font-family: Arial, Helvetica, sans-serif;
-  width: 1246px;
+  width: 100%;
   height: 100px;
   display: flex;
   align-content: center;
   align-items: center;
   position: fixed;
   top: 0px;
-  left: 99px;
+  left: 100px;
   border-bottom: inset 3px gray;
-  z-index: 3; }
+  z-index: 2; }
+  #navegador #menuDesplegable {
+    z-index: 3; }
   #navegador .menuNav {
     width: 800px;
     height: 80px;
@@ -580,8 +582,6 @@
       flex-wrap: wrap;
       justify-content: flex-start;
       align-items: stretch; }
-      #articulo #notaPartido .divNota .alineaciones .alineacion-visitante {
-        transform: translateY(-24px); }
     #articulo #notaPartido .divNota .cronologia {
       overflow: auto; }
   #articulo #cajaComentarios .comentarios {
@@ -1318,7 +1318,7 @@
   justify-content: space-evenly;
   font-family: Arial, Helvetica, sans-serif;
   padding-top: 50px;
-  width: 1343px; }
+  width: 1440px; }
   #piePagina .contacto div .iconoRedes {
     height: 30px;
     width: 30px;
@@ -1352,6 +1352,7 @@
   padding: 0;
   box-sizing: border-box; }
 
+/*MOBILE*/
 /*INDEX*/
 @media (min-width: 0px) and (max-width: 425px) {
   #padreIndex {
@@ -2098,14 +2099,12 @@
     grid-template-areas: "cabecera navegador"                         " . seccionTitulares"                             "footer footer"; }
   #seccionTitulares {
     grid-area: seccionTitulares;
-    background-color: red;
     width: 400px; }
     #seccionTitulares .tituloSecciones {
       font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; }
     #seccionTitulares .contenedor-breadcrumb {
       transform: translate(0px, 0px); }
     #seccionTitulares #titularSecundario {
-      background-color: aqua;
       display: grid;
       justify-content: flex-start;
       font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
@@ -2371,3 +2370,956 @@
     background-repeat: no-repeat;
     background-size: 192%;
     background-position: -170px 100px; } }
+
+/*TABLET*/
+/*INDEX*/
+@media (min-width: 426px) and (max-width: 768px) {
+  #padreIndex {
+    display: grid;
+    grid-template-areas: "cabecera navegador navegador"  ". aside ." ". titulares ."                                                                                                                "footer footer footer";
+    grid-template-columns: 20px 728px 20px;
+    grid-template-rows: 100px 80px 4000px 400px;
+    grid-row-gap: 15px;
+    grid-column-gap: 10px; }
+  /*Header*/
+  #cabecera {
+    display: grid;
+    grid-area: cabecera;
+    z-index: 3; }
+    #cabecera .logoSportia {
+      display: flex;
+      width: 20px;
+      height: 20px;
+      justify-items: center;
+      transform: translateY(5px); }
+  /*Nav*/
+  #navegador {
+    grid-area: navegador;
+    width: 678px; }
+    #navegador .menuNav {
+      width: 300px;
+      position: fixed;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      transform: translateX(350px);
+      z-index: 3; }
+      #navegador .menuNav ul li a .stat-icon {
+        width: 30px; }
+      #navegador .menuNav ul li a .textoNav {
+        display: none; }
+      #navegador .menuNav ul li a .calendario-icon {
+        width: 30px; }
+      #navegador .menuNav ul li .suscribirme {
+        background-color: black;
+        color: white;
+        font-size: 12px;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 10px 10px 10px 10px;
+        text-decoration: none; }
+  /*Aside*/
+  #publicidad {
+    grid-area: aside;
+    width: 708px; }
+    #publicidad .bannerPublicitario {
+      width: 708px;
+      transform: translateX(0px); }
+  /*MAIN*/
+  #titulares {
+    grid-area: titulares;
+    width: 728px; }
+    #titulares #titularesPrincipales {
+      height: auto; }
+      #titulares #titularesPrincipales #titularPrincipal div {
+        width: 728px;
+        transform: translateY(0px); }
+        #titulares #titularesPrincipales #titularPrincipal div a .imagenPrincipal {
+          width: 708px;
+          transform: translateY(-29px);
+          position: relative;
+          z-index: 1; }
+        #titulares #titularesPrincipales #titularPrincipal div .copete {
+          width: 300px;
+          transform: translateX(10px);
+          position: relative;
+          z-index: 2; }
+        #titulares #titularesPrincipales #titularPrincipal div .decoration .tituloPrincipal {
+          width: 728px;
+          color: black;
+          transform: translate(0px, -30px);
+          font-size: 25px;
+          text-shadow: none;
+          text-align: left; }
+        #titulares #titularesPrincipales #titularPrincipal div .subtituloPrincipal {
+          width: 728px;
+          font-size: 14px;
+          text-align: left;
+          color: black;
+          text-shadow: none;
+          transform: translate(0px, -32px);
+          line-height: 20px; }
+      #titulares #titularesPrincipales #titularSecundario .cajaTitular {
+        width: 728px;
+        transform: translateY(-30px); }
+        #titulares #titularesPrincipales #titularSecundario .cajaTitular a .imagenTitulo2 {
+          width: 708px; }
+        #titulares #titularesPrincipales #titularSecundario .cajaTitular .copete2 {
+          transform: translate(10px, -340px); }
+        #titulares #titularesPrincipales #titularSecundario .cajaTitular .decoration .titulo2 {
+          width: 728px;
+          color: black;
+          transform: translateY(-20px);
+          font-size: 25px;
+          text-shadow: none; }
+      #titulares #titularesPrincipales #titularSecundario2 .cajaTitular2 {
+        width: 728px;
+        height: 280px;
+        transform: translateY(46px); }
+        #titulares #titularesPrincipales #titularSecundario2 .cajaTitular2 a .imagenTitulo3 {
+          display: inline-block;
+          position: absolute;
+          width: 708px; }
+        #titulares #titularesPrincipales #titularSecundario2 .cajaTitular2 .copete3 {
+          width: 400px;
+          transform: translate(10px, 5px); }
+        #titulares #titularesPrincipales #titularSecundario2 .cajaTitular2 .decoration .titulo3 {
+          width: 708px;
+          color: black;
+          transform: translateY(330px);
+          font-size: 25px;
+          text-shadow: none; }
+        #titulares #titularesPrincipales #titularSecundario2 .cajaTitular2 .subtitulo3 {
+          width: 728px;
+          font-size: 14px;
+          text-align: left;
+          color: black;
+          text-shadow: none;
+          transform: translateY(324px);
+          line-height: 20px; }
+    #titulares #otrosTitulares {
+      width: 728px;
+      height: auto;
+      transform: translateY(200px); }
+      #titulares #otrosTitulares #titularPrincipal div {
+        transform: translateY(-29px); }
+        #titulares #otrosTitulares #titularPrincipal div .copete {
+          color: white;
+          text-shadow: 1px 1px black;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 10px;
+          width: 300px;
+          transform: translate(10px, 25px);
+          display: inline-block; }
+        #titulares #otrosTitulares #titularPrincipal div a .imagenPrincipal {
+          width: 708px; }
+        #titulares #otrosTitulares #titularPrincipal div .decoration {
+          text-decoration: none;
+          color: black; }
+          #titulares #otrosTitulares #titularPrincipal div .decoration .tituloPrincipal {
+            width: 728px;
+            color: black;
+            transform: translate(0px, 0px);
+            font-size: 25px;
+            text-shadow: none;
+            text-align: left;
+            font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; }
+        #titulares #otrosTitulares #titularPrincipal div .subtituloPrincipal {
+          width: 708px;
+          font-size: 14px;
+          text-align: left;
+          color: black;
+          text-shadow: none;
+          transform: translate(0px, 0px);
+          line-height: 20px; }
+      #titulares #otrosTitulares #titularSecundario {
+        display: grid;
+        justify-content: flex-start;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        transform: translateY(-25px); }
+        #titulares #otrosTitulares #titularSecundario .cajaTitular {
+          width: 728px;
+          height: 340px;
+          transform: translateY(0px); }
+          #titulares #otrosTitulares #titularSecundario .cajaTitular a .imagenTitulo2 {
+            width: 708px;
+            transform: translate(-1px, 0px); }
+          #titulares #otrosTitulares #titularSecundario .cajaTitular .copete2 {
+            width: 300px;
+            color: white;
+            text-shadow: 1px 1px black;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 10px;
+            transform: translate(10px, -342px); }
+          #titulares #otrosTitulares #titularSecundario .cajaTitular .decoration {
+            text-decoration: none;
+            color: black; }
+            #titulares #otrosTitulares #titularSecundario .cajaTitular .decoration .titular2 {
+              width: 708px;
+              color: black;
+              transform: translate(0px, -18px);
+              text-align: left; }
+              #titulares #otrosTitulares #titularSecundario .cajaTitular .decoration .titular2:hover {
+                text-decoration: underline; }
+          #titulares #otrosTitulares #titularSecundario .cajaTitular .subtitulo3 {
+            width: 708px;
+            text-align: left;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            transform: translate(0px, -26px); }
+      #titulares #otrosTitulares #titularSecundario2 {
+        display: grid;
+        justify-content: flex-start;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; }
+        #titulares #otrosTitulares #titularSecundario2 .cajaTitular2 {
+          width: 728px;
+          height: 350px;
+          transform: translate(0px, 80px); }
+          #titulares #otrosTitulares #titularSecundario2 .cajaTitular2 a .imagenTitulo3 {
+            width: 708px;
+            transform: translate(0px, 0px); }
+          #titulares #otrosTitulares #titularSecundario2 .cajaTitular2 .copete3 {
+            color: white;
+            text-shadow: 1px 1px black;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 10px;
+            transform: translate(10px, -340px); }
+          #titulares #otrosTitulares #titularSecundario2 .cajaTitular2 .decoration {
+            text-decoration: none;
+            color: black; }
+            #titulares #otrosTitulares #titularSecundario2 .cajaTitular2 .decoration .titulo3 {
+              width: 708px;
+              color: black;
+              transform: translate(0px, -20px); }
+              #titulares #otrosTitulares #titularSecundario2 .cajaTitular2 .decoration .titulo3:hover {
+                text-decoration: underline; }
+          #titulares #otrosTitulares #titularSecundario2 .cajaTitular2 .subtitulo3 {
+            width: 700px;
+            text-align: left;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            transform: translate(0px, -26px); }
+    #titulares #otrosTitulares2 {
+      width: 728px;
+      height: auto;
+      transform: translateY(390px); }
+      #titulares #otrosTitulares2 #titularPrincipal div {
+        width: 728px;
+        transform: translateY(-50px); }
+        #titulares #otrosTitulares2 #titularPrincipal div .copete {
+          color: white;
+          text-shadow: 1px 1px black;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 10px;
+          transform: translate(10px, 25px);
+          display: inline-block;
+          width: 300px; }
+        #titulares #otrosTitulares2 #titularPrincipal div a .imagenPrincipal {
+          width: 708px; }
+        #titulares #otrosTitulares2 #titularPrincipal div .decoration {
+          text-decoration: none;
+          color: black; }
+          #titulares #otrosTitulares2 #titularPrincipal div .decoration .tituloPrincipal {
+            width: 708px;
+            color: black;
+            transform: translate(0px, 0px);
+            font-size: 25px;
+            text-shadow: none;
+            text-align: left;
+            font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; }
+        #titulares #otrosTitulares2 #titularPrincipal div .subtituloPrincipal {
+          width: 708px;
+          font-size: 14px;
+          text-align: left;
+          color: black;
+          text-shadow: none;
+          transform: translate(0px, -5px);
+          line-height: 20px; }
+      #titulares #otrosTitulares2 #titularSecundario {
+        display: grid;
+        justify-content: flex-start;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        transform: translateY(-50px); }
+        #titulares #otrosTitulares2 #titularSecundario .cajaTitular {
+          width: 728px;
+          height: 340px;
+          transform: translateY(0px); }
+          #titulares #otrosTitulares2 #titularSecundario .cajaTitular a .imagenTitulo2 {
+            width: 708px;
+            transform: translate(-1px, 0px); }
+          #titulares #otrosTitulares2 #titularSecundario .cajaTitular .copete2 {
+            width: 300px;
+            color: white;
+            text-shadow: 1px 1px black;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 10px;
+            transform: translate(10px, -342px); }
+          #titulares #otrosTitulares2 #titularSecundario .cajaTitular .decoration {
+            text-decoration: none;
+            color: black; }
+            #titulares #otrosTitulares2 #titularSecundario .cajaTitular .decoration .titular2 {
+              width: 708px;
+              height: 50px;
+              color: black;
+              transform: translate(0px, -20px);
+              text-align: left; }
+              #titulares #otrosTitulares2 #titularSecundario .cajaTitular .decoration .titular2:hover {
+                text-decoration: underline; }
+          #titulares #otrosTitulares2 #titularSecundario .cajaTitular .subtitulo3 {
+            width: 708px;
+            text-align: left;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            transform: translate(0px, -45px); }
+      #titulares #otrosTitulares2 #titularSecundario2 {
+        display: grid;
+        justify-content: flex-start;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        width: 728px;
+        height: auto;
+        transform: translate(0px, 60px); }
+        #titulares #otrosTitulares2 #titularSecundario2 .cajaTitular2 {
+          width: 350px;
+          height: 340px; }
+          #titulares #otrosTitulares2 #titularSecundario2 .cajaTitular2 a .imagenTitulo3 {
+            width: 708px;
+            transform: translate(0px, 0px); }
+          #titulares #otrosTitulares2 #titularSecundario2 .cajaTitular2 .copete3 {
+            color: white;
+            text-shadow: 1px 1px black;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 10px;
+            transform: translate(10px, -345px); }
+          #titulares #otrosTitulares2 #titularSecundario2 .cajaTitular2 .decoration {
+            text-decoration: none;
+            color: black; }
+            #titulares #otrosTitulares2 #titularSecundario2 .cajaTitular2 .decoration .titulo3 {
+              width: 708px;
+              color: black;
+              transform: translate(0px, -20px); }
+              #titulares #otrosTitulares2 #titularSecundario2 .cajaTitular2 .decoration .titulo3:hover {
+                text-decoration: underline; }
+          #titulares #otrosTitulares2 #titularSecundario2 .cajaTitular2 .subtitulo3 {
+            width: 708px;
+            text-align: left;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            transform: translate(0px, -26px); }
+  /*Footer*/
+  #piePagina {
+    grid-area: footer;
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    justify-items: flex-start;
+    width: 768px; }
+    #piePagina .contacto {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      width: 500px;
+      height: 250px;
+      font-size: 20px;
+      text-align: center; }
+      #piePagina .contacto div .iconoRedes {
+        width: 25px;
+        height: 25px; }
+    #piePagina .columnaFooter {
+      display: none; } }
+
+/*ARTICULO*/
+@media (min-width: 426px) and (max-width: 768px) {
+  #padreArticulo {
+    display: grid;
+    grid-template-areas: "cabecera navegador navegador"   ". articulo ."  "footer footer footer";
+    grid-template-columns: 20px 728px 20px;
+    grid-template-rows: 100px auto 400px;
+    grid-row-gap: 40px; }
+  /*Articulo*/
+  #articulo {
+    grid-area: articulo; }
+    #articulo #notaPartido {
+      display: flex; }
+      #articulo #notaPartido .divNota {
+        width: 728px;
+        display: grid;
+        grid-template-rows: 50px auto 75px 350px 50px 110px 85px auto 391px 50px auto 250px;
+        grid-template-columns: 415px; }
+        #articulo #notaPartido .divNota div {
+          width: 728px; }
+          #articulo #notaPartido .divNota div .copeteNota {
+            width: 283px;
+            font-size: 11px;
+            padding-top: 10px;
+            padding-right: 18px;
+            padding-bottom: 10px;
+            padding-left: 18px; }
+        #articulo #notaPartido .divNota div .titular {
+          width: 708px;
+          height: auto;
+          font-size: 35px;
+          line-height: 53px; }
+        #articulo #notaPartido .divNota #cajaSubtitulo {
+          width: 708px;
+          height: auto; }
+        #articulo #notaPartido .divNota .fotoArticulo {
+          width: 708px; }
+        #articulo #notaPartido .divNota .cajaPie {
+          width: 708px;
+          font-size: 12px; }
+        #articulo #notaPartido .divNota .marcador-partido {
+          width: 900px;
+          height: 150px;
+          text-align: center;
+          display: grid;
+          grid-template-columns: 350px 200px 350px;
+          grid-template-rows: 140px;
+          justify-content: space-between;
+          align-items: center;
+          background-color: #312f2f;
+          width: 708px;
+          height: 100px;
+          grid-template-columns: 350px 200px 350px; }
+          #articulo #notaPartido .divNota .marcador-partido .equipo-local {
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: white;
+            font-size: 30px;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            width: 320px; }
+            #articulo #notaPartido .divNota .marcador-partido .equipo-local p .escudoLocal {
+              width: 70px;
+              height: 70px; }
+          #articulo #notaPartido .divNota .marcador-partido .resultado {
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: white;
+            text-align: center;
+            font-size: 50px;
+            background-color: orange;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: translateY(5px); }
+          #articulo #notaPartido .divNota .marcador-partido .equipo-visitante {
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: white;
+            text-align: center;
+            font-size: 30px;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            width: 320px;
+            transform: translateX(30px); }
+            #articulo #notaPartido .divNota .marcador-partido .equipo-visitante .escudo {
+              width: 70px;
+              height: 70px; }
+          #articulo #notaPartido .divNota .marcador-partido span .goles-local {
+            width: 145px;
+            height: 50px;
+            transform: translate(110px, -60px);
+            color: white;
+            font-size: 12px; }
+          #articulo #notaPartido .divNota .marcador-partido span .goles-visitante {
+            width: 150px;
+            height: 50px;
+            transform: translate(640px, -130px);
+            color: white;
+            font-size: 12px; }
+          #articulo #notaPartido .divNota .marcador-partido .equipo-local {
+            width: 320px;
+            font-size: 30px;
+            transform: translateY(-10px); }
+            #articulo #notaPartido .divNota .marcador-partido .equipo-local .escudo {
+              width: 70px;
+              height: 70px; }
+          #articulo #notaPartido .divNota .marcador-partido .resultado {
+            transform: translate(-20px, -20px);
+            width: 100px;
+            height: 100px;
+            font-size: 35px; }
+          #articulo #notaPartido .divNota .marcador-partido .equipo-visitante {
+            transform: translate(-120px, -20px);
+            width: 140px;
+            font-size: 30px; }
+            #articulo #notaPartido .divNota .marcador-partido .equipo-visitante .escudo {
+              width: 70px;
+              height: 70px; }
+          #articulo #notaPartido .divNota .marcador-partido span .goles-local {
+            background-color: black;
+            transform: translate(5px, -65px);
+            display: none; }
+          #articulo #notaPartido .divNota .marcador-partido span .goles-visitante {
+            background-color: black;
+            transform: translate(250px, -131px);
+            display: none; }
+        #articulo #notaPartido .divNota #fecha-nota {
+          width: 708px; }
+        #articulo #notaPartido .divNota .notaPeriodistica {
+          width: 700px; }
+        #articulo #notaPartido .divNota .videoResumen .title-franklin {
+          font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; }
+        #articulo #notaPartido .divNota .videoResumen iframe {
+          width: 624px;
+          height: 351px; }
+        #articulo #notaPartido .divNota .alineaciones {
+          width: 900px;
+          height: 1100;
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+          justify-content: flex-start;
+          align-items: stretch; }
+        #articulo #notaPartido .divNota .cronologia {
+          overflow: auto; }
+      #articulo #notaPartido .divNota2 {
+        width: 415px;
+        display: grid;
+        grid-template-rows: 50px auto 80px auto 50px auto;
+        grid-template-columns: 415px; }
+        #articulo #notaPartido .divNota2 div {
+          width: 415px; }
+          #articulo #notaPartido .divNota2 div .copeteNota2 {
+            width: 200px;
+            font-size: 11px;
+            padding-top: 10px;
+            padding-right: 18px;
+            padding-bottom: 10px;
+            padding-left: 18px; }
+        #articulo #notaPartido .divNota2 div .titular {
+          width: 708px;
+          height: auto;
+          font-size: 35px;
+          line-height: 53px; }
+        #articulo #notaPartido .divNota2 #cajaSubtitulo {
+          width: 708px;
+          height: auto; }
+        #articulo #notaPartido .divNota2 .fotoArticulo {
+          width: 708px; }
+        #articulo #notaPartido .divNota2 #fecha-nota {
+          width: 700px; }
+        #articulo #notaPartido .divNota2 .notaPeriodistica {
+          width: 700px; }
+    #articulo #cajaComentarios {
+      display: flex; }
+      #articulo #cajaComentarios .comentarios {
+        display: grid;
+        grid-template-rows: 30px 50px 100px; }
+        #articulo #cajaComentarios .comentarios .title-impact {
+          font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; }
+        #articulo #cajaComentarios .comentarios form .area-texto {
+          width: 600px;
+          height: 50px; }
+    #articulo #noticiasRelacionadas {
+      width: 728px;
+      height: 750px;
+      display: grid;
+      grid-template-rows: 400px 400px; }
+      #articulo #noticiasRelacionadas .contenedor-noticias .title-impact {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; }
+      #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada {
+        width: 301px;
+        height: 240px;
+        border: solid 1px gray;
+        transform: translateY(0px); }
+        #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada a .imagen-noticia {
+          width: 300px;
+          transform: translate(0px, 0px); }
+        #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada .decoration {
+          text-decoration: none;
+          color: black; }
+          #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada .decoration .titulo3 {
+            padding-top: 8px;
+            padding-left: 5px;
+            width: 300px;
+            color: black;
+            font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+            transform: translate(0px, -1px);
+            text-align: left;
+            font-size: 22px; }
+            #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada .decoration .titulo3:hover {
+              text-decoration: underline; }
+      #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada2 {
+        width: 302px;
+        height: 240px;
+        border: solid 1px gray;
+        transform: translate(0px, 10px); }
+        #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada2 a .imagen-noticia2 {
+          width: 300px;
+          transform: translate(0px, 0px); }
+        #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada2 .decoration {
+          text-decoration: none;
+          color: black; }
+          #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada2 .decoration .titulo3 {
+            padding-top: 8px;
+            padding-left: 5px;
+            width: 300px;
+            color: black;
+            font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+            transform: translate(0px, 0px); }
+            #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada2 .decoration .titulo3:hover {
+              text-decoration: underline; }
+      #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada3 {
+        width: 302px;
+        height: 240px;
+        border: solid 1px gray;
+        transform: translate(0px, 20px); }
+        #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada3 a .imagen-noticia3 {
+          width: 300px;
+          transform: translate(0px, 0px); }
+        #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada3 .decoration {
+          text-decoration: none;
+          color: black; }
+          #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada3 .decoration .titulo2 {
+            padding-top: 8px;
+            padding-left: 5px;
+            width: 300px;
+            color: black;
+            font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+            transform: translate(0px, 0px); }
+            #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada3 .decoration .titulo2:hover {
+              text-decoration: underline; }
+      #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada4 {
+        width: 302px;
+        height: 240px;
+        border: solid 1px gray;
+        transform: translate(310px, -720px); }
+        #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada4 a .imagen-noticia4 {
+          width: 300px;
+          transform: translate(0px, 0px); }
+        #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada4 .decoration {
+          text-decoration: none;
+          color: black; }
+          #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada4 .decoration .titulo2 {
+            padding-top: 8px;
+            padding-left: 4px;
+            width: 310px;
+            font-size: 18px;
+            color: black;
+            font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+            transform: translate(0px, 0px); }
+            #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada4 .decoration .titulo2:hover {
+              text-decoration: underline; }
+      #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada5 {
+        width: 302px;
+        height: 240px;
+        border: solid 1px gray;
+        transform: translate(310px, -710px); }
+        #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada5 a .imagen-noticia5 {
+          width: 300px;
+          transform: translate(0px, 0px); }
+        #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada5 .decoration {
+          text-decoration: none;
+          color: black; }
+          #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada5 .decoration .titulo2 {
+            padding-top: 8px;
+            padding-left: 4px;
+            width: 310px;
+            font-size: 17px;
+            color: black;
+            font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+            transform: translate(0px, 0px); }
+            #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada5 .decoration .titulo2:hover {
+              text-decoration: underline; }
+      #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada6 {
+        width: 302px;
+        height: 240px;
+        border: solid 1px gray;
+        transform: translate(310px, -700px); }
+        #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada6 a .imagen-noticia6 {
+          width: 300px;
+          transform: translate(0px, 0px); }
+        #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada6 .decoration {
+          text-decoration: none;
+          color: black; }
+          #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada6 .decoration .titulo2 {
+            padding-top: 8px;
+            padding-left: 4px;
+            width: 310px;
+            font-size: 16px;
+            color: black;
+            font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+            transform: translate(0px, 0px); }
+            #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada6 .decoration .titulo2:hover {
+              text-decoration: underline; } }
+
+/*SECCIONES*/
+@media (min-width: 426px) and (max-width: 768px) {
+  #padreSecciones {
+    display: grid;
+    grid-template-rows: 100px auto 400px;
+    grid-template-columns: 20px 728px 20px;
+    grid-row-gap: 35px;
+    grid-template-areas: "cabecera navegador"                         " . seccionTitulares"                             "footer footer"; }
+  #seccionTitulares {
+    grid-area: seccionTitulares;
+    width: 400px; }
+    #seccionTitulares .tituloSecciones {
+      font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; }
+    #seccionTitulares .contenedor-breadcrumb {
+      transform: translate(0px, 0px); }
+    #seccionTitulares #titularSecundario {
+      display: grid;
+      justify-content: flex-start;
+      font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      width: 400px;
+      height: auto; }
+      #seccionTitulares #titularSecundario .cajaTitular {
+        width: 348px;
+        height: 340px;
+        transform: translateY(0px); }
+        #seccionTitulares #titularSecundario .cajaTitular a .imagenTitulo2 {
+          width: 400px;
+          transform: translate(-1px, 0px); }
+        #seccionTitulares #titularSecundario .cajaTitular .copete2 {
+          width: 300px;
+          color: white;
+          text-shadow: 1px 1px black;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 10px;
+          transform: translate(4px, -192px); }
+        #seccionTitulares #titularSecundario .cajaTitular .decoration {
+          text-decoration: none;
+          color: black; }
+          #seccionTitulares #titularSecundario .cajaTitular .decoration .titulo2 {
+            width: 400px;
+            height: auto;
+            color: black;
+            transform: translate(0px, -18px);
+            text-align: left;
+            font-size: 25px; }
+            #seccionTitulares #titularSecundario .cajaTitular .decoration .titulo2:hover {
+              text-decoration: underline; }
+        #seccionTitulares #titularSecundario .cajaTitular .subtitulo3 {
+          width: 357px;
+          height: auto;
+          text-align: left;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 16px;
+          transform: translate(0px, -20px); }
+      #seccionTitulares #titularSecundario .cajaTitular2 {
+        width: 400px;
+        height: auto;
+        transform: translate(0px, 40px); }
+        #seccionTitulares #titularSecundario .cajaTitular2 a .imagenTitulo3 {
+          width: 400px;
+          transform: translate(0px, 0px); }
+        #seccionTitulares #titularSecundario .cajaTitular2 .copete3 {
+          color: white;
+          text-shadow: 1px 1px black;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 10px;
+          transform: translate(4px, -192px); }
+        #seccionTitulares #titularSecundario .cajaTitular2 .decoration {
+          text-decoration: none;
+          color: black; }
+          #seccionTitulares #titularSecundario .cajaTitular2 .decoration .titulo3 {
+            width: 400px;
+            height: auto;
+            color: black;
+            transform: translate(0px, -20px); }
+            #seccionTitulares #titularSecundario .cajaTitular2 .decoration .titulo3:hover {
+              text-decoration: underline; }
+        #seccionTitulares #titularSecundario .cajaTitular2 .subtitulo3 {
+          width: 357px;
+          height: auto;
+          text-align: left;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 16px;
+          transform: translate(0px, -20px); }
+      #seccionTitulares #titularSecundario .cajaTitular3 {
+        width: 400px;
+        height: auto;
+        transform: translate(0px, 20px); }
+        #seccionTitulares #titularSecundario .cajaTitular3 a .imagenTitulo4 {
+          width: 400px;
+          transform: translate(0px, 0px); }
+        #seccionTitulares #titularSecundario .cajaTitular3 .copete4 {
+          color: white;
+          text-shadow: 1px 1px black;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 10px;
+          transform: translate(4px, -170px); }
+        #seccionTitulares #titularSecundario .cajaTitular3 .decoration {
+          text-decoration: none;
+          color: black; }
+          #seccionTitulares #titularSecundario .cajaTitular3 .decoration .titulo4 {
+            width: 400px;
+            height: auto;
+            color: black;
+            transform: translate(0px, -20px); }
+            #seccionTitulares #titularSecundario .cajaTitular3 .decoration .titulo4:hover {
+              text-decoration: underline; }
+        #seccionTitulares #titularSecundario .cajaTitular3 .subtitulo3 {
+          width: 357px;
+          height: auto;
+          text-align: left;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 16px;
+          transform: translate(0px, -20px); }
+      #seccionTitulares #titularSecundario .cajaTitular4 {
+        width: 400px;
+        height: 340px;
+        transform: translate(0px, 0px); }
+        #seccionTitulares #titularSecundario .cajaTitular4 a .imagenTitulo5 {
+          width: 400px;
+          transform: translate(0px, 0px); }
+        #seccionTitulares #titularSecundario .cajaTitular4 .copete5 {
+          color: white;
+          text-shadow: 1px 1px black;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 10px;
+          transform: translate(4px, -170px); }
+        #seccionTitulares #titularSecundario .cajaTitular4 .decoration {
+          text-decoration: none;
+          color: black; }
+          #seccionTitulares #titularSecundario .cajaTitular4 .decoration .titulo4 {
+            width: 400px;
+            height: auto;
+            color: black;
+            transform: translate(0px, -20px); }
+            #seccionTitulares #titularSecundario .cajaTitular4 .decoration .titulo4:hover {
+              text-decoration: underline; } }
+
+/*ESTADISTICAS*/
+@media (min-width: 426px) and (max-width: 768px) {
+  #padreStats {
+    display: grid;
+    grid-template-areas: "cabecera navegador navegador" ". tablaGrupo ."                             "footer footer footer";
+    grid-template-rows: 100px auto 470px;
+    grid-template-columns: 20px 728px 20px;
+    grid-row-gap: 50px; }
+  /*TABLAS*/
+  #tablaGrupo {
+    grid-area: tablaGrupo;
+    grid-template-rows: 90px 516px 516px; }
+    #tablaGrupo table tr .celda-grupo {
+      width: 596px; }
+    #tablaGrupo table tr .columnaPos, #tablaGrupo table tr .columnaEquipo, #tablaGrupo table tr .columnaPts, #tablaGrupo table tr .columnaJGEP {
+      width: 46px; }
+    #tablaGrupo table tr .columnaEquipo {
+      width: 178px; }
+    #tablaGrupo table tr .columnaPts {
+      width: 50px; }
+    #tablaGrupo table tr .celdaPos, #tablaGrupo table tr .celdaEquipo, #tablaGrupo table tr .celdaPts, #tablaGrupo table tr .celdaJGEP, #tablaGrupo table tr .celdaPosGris, #tablaGrupo table tr .celdaEquipoGris, #tablaGrupo table tr .celdaPtsGris, #tablaGrupo table tr .celdaJGEPGris {
+      width: 46px; }
+    #tablaGrupo table tr .celdaEquipo {
+      width: 178px; }
+    #tablaGrupo table tr .celdaPts {
+      width: 50px; }
+    #tablaGrupo table tr .celdaPosGris {
+      width: 46px; }
+    #tablaGrupo table tr .celdaEquipoGris {
+      width: 178px; }
+    #tablaGrupo table tr .celdaPtsGris {
+      width: 50px; }
+  #tablaFixture tr .celda-fecha {
+    background-color: yellowgreen;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 6px; }
+  #tablaFixture tr .columnaFecha, #tablaFixture tr .faseEliminatoria {
+    height: 32px;
+    text-align: left;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 10px;
+    font-size: 12px;
+    background-color: #cec9c9; }
+  #tablaFixture tr .faseEliminatoria {
+    text-align: right;
+    padding-right: 10px; }
+  #tablaFixture tr .celdaEquipo1, #tablaFixture tr .celdaEquipo2 {
+    width: 250px;
+    text-align: right;
+    display: inline-block;
+    padding-top: 4px;
+    padding-right: 10px;
+    padding-bottom: 4px;
+    font-size: 12px;
+    text-align: right; }
+    #tablaFixture tr .celdaEquipo1 .escudo-equipo, #tablaFixture tr .celdaEquipo2 .escudo-equipo {
+      width: 20px;
+      transform: translateX(15px); }
+  #tablaFixture tr .celdaResultado {
+    width: 100px;
+    text-align: center; }
+  #tablaFixture tr .celdaEquipo2 {
+    width: 250px;
+    text-align: left; }
+    #tablaFixture tr .celdaEquipo2 .escudo-equipo {
+      width: 20px;
+      transform: translateX(-15px); } }
+
+/*AGENDA*/
+@media (min-width: 426px) and (max-width: 768px) {
+  #padreAgenda {
+    display: grid;
+    grid-template-areas: "cabecera navegador navegador " ". agenda ." "footer footer footer";
+    grid-template-rows: 100px auto 470px;
+    grid-template-columns: 20px 728px 20px;
+    grid-row-gap: 10px; }
+  #agenda {
+    grid-area: agenda;
+    width: 708px;
+    display: grid;
+    grid-template-rows: 380px 30px 20px auto; }
+    #agenda #encabezadoAgenda {
+      width: 708px;
+      height: 30px;
+      line-height: 30px; }
+      #agenda #encabezadoAgenda div .tituloAgenda {
+        width: 708px; }
+      #agenda #encabezadoAgenda div .subtituloAgenda {
+        width: 708px; }
+    #agenda #selector {
+      width: 360px;
+      height: 120px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      z-index: 2; }
+    #agenda #cajaAgenda {
+      width: 708px;
+      z-index: 1; }
+      #agenda #cajaAgenda .eventosAgenda div table .horario {
+        display: block; }
+      #agenda #cajaAgenda .eventosAgenda div table .celdaAgenda {
+        width: 550px;
+        transform: translateX(0px);
+        font-size: 12px; }
+        #agenda #cajaAgenda .eventosAgenda div table .celdaAgenda .vs {
+          transform: translateX(0px); } }
+
+/*FORMULARIOS*/
+@media (min-width: 426px) and (max-width: 768px) {
+  #padreForm {
+    display: grid;
+    grid-template-rows: 100px 500px 470px;
+    grid-template-columns: 20px 728px 20px;
+    grid-template-areas: "cabecera navegador navegador" ".  formulario ." "footer footer footer";
+    grid-row-gap: 10px; }
+  #formulario {
+    grid-area: formulario; }
+    #formulario #formularioSuscribe {
+      display: flex;
+      justify-content: flex-end;
+      padding-top: 50px;
+      transform: translate(-50px, -80px); }
+      #formulario #formularioSuscribe #caja-form-principal {
+        display: grid;
+        grid-template-rows: 50px 300px;
+        padding-top: 15px; }
+  .fondo-form {
+    background-image: url(../img/fondo-formulario.jpg);
+    background-repeat: no-repeat;
+    background-size: 252%;
+    background-position: -170px 100px; } }
+
+/*DESKTOP*/
