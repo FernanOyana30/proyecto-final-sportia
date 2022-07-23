@@ -99,18 +99,16 @@
   grid-area: navegador;
   background-image: linear-gradient(to top, #73a314, #9ed333);
   font-family: Arial, Helvetica, sans-serif;
-  width: 100%;
+  width: 1246px;
   height: 100px;
   display: flex;
   align-content: center;
   align-items: center;
   position: fixed;
   top: 0px;
-  left: 100px;
+  left: 99px;
   border-bottom: inset 3px gray;
-  z-index: 2; }
-  #navegador #menuDesplegable {
-    z-index: 3; }
+  z-index: 3; }
   #navegador .menuNav {
     width: 800px;
     height: 80px;
@@ -523,7 +521,7 @@
         flex-direction: row;
         justify-content: flex-end;
         width: 320px; }
-        #articulo #notaPartido .divNota .marcador-partido .equipo-local p .escudoLocal {
+        #articulo #notaPartido .divNota .marcador-partido .equipo-local .escudoLocal {
           width: 70px;
           height: 70px; }
       #articulo #notaPartido .divNota .marcador-partido .resultado {
@@ -728,7 +726,7 @@
   grid-area: articulo; }
   #articulo #notaPartido .divNota2 {
     display: grid;
-    grid-template-rows: 50px auto 80px 460px 60px auto; }
+    grid-template-rows: 50px auto 80px 530px 60px auto; }
     #articulo #notaPartido .divNota2 div .copeteNota {
       background-color: yellowgreen;
       color: white;
@@ -1318,7 +1316,7 @@
   justify-content: space-evenly;
   font-family: Arial, Helvetica, sans-serif;
   padding-top: 50px;
-  width: 1440px; }
+  width: 1343px; }
   #piePagina .contacto div .iconoRedes {
     height: 30px;
     width: 30px;
@@ -1352,7 +1350,12 @@
   padding: 0;
   box-sizing: border-box; }
 
-/*MOBILE*/
+/*      
+***
+*Media Queries 
+*vista mobile
+***
+*/
 /*INDEX*/
 @media (min-width: 0px) and (max-width: 425px) {
   #padreIndex {
@@ -1765,7 +1768,9 @@
   #articulo {
     grid-area: articulo; }
     #articulo #notaPartido {
-      display: flex; }
+      display: flex;
+      /*resultados de partidos*/
+      /*notas y entrevistas*/ }
       #articulo #notaPartido .divNota {
         width: 415px;
         display: grid;
@@ -1784,7 +1789,7 @@
           width: 410px;
           height: auto;
           font-size: 35px;
-          line-height: 53px; }
+          line-height: normal; }
         #articulo #notaPartido .divNota #cajaSubtitulo {
           width: 402px;
           height: auto; }
@@ -1815,7 +1820,7 @@
             flex-direction: row;
             justify-content: flex-end;
             width: 320px; }
-            #articulo #notaPartido .divNota .marcador-partido .equipo-local p .escudoLocal {
+            #articulo #notaPartido .divNota .marcador-partido .equipo-local .escudoLocal {
               width: 70px;
               height: 70px; }
           #articulo #notaPartido .divNota .marcador-partido .resultado {
@@ -1859,10 +1864,17 @@
           #articulo #notaPartido .divNota .marcador-partido .equipo-local {
             transform: translate(5px, -20px);
             width: 140px;
+            height: 100px;
             font-size: 15px; }
-            #articulo #notaPartido .divNota .marcador-partido .equipo-local .escudo {
-              width: 60px;
-              height: 60px; }
+            #articulo #notaPartido .divNota .marcador-partido .equipo-local p {
+              width: 250px;
+              font-size: 13px;
+              text-align: center;
+              transform: translate(20px, 10px); }
+            #articulo #notaPartido .divNota .marcador-partido .equipo-local .escudoLocal {
+              width: 40px;
+              height: 40px;
+              transform: translate(-50px, 35px); }
           #articulo #notaPartido .divNota .marcador-partido .resultado {
             transform: translate(-200px, -20px);
             width: 100px;
@@ -1870,11 +1882,17 @@
             font-size: 35px; }
           #articulo #notaPartido .divNota .marcador-partido .equipo-visitante {
             transform: translate(-300px, -20px);
-            width: 140px;
-            font-size: 15px; }
+            width: 160px;
+            height: 100px; }
+            #articulo #notaPartido .divNota .marcador-partido .equipo-visitante p {
+              width: 100%;
+              transform: translate(-20px, 10px);
+              text-align: center;
+              font-size: 13px; }
             #articulo #notaPartido .divNota .marcador-partido .equipo-visitante .escudo {
-              width: 60px;
-              height: 60px; }
+              width: 40px;
+              height: 40px;
+              transform: translate(55px, 30px); }
           #articulo #notaPartido .divNota .marcador-partido span .goles-local {
             background-color: black;
             transform: translate(5px, -65px);
@@ -1915,7 +1933,7 @@
           width: 410px;
           height: auto;
           font-size: 35px;
-          line-height: 53px; }
+          line-height: normal; }
         #articulo #notaPartido .divNota2 #cajaSubtitulo {
           width: 402px;
           height: auto; }
@@ -2185,7 +2203,7 @@
           text-shadow: 1px 1px black;
           font-family: Arial, Helvetica, sans-serif;
           font-size: 10px;
-          transform: translate(4px, -170px); }
+          transform: translate(4px, -190px); }
         #seccionTitulares #titularSecundario .cajaTitular3 .decoration {
           text-decoration: none;
           color: black; }
@@ -2215,7 +2233,7 @@
           text-shadow: 1px 1px black;
           font-family: Arial, Helvetica, sans-serif;
           font-size: 10px;
-          transform: translate(4px, -170px); }
+          transform: translate(4px, -190px); }
         #seccionTitulares #titularSecundario .cajaTitular4 .decoration {
           text-decoration: none;
           color: black; }
@@ -2350,7 +2368,7 @@
 @media (min-width: 0px) and (max-width: 425px) {
   #padreForm {
     display: grid;
-    grid-template-rows: 100px 500px 470px;
+    grid-template-rows: 100px 450px 470px;
     grid-template-columns: 10px 415px;
     grid-template-areas: "cabecera navegador" ".  formulario" "footer footer";
     grid-row-gap: 10px; }
@@ -2371,7 +2389,12 @@
     background-size: 192%;
     background-position: -170px 100px; } }
 
-/*TABLET*/
+/*      
+***
+*Media Queries 
+*vista tablet
+***
+*/
 /*INDEX*/
 @media (min-width: 426px) and (max-width: 768px) {
   #padreIndex {
@@ -2738,7 +2761,9 @@
   #articulo {
     grid-area: articulo; }
     #articulo #notaPartido {
-      display: flex; }
+      display: flex;
+      /*Resultados partidos*/
+      /*Notas y entrevistas*/ }
       #articulo #notaPartido .divNota {
         width: 728px;
         display: grid;
@@ -2788,7 +2813,7 @@
             flex-direction: row;
             justify-content: flex-end;
             width: 320px; }
-            #articulo #notaPartido .divNota .marcador-partido .equipo-local p .escudoLocal {
+            #articulo #notaPartido .divNota .marcador-partido .equipo-local .escudoLocal {
               width: 70px;
               height: 70px; }
           #articulo #notaPartido .divNota .marcador-partido .resultado {
@@ -3322,4 +3347,9 @@
     background-size: 252%;
     background-position: -170px 100px; } }
 
-/*DESKTOP*/
+/*      
+***
+*Media Queries 
+*vista Desktop
+***
+*/

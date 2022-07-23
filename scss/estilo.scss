@@ -129,13 +129,11 @@ $button_green: map-get($button, button_green );
             display: flex;
             flex-direction: row; 
             justify-content: flex-end;               
-            width: 320px;                 
-            p{                
-                .escudoLocal{
+            width: 320px; 
+            .escudoLocal{
                 width: 70px;
                 height: 70px;
-                }
-            }            
+                }         
         }
         .resultado{
             font-family: 'Times New Roman', Times, serif;

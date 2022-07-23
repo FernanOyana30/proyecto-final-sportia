@@ -3,19 +3,16 @@
     grid-area: navegador;
     background-image: linear-gradient(to top, rgb(115, 163, 20), rgb(158, 211, 51));  
     font-family: $font_arial;
-    width: 100%;
+    width: 1246px;
     height: 100px;
     display: flex;
     align-content: center;
     align-items: center;
     position: fixed;
-    top: 0px;    
-    left: 100px;
+    top: 0px;
+    left: 99px;
     border-bottom: $border_inset;
-    z-index: 2;
-    #menuDesplegable{
-        z-index: 3;
-    }
+    z-index: 3;
     .menuNav{
         width: 800px;
         height: 80px;
